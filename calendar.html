@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Deepak Mandal - Calendar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!--latest compiled and minified CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!--jQuery library-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <!--Latest compiled and minified javascript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="jumbotron">
+                <center><h1><a href="index.html">Home</a></h1></center>
+            </div>
+            
+<div id="clockbox"></div>
+
+<script type="text/javascript">
+var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('clockbox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+            
+            
+<br>
+        </div>
+        
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <tbody>                       
+                        <tr>
+                            <th></th>
+                            <th>07:55-08:50</th>
+                            <th>09:00-09:55</th>
+                            <th>10:00-10:55</th>
+                            <th>11:00-11:55</th>
+                            <th>12:00-12:55</th>
+                            <th>01:00-01:55</th>
+                            <th>02:00-02:55</th>
+                            <th>03:00-03:55</th>
+                            <th>04:00-04:55</th>
+                            <th>05:00-05:55</th>
+                            
+                        </tr>
+                        <tr>
+                            <th>Monday</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>CH 426
+                                <br/><p>Green Chem. & Tech.</p>
+                            </td>
+                            <td></td>
+                            <td>CH 401
+                                <br><p>Mod. Chem. Tech.</p>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <th>Tuesday</th>
+                            <td></td>
+                            <td></td>
+                            <td>CH 427
+                                <br><p>Med. Chem.</p>
+                            </td>
+                            <td></td>
+                            <td>CH 426</td>
+                            <td></td>
+                            <td>CH 401</td>
+                            <td>CH 437
+                                <br><p>Nn.Scl. Sc. & Tech.</p>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <th>Wednesday</th>
+                            <td></td>
+                            <td></td>
+                            <td>CH 427</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>CH 401</td>
+                            <td>CH 437</td>
+                            <td></td>
+                            <td></td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <th>Thursday</th>
+                            <td></td>
+                            <td></td>
+                            <td>CH 427</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>CH 437</td>
+                            <td></td>
+                            <td></td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <th>Friday</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>CH 426</td>
+                            <td></td>
+                            <td></td>
+                            <!--<td colspan="1"></td>-->
+                            <td colspan="3">CH 402<br><p>Tech. Rep. Pres.</p></td>
+                            <!--<td></td>-->
+                            <td></td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <th>Saturday</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        
+
+        
+        
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <tbody>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                        <tr>
+                           <td><br></td>
+                           <td><br></td>
+                           <td><br></td>
+                           <td><br></td>
+                           <td><br>20 Aug</td>
+                           <td><br>21 Aug</td>
+                           <td><br>22 Aug</td>
+                        </tr>
+                        <tr>
+                           <td><br>23 Aug</td>
+                           <td><br>24 Aug</td>
+                           <td><br>25 Aug</td>
+                           <td><br>26 Aug</td>
+                           <td><br>27 Aug</td>
+                           <td><br>28 Aug</td>
+                           <td><br>29 Aug</td>
+                        </tr>
+                        <tr>
+                           <td><br>30 Aug</td>
+                           <td><br>31 Aug</td>
+                           <td><br>1 Sep</td>
+                           <td><br>2 Sep</td>
+                           <td><br>3 Sep</td>
+                           <td><br>4 Sep</td>
+                           <td><br><h5 style="color:red">Thu-1</h5>5 Sep</td>
+                        </tr>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                        <tr>
+                           <td><br>6 Sep</td>
+                           <td><br>7 Sep</td>
+                           <td><br>8 Sep</td>
+                           <td><br>9 Sep</td>
+                           <td><br>10 Sep</td>
+                           <td><br>11 Sep</td>
+                           <td><br><h5 style="color:red">Wed-2</h5>12 Sep</td>
+                        </tr>
+                        <tr>
+                           <td><br>13 Sep</td>
+                           <td><br>14 Sep</td>
+                           <td><br>15 Sep</td>
+                           <td><br>16 Sep</td>
+                           <td><br>17 Sep</td>
+                           <td><br>18 Sep</td>
+                           <td><br><h5 style="color:red">Tue-3</h5>19 Sep</td>
+                        </tr>
+                        
+                        <tr>
+                           <td><br>20 Sep</td>
+                           <td><br>21 Sep</td>
+                           <td><br>22 Sep</td>
+                           <td><br>23 Sep</td>
+                           <td><br>24 Sep</td>
+                           <td><br>25 Sep</td>
+                           <td><br><h5 style="color:red">Mon-4</h5>26 Sep</td>
+                        </tr>
+                        <tr>
+                           <td><br>27 Sep</td>
+                           <td><br>28 Sep</td>
+                           <td><br>29 Sep</td>
+                           <td><br>30 Sep</td>
+                           <td><br>1 Oct</td>
+                           <td><br><h5 style="color:green">Holiday</h5>2 Oct</td>
+                           <td><br><h5 style="color:red">Fri-5</h5>3 Oct</td>
+                        </tr>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                        <tr>
+                           <td><br>4 Oct</td>
+                           <td><br>5 Oct</td>
+                           <td><br>6 Oct</td>
+                           <td><br>7 Oct</td>
+                           <td><br>8 Oct</td>
+                           <td><br>9 Oct</td>
+                           <td><br><h5 style="color:red">Mon-7</h5>10 Oct</td>
+                        </tr>
+                        <tr>
+                           <td><br>11 Oct</td>
+                           <td><br>12 Oct</td>
+                           <td><br>13 Oct</td>
+                           <td><br>14 Oct</td>
+                           <td><br>15 Oct</td>
+                           <td><br>16 Oct</td>
+                           <td><br><h5 style="color:red">Tue-8</h5>17 Oct</td>
+                        </tr>
+                        <tr>
+                           <td><br>18 Oct</td>
+                           <td><br>19 Oct</td>
+                           <td><br>20 Oct</td>
+                           <td><br>21 Oct</td>
+                           <td><br>22 Oct</td>
+                           <td><br><h5 style="color:green">Holiday</h5>23 Oct</td>
+                           <td><br><h5 style="color:red">Fri-8</h5>24 Oct</td>
+                        </tr>
+                        <tr>
+                           <td><br>25 Oct</td>
+                           <td><br>26 Oct</td>
+                           <td><br>27 Oct</td>
+                           <td><br>28 Oct</td>
+                           <td><br>29 Oct</td>
+                           <td><br><h5 style="color:green">Holiday</h5>30 Oct</td>
+                           <td><br><h5 style="color:red">Fri-9</h5>31 Oct</td>
+                        </tr>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                        <tr>
+                           <td><br>1 Nov</td>
+                           <td><br>2 Nov</td>
+                           <td><br>3 Nov</td>
+                           <td><br>4 Nov</td>
+                           <td><br>5 Nov</td>
+                           <td><br>6 Nov</td>
+                           <td><br><h5 style="color:red">Wed-11</h5>7 Nov</td>
+                        </tr>
+                        <tr>
+                           <td><br>8 Nov</td>
+                           <td><br>9 Nov</td>
+                           <td><br>10 Nov</td>
+                           <td><br>11 Nov</td>
+                           <td><br>12 Nov</td>
+                           <td><br>13 Nov</td>
+                           <td><br><h5 style="color:green">Holiday</h5>14 Nov</td>
+                        </tr>
+                        <tr>
+                           <td><br>15 Nov</td>
+                           <td><br>16 Nov</td>
+                           <td><br>17 Nov</td>
+                           <td><br>18 Nov</td>
+                           <td><br>19 Nov</td>
+                           <td><br>20 Nov</td>
+                           <td><br><h5 style="color:red">Fri-13</h5>21 Nov</td>
+                        </tr>
+                        <tr>
+                           <td><br>22 Nov</td>
+                           <td><br>23 Nov</td>
+                           <td><br>24 Nov</td>
+                           <td><br>25 Nov</td>
+                           <td><br>26 Nov</td>
+                           <td><br>27 Nov</td>
+                           <td><br><h5 style="color:red">Thu (End)</h5>28 Nov</td>
+                        </tr>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                        <tr>
+                           <td><br>29 Nov</td>
+                           <td><br><h5 style="color:green">Holiday</h5>30 Nov</td>
+                           <td><br>1 Dec</td>
+                           <td><br>2 Dec Nov</td>
+                           <td><br>3 Dec</td>
+                           <td><br>4 Dec</td>
+                           <td><br>5 Dec</td>
+                        </tr>
+                        <tr>
+                           <td><br>6 Dec</td>
+                           <td><br>7 Dec</td>
+                           <td><br>8 Dec</td>
+                           <td><br>9 Dec Nov</td>
+                           <td><br>10 Dec</td>
+                           <td><br>11 Dec</td>
+                           <td><br>12 Dec</td>
+                        </tr>
+                        <tr>
+                           <td><br>13 Dec</td>
+                           <td><br>14 Dec</td>
+                           <td><br>15 Dec</td>
+                           <td><br>16 Dec Nov</td>
+                           <td><br>17 Dec</td>
+                           <td><br>18 Dec</td>
+                           <td><br>19 Dec</td>
+                        </tr>
+                        
+                        <tr>
+                           <td><br>20 Dec</td>
+                           <td><br>21 Dec</td>
+                           <td><br>22 Dec</td>
+                           <td><br>23 Dec Nov</td>
+                           <td><br>24 Dec</td>
+                           <td><br>25 Dec</td>
+                           <td><br>26 Dec</td>
+                        </tr>
+                        <tr>
+                           <td><br>27 Dec</td>
+                           <td><br>28 Dec</td>
+                           <td><br>29 Dec</td>
+                           <td><br>30 Dec Nov</td>
+                           <td><br>31 Dec</td>
+                           <td><br>1 Jan</td>
+                           <td><br>2 Jan</td>
+                        </tr>
+
+
+
+
+
+                        
+                        
+                        
+                        
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        
+        
+    </body>
+</html>
