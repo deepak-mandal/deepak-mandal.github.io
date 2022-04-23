@@ -1,9 +1,9 @@
 .example-header-image {
-    background-image: url('../images/cgi.png');
-    background-size: cover;
-  }
-  
-  .example-header-image1 {
-    background-image: url('../images/dkm.jpeg');
-    background-size: cover;
-  }
+  background-image: url('../images/cgi.png');
+  background-size: cover;
+}
+
+.example-header-image1 {
+  background-image: url('../images/dkm.jpeg');
+  background-size: cover;
+}

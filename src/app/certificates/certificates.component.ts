@@ -12,15 +12,15 @@ export class CertificatesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  cpmaImg = 'assets/images/cpma.png'  
+  cpmaImg = 'assets/images/cpma.png'
   cpmaAlt = 'cpma'
 
-  pyImg = 'assets/images/python.png'  
+  pyImg = 'assets/images/python.png'
   pyAlt = 'python'
-  phpImg = 'assets/images/php.png'  
+  phpImg = 'assets/images/php.png'
   phpAlt = 'php'
-  dsaImg = 'assets/images/data-structures-and-algorithms.png'  
+  dsaImg = 'assets/images/data-structures-and-algorithms.png'
   dsaAlt = 'dsa'
-  cImg = 'assets/images/cpp.png'  
+  cImg = 'assets/images/cpp.png'
   cAlt = 'cpp'
 }

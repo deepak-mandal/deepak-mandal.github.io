@@ -1,10 +1,9 @@
-
 .java {
-    background-image: url('../images/java.png');
-    background-size: cover;
-  }
-  
-  
+  background-image: url('../images/java.png');
+  background-size: cover;
+}
+
+
 .py {
   background-image: url('../images/py.png');
   background-size: cover;

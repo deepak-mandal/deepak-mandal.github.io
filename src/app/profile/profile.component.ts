@@ -12,7 +12,6 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // imageSrc = 'assets/images/dkm.jpeg'  
-  // imageAlt = 'dkm'
+
 
 }

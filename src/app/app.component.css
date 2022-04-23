@@ -1,36 +1,13 @@
-/* .example-small-box, .example-large-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 16px;
-    padding: 16px;
-    border-radius: 8px;
-  }
-  
-  .example-small-box {
-    height: auto;
-    width: auto;
-  }
-  
-  .example-large-box {
-    height: 300px;
-    width: 300px;
-  } */
-  
-
-  .mat-tab-group {
-    margin-bottom: 48px;
-  }
+.mat-tab-group {
+  margin-bottom: 48px;
+}
 
 
 
+.mat-stepper-vertical {
+  margin-top: 8px;
+}
 
-
-
-  .mat-stepper-vertical {
-    margin-top: 8px;
-  }
-  
-  .mat-form-field {
-    margin-top: 16px;
-  }
+.mat-form-field {
+  margin-top: 16px;
+}
