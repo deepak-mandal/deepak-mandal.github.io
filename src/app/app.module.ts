@@ -14,10 +14,13 @@ import {MatListModule} from '@angular/material/list';
 import {MatStepperModule} from '@angular/material/stepper';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
-// import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
+import { CertificatesComponent } from './certificates/certificates.component';
+import { AchievementsComponent } from './achievements/achievements.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { FooterComponent } from './footer/footer.component';
     EducationComponent,
     ExperiencesComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    CertificatesComponent,
+    AchievementsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +47,7 @@ import { FooterComponent } from './footer/footer.component';
     ReactiveFormsModule,
     MatNativeDateModule,
     MatFormFieldModule ,
+MatIconModule
     
 
   ],
