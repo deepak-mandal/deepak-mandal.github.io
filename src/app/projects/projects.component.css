@@ -1,0 +1,19 @@
+.cgi {
+    background-image: url('../images/cgi.png');
+    background-size: cover;
+  }
+
+  .iitg {
+    background-image: url('../images/IITG.png');
+    background-size: cover;
+  }
+
+  .internshala {
+    background-image: url('../images/in.png');
+    background-size: cover;
+  }
+
+  .dkm {
+    background-image: url('../images/dkm.jpeg');
+    background-size: cover;
+  }
