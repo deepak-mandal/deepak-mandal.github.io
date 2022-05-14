@@ -24,12 +24,12 @@ export class CertificatesComponent implements OnInit {
   cImg = 'assets/images/cpp.png'
   cAlt = 'cpp'
 
-  lataxImg ='assets/images/latex.jpg'
+  lataxImg = 'assets/images/latex.jpg'
   lataxAlt = 'LaTaX'
 
-  hackerRankImg ='assets/images/sql.png'
+  hackerRankImg = 'assets/images/sql.png'
   hackerRankAlt = 'LaTaX'
 
-  problemSolvingImg ='assets/images/problem-solving.png'
-  hrpyImg ='assets/images/Python-basic.png'
+  problemSolvingImg = 'assets/images/problem-solving.png'
+  hrpyImg = 'assets/images/Python-basic.png'
 }

@@ -1,115 +1,103 @@
 <app-profile></app-profile>
 
 <mat-stepper orientation="vertical" #stepper>
+  <mat-step [stepControl]="firstFormGroup" state="edu">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Education</ng-template>
+      <mat-card>
+        <app-education></app-education>
+      </mat-card>
+      <div>
+        <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" state="exp">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Experiences</ng-template>
+      <mat-card>
+        <app-experiences></app-experiences>
+      </mat-card>
+      <div>
+        <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
+        <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" state="proj">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Projects</ng-template>
+      <mat-card>
+        <app-projects></app-projects>
+      </mat-card>
+      <div>
+        <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
+        <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
+      </div>
+    </form>
+  </mat-step>
 
-    <mat-step [stepControl]="firstFormGroup" state="edu">
-        <form [formGroup]="firstFormGroup">
-            <ng-template matStepLabel>Education</ng-template>
+  <mat-step [stepControl]="secondFormGroup" state="skill">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Technical Skills</ng-template>
+      <mat-card>
+        <app-skills></app-skills>
+      </mat-card>
+      <div>
+        <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
+        <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
+      </div>
+    </form>
+  </mat-step>
 
-            <mat-card>
-                <app-education></app-education>
-            </mat-card>
-            <div>
-                <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
-            </div>
-        </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup" state="exp">
-        <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Experiences</ng-template>
-            <mat-card>
-                <app-experiences></app-experiences>
-            </mat-card>
-            <div>
-                <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
-                <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
-            </div>
-        </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup" state="proj">
-        <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Projects</ng-template>
-            <mat-card>
-                <app-projects></app-projects>
-            </mat-card>
-            <div>
-                <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
-                <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
-            </div>
-        </form>
-    </mat-step>
+  <mat-step [stepControl]="secondFormGroup" state="certi">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Certifications</ng-template>
+      <mat-card>
+        <app-certificates></app-certificates>
+      </mat-card>
+      <div>
+        <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
+        <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
+      </div>
+    </form>
+  </mat-step>
 
-    <mat-step [stepControl]="secondFormGroup" state="skill">
-        <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Technical Skills</ng-template>
+  <mat-step [stepControl]="secondFormGroup" state="ach">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Achievements</ng-template>
+      <mat-tab-group mat-align-tabs="start">
+        <mat-tab label="JEE 2017">
+          <mat-card>
+            <app-achievements></app-achievements>
+          </mat-card>
+        </mat-tab>
+      </mat-tab-group>
+      <div>
+        <button mat-raised-button color="primary" matStepperPrevious style="margin-right:10px">Back</button>
+        <button mat-raised-button (click)="stepper.reset()" color="accent">Navigate to Top</button>
+      </div>
+    </form>
+  </mat-step>
 
-            <mat-card>
-                <app-skills></app-skills>
-            </mat-card>
-            <div>
-                <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
-                <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
-            </div>
-        </form>
-    </mat-step>
-
-
-    <mat-step [stepControl]="secondFormGroup" state="certi">
-        <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Certifications</ng-template>
-            <mat-card>
-                <app-certificates></app-certificates>
-            </mat-card>
-            <div>
-                <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
-                <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
-            </div>
-
-        </form>
-    </mat-step>
-
-    <mat-step [stepControl]="secondFormGroup" state="ach">
-        <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Achievements</ng-template>
-            <mat-tab-group mat-align-tabs="start">
-                <mat-tab label="JEE 2017">
-                    <mat-card>
-                        <app-achievements></app-achievements>
-                    </mat-card>
-                </mat-tab>
-            </mat-tab-group>
-            <div>
-                <button mat-raised-button color="primary" matStepperPrevious style="margin-right:10px">Back</button>
-                <button mat-raised-button (click)="stepper.reset()" color="accent">Navigate to Top</button>
-            </div>
-        </form>
-    </mat-step>
-
-
-
-    <ng-template matStepperIcon="edu">
-        <mat-icon>school</mat-icon>
-    </ng-template>
-    <ng-template matStepperIcon="exp">
-        <mat-icon> business </mat-icon>
-    </ng-template>
-    <ng-template matStepperIcon="proj">
-        <mat-icon> business_center </mat-icon>
-    </ng-template>
-    <ng-template matStepperIcon="skill">
-        <mat-icon> sort </mat-icon>
-    </ng-template>
-    <ng-template matStepperIcon="certi">
-        <mat-icon> wallpaper </mat-icon>
-    </ng-template>
-    <ng-template matStepperIcon="ach">
-        <mat-icon> star </mat-icon>
-    </ng-template>
-
+  <ng-template matStepperIcon="edu">
+    <mat-icon>school</mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="exp">
+    <mat-icon> business </mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="proj">
+    <mat-icon> business_center </mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="skill">
+    <mat-icon> sort </mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="certi">
+    <mat-icon> wallpaper </mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="ach">
+    <mat-icon> star </mat-icon>
+  </ng-template>
 </mat-stepper>
-
-
-
-
 
 <app-footer></app-footer>
