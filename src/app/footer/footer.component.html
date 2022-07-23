@@ -3,13 +3,16 @@
     <!-- <div mat-card-avatar class="example-header-image"></div> -->
     <div class="footer-picture">
       <img mat-card-image [src]="wordCloudImg" style="width:80vw; margin-right: 1px; border-radius: 10px;" [alt]="wordCloudAlt">
-      <img mat-card-image [src]="deepakImg" style="width:20vw; margin-left: 1px; border-radius: 100%;" [alt]="deepakAlt">
+      <div>
+        <img mat-card-image [src]="deepakImg" style="width:20vw; margin-left: 1px; border-radius: 100%;" [alt]="deepakAlt">
+        <i>Deepak - Software Engineer, IITian</i>
+      </div>
+      
     </div>
 
     <div class="move">
       <marquee direction="left" height="100%" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">                   
-        <p><i style="color: #E11937;">Hey there! I'm Deepak.</i><br/>
-          <i style="color:indigo">It's great to see you here!</i><br/>
+        <p>
           <i style="color: violet">Thank you..</i>
         </p>                   
       </marquee>

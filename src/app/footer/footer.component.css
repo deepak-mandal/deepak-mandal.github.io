@@ -6,4 +6,12 @@
 .footer-picture{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-heading{
+  text-align: right;
+  align-items: center;
 }

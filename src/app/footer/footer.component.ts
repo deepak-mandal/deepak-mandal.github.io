@@ -13,6 +13,6 @@ export class FooterComponent implements OnInit {
   }
   wordCloudImg = 'assets/images/tech.png'
   wordCloudAlt = 'Software Engineer, CGI || B.Tech, IIT Guwahati'
-  deepakImg = 'assets/images/dkm.jpeg';
+  deepakImg = 'assets/images/dkm-profile.jpeg';
   deepakAlt = 'Software Engineer, IITian';
 }
