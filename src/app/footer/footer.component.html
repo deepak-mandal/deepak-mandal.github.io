@@ -1,10 +1,23 @@
 <div class="footer">
   <mat-card>
-    <div mat-card-avatar class="example-header-image"></div>
+    <!-- <div mat-card-avatar class="example-header-image"></div> -->
+    <div>
+      <img mat-card-image [src]="wordCloudImg" [alt]="wordCloudAlt">
+    </div>
+
+    <div class="move">
+      <marquee direction="left" height="100%" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">                   
+        <p style="color: indigo;"><i>Hey there! I'm Deepak.</i><br/>
+          <i>It's great to see you here!</i><br/>
+          <i style="color: violet">Thank you..</i>
+        </p>                   
+      </marquee>
+    </div>
+
     <div style="display: flex; justify-content: space-evenly;">
       <div>
         <a href="https://goo.gl/maps/GebWoMq6Q7fBhKFc9">
-          <mat-icon> place </mat-icon>
+          <mat-icon> place </mat-icon> 
         </a>
       </div>
       <div>

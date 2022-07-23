@@ -11,5 +11,6 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  wordCloudImg = 'assets/images/tech.png'
+  wordCloudAlt = 'Software Engineer, CGI || B.Tech, IIT Guwahati'
 }
