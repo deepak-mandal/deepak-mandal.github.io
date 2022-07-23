@@ -1,14 +1,15 @@
 <div class="footer">
   <mat-card>
     <!-- <div mat-card-avatar class="example-header-image"></div> -->
-    <div>
-      <img mat-card-image [src]="wordCloudImg" [alt]="wordCloudAlt">
+    <div class="footer-picture">
+      <img mat-card-image [src]="wordCloudImg" style="width:80vw; margin-right: 1px; border-radius: 10px;" [alt]="wordCloudAlt">
+      <img mat-card-image [src]="deepakImg" style="width:20vw; margin-left: 1px; border-radius: 10px;" [alt]="deepakAlt">
     </div>
 
     <div class="move">
       <marquee direction="left" height="100%" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">                   
-        <p style="color: indigo;"><i>Hey there! I'm Deepak.</i><br/>
-          <i>It's great to see you here!</i><br/>
+        <p><i style="color: #E11937;">Hey there! I'm Deepak.</i><br/>
+          <i style="color:indigo">It's great to see you here!</i><br/>
           <i style="color: violet">Thank you..</i>
         </p>                   
       </marquee>
@@ -16,7 +17,7 @@
 
     <div style="display: flex; justify-content: space-evenly;">
       <div>
-        <a href="https://goo.gl/maps/GebWoMq6Q7fBhKFc9">
+        <a href="https://goo.gl/maps/WQ7mi944UBfRMpG87" target="_blank">
           <mat-icon> place </mat-icon> 
         </a>
       </div>
@@ -26,7 +27,7 @@
         </a>
       </div>
       <div>
-        <a href="https://github.com/deepak-mandal">
+        <a href="https://github.com/deepak-mandal" target="_blank">
           <mat-icon> github </mat-icon>
         </a>
       </div>

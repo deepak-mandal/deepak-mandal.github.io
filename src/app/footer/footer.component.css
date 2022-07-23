@@ -2,3 +2,8 @@
   padding: 10px;
   width: 95vw
 }
+
+.footer-picture{
+  display: flex;
+  flex-direction: row;
+}
