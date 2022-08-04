@@ -21,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CertificatesComponent } from './certificates/certificates.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { SkillsComponent } from './skills/skills.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { SkillsComponent } from './skills/skills.component';
     ReactiveFormsModule,
     MatNativeDateModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
 
 
   ],
