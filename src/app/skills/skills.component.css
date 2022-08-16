@@ -26,6 +26,11 @@
   background-size: cover;
 }
 
+.sqlite {
+  background-image: url('../images/sqlite.png');
+  background-size: cover;
+}
+
 
 .mongodb {
   background-image: url('../images/mongodb.png');
