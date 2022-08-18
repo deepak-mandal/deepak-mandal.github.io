@@ -11,5 +11,6 @@ export class AchievementsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  panelOpenState = false;
+  cgiAppreciation = 'assets/images/Deepak-Apprication.png';
 }

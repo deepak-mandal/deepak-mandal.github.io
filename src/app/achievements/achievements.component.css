@@ -1,3 +1,9 @@
 .example-header-image {
+  background-image: url('../images/cgi.png');
+  background-size: cover;
+}
+
+.example-header-image-iitm {
+  background-image: url('../images/iitm.png');
   background-size: cover;
 }

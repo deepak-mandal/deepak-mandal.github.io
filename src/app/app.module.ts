@@ -22,6 +22,7 @@ import { CertificatesComponent } from './certificates/certificates.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { SkillsComponent } from './skills/skills.component';
 import {MatTableModule} from '@angular/material/table';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -49,8 +50,8 @@ import {MatTableModule} from '@angular/material/table';
     MatNativeDateModule,
     MatFormFieldModule,
     MatIconModule,
-    MatTableModule
-
+    MatTableModule,
+    MatExpansionModule
 
   ],
   providers: [],

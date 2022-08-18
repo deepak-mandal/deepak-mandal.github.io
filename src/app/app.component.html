@@ -66,15 +66,11 @@
   <mat-step [stepControl]="secondFormGroup" state="ach">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Achievements</ng-template>
-      <mat-tab-group mat-align-tabs="start">
-        <mat-tab label="JEE 2017">
           <mat-card>
             <app-achievements></app-achievements>
           </mat-card>
-        </mat-tab>
-      </mat-tab-group>
       <div>
-        <button mat-raised-button color="primary" matStepperPrevious style="margin-right:10px">Back</button>
+        <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
         <button mat-raised-button (click)="stepper.reset()" color="accent">Navigate to Top</button>
       </div>
     </form>
