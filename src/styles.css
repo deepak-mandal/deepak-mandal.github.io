@@ -2,3 +2,11 @@
 
 html, body { height: 100%; }
 body { margin: 0; padding:20px; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-card-title{
+    color: rgb(227, 25, 55);
+  }
+
+  
+  .mat-card-subtitle{
+    color: rgb(82, 54, 171)
+  }

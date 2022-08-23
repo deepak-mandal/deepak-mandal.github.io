@@ -1,4 +1,4 @@
-import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
+import { StepperSelectionEvent, STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { Component, Injectable } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -32,4 +32,30 @@ export class AppComponent {
       secondCtrl: ['', Validators.required],
     });
   }
+
+  iconValue = 'school';
+  selectionChange(event: StepperSelectionEvent) {
+    console.log(event.selectedStep.label);
+    let stepLabel = event.selectedStep.label
+    if (stepLabel == "edu") {
+      this.iconValue='school'
+    }
+    if (stepLabel == "exp") {
+      this.iconValue='business'
+    }
+    if (stepLabel == "proj") {
+      this.iconValue='business_center'
+    }
+    if (stepLabel == "skill") {
+      this.iconValue='sort'
+    }
+    if (stepLabel == "certi") {
+      this.iconValue='wallpaper'
+    }
+    if (stepLabel == "ach") {
+      this.iconValue='star'
+    }
+
+  }
+  
 }
