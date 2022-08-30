@@ -3,7 +3,6 @@
   background-size: cover;
 }
 
-
 .py {
   background-image: url('../images/py.png');
   background-size: cover;
@@ -14,12 +13,10 @@
   background-size: cover;
 }
 
-
 .angular {
   background-image: url('../images/angular.png');
   background-size: cover;
 }
-
 
 .mysql {
   background-image: url('../images/mysql.png');
@@ -31,12 +28,10 @@
   background-size: cover;
 }
 
-
 .mongodb {
   background-image: url('../images/mongodb.png');
   background-size: cover;
 }
-
 
 .rabbitmq {
   background-image: url('../images/rabbitmq.png');

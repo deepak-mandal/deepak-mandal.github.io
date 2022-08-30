@@ -1,29 +1,19 @@
 <div class="footer">
   <mat-card>
-    <!-- <div mat-card-avatar class="example-header-image"></div> -->
-    <div class="footer-picture">
-      <img mat-card-image [src]="wordCloudImg" style="width:80vw; margin-right: 1px; border-radius: 10px;" [alt]="wordCloudAlt">
-      <div>
-        <img mat-card-image [src]="deepakImg" style="width:20vw; margin-left: 1px; border-radius: 100%;" [alt]="deepakAlt">
-        <a href="https://deepak-mandal.github.io/" style="text-decoration:none; background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-text-fill-color: transparent; -webkit-background-clip: text;"><b>Deepak - Software Engineer, IITian</b></a>
-      </div>
-      
-    </div>
-
     <div class="move">
-      <marquee direction="left" height="100%" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">                   
+      <marquee direction="left" height="100%" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
         <p>
           <i style=" background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171));
   -webkit-text-fill-color: transparent; -webkit-background-clip: text;">
-            Hey there! I'm Deepak. It's great to see you here! Thank you..</i>
-        </p>                   
+            Hey there! I'm Deepak. It's great to see you here! Thanking you..</i>
+        </p>
       </marquee>
     </div>
 
     <div style="display: flex; justify-content: space-evenly;">
       <div>
         <a href="https://goo.gl/maps/WQ7mi944UBfRMpG87" target="_blank">
-          <mat-icon> place </mat-icon> 
+          <mat-icon> place </mat-icon>
         </a>
       </div>
       <div>
@@ -39,9 +29,11 @@
     </div>
     <div style="text-align: center ;">
       <mat-card-subtitle>
-        &copy; 2020 - 2022 <a href="https://deepak-mandal.github.io/"
-          style="text-decoration: none; color: rgb(227, 25, 55);">Deepak</a>. For queries contact <a
-          href="mailto:dkmiitg@gmail.com"><b style="color:gray;">dkm.iitg@gmail.com</b></a>
+        &copy; 2020 - 2022
+        <b (click)="openDialog('3000ms', '1500ms')"
+          style="text-decoration:none; background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">
+          Deepak K Mandal</b>. For queries contact <a href="mailto:dkmiitg@gmail.com"><b
+            style="color:gray;">dkm.iitg@gmail.com</b></a>
       </mat-card-subtitle>
     </div>
   </mat-card>

@@ -1,13 +1,13 @@
-.example-header-image {
+/* .example-header-image {
   background-image: url('../images/cgi.png');
   background-size: cover;
-}
+} */
 
 .example-header-image-iitm {
   background-image: url('../images/iitm.png');
   background-size: cover;
 }
 
-mat-panel-title{
+/* mat-panel-title {
   color: rgb(227, 25, 55);
-}
+} */

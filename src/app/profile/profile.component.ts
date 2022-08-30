@@ -1,17 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ProfileDialogComponent } from '../profile-dialog/profile-dialog.component';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-export class ProfileComponent implements OnInit {
+export class ProfileComponent {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
-  ngOnInit(): void {
+  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
+    this.dialog.open(
+      ProfileDialogComponent, {
+      width: 'auto',
+      height: 'auto'
+      // enterAnimationDuration,
+      // exitAnimationDuration,
+    });
   }
-
 
 
 }

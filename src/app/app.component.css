@@ -12,7 +12,5 @@
 
 ::ng-deep .mat-step-header .mat-step-icon-selected {
   background-color: red
-   /* rgb(227, 25, 55); */
+    /* rgb(227, 25, 55); */
 }
-
-

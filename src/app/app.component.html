@@ -1,5 +1,4 @@
 <app-profile></app-profile>
-
 <mat-stepper orientation="vertical" #stepper (selectionChange)="selectionChange($event)">
   <mat-step [stepControl]="firstFormGroup" state="edu" label="edu">
     <form [formGroup]="firstFormGroup">
@@ -36,7 +35,6 @@
       </div>
     </form>
   </mat-step>
-
   <mat-step [stepControl]="secondFormGroup" state="skill" label="skill">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Technical Skills</ng-template>
@@ -49,7 +47,6 @@
       </div>
     </form>
   </mat-step>
-
   <mat-step [stepControl]="secondFormGroup" state="certi" label="certi">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Certifications</ng-template>
@@ -62,20 +59,30 @@
       </div>
     </form>
   </mat-step>
-
   <mat-step [stepControl]="secondFormGroup" state="ach" label="ach">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Achievements</ng-template>
-          <mat-card>
-            <app-achievements></app-achievements>
-          </mat-card>
+      <mat-card>
+        <app-achievements></app-achievements>
+      </mat-card>
+      <div>
+        <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
+        <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" state="extra" label="extra">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Extracurriculars</ng-template>
+      <mat-card>
+        <app-extracurriculars></app-extracurriculars>
+      </mat-card>
       <div>
         <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
         <button mat-raised-button (click)="stepper.reset()" color="accent">Navigate to Top</button>
       </div>
     </form>
   </mat-step>
-
   <ng-template matStepperIcon="edu">
     <mat-icon>school</mat-icon>
   </ng-template>
@@ -94,11 +101,11 @@
   <ng-template matStepperIcon="ach">
     <mat-icon> star </mat-icon>
   </ng-template>
-
+  <ng-template matStepperIcon="extra">
+    <mat-icon> public </mat-icon>
+  </ng-template>
   <ng-template matStepperIcon="edit">
     <mat-icon> {{iconValue}} </mat-icon>
   </ng-template>
-
 </mat-stepper>
-
 <app-footer></app-footer>

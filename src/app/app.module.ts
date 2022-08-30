@@ -21,8 +21,12 @@ import { FooterComponent } from './footer/footer.component';
 import { CertificatesComponent } from './certificates/certificates.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { SkillsComponent } from './skills/skills.component';
-import {MatTableModule} from '@angular/material/table';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatTableModule } from '@angular/material/table';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { ProfileDialogComponent } from './profile-dialog/profile-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ExtracurricularsComponent } from './extracurriculars/extracurriculars.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     FooterComponent,
     CertificatesComponent,
     AchievementsComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProfileDialogComponent,
+    ExtracurricularsComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +57,10 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatFormFieldModule,
     MatIconModule,
     MatTableModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatPaginatorModule,
+    MatDialogModule,
+
 
   ],
   providers: [],

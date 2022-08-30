@@ -2,7 +2,6 @@ import { StepperSelectionEvent, STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/step
 import { Component, Injectable } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,13 +16,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class AppComponent {
   title = 'Deepak Mandal | CGI | IIT Guwahati';
 
-
-
   firstFormGroup!: FormGroup;
   secondFormGroup!: FormGroup;
 
   constructor(private _formBuilder: FormBuilder) { }
-
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
       firstCtrl: ['', Validators.required],
@@ -38,24 +34,26 @@ export class AppComponent {
     console.log(event.selectedStep.label);
     let stepLabel = event.selectedStep.label
     if (stepLabel == "edu") {
-      this.iconValue='school'
+      this.iconValue = 'school'
     }
     if (stepLabel == "exp") {
-      this.iconValue='business'
+      this.iconValue = 'business'
     }
     if (stepLabel == "proj") {
-      this.iconValue='business_center'
+      this.iconValue = 'business_center'
     }
     if (stepLabel == "skill") {
-      this.iconValue='sort'
+      this.iconValue = 'sort'
     }
     if (stepLabel == "certi") {
-      this.iconValue='wallpaper'
+      this.iconValue = 'wallpaper'
     }
     if (stepLabel == "ach") {
-      this.iconValue='star'
+      this.iconValue = 'star'
     }
-
+    if (stepLabel == "extra") {
+      this.iconValue = 'public'
+    }
   }
-  
+
 }
