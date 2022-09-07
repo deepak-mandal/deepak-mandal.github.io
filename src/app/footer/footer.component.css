@@ -1,6 +1,7 @@
 .footer {
-  padding: 10px;
-  width: 95vw
+  padding-top: 10px;
+  /* width: 95vw */
+  padding-bottom: 10px;
 }
 
 .footer-picture {
