@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ContactComponent } from '../contact/contact.component';
 import { ProfileDialogComponent } from '../profile-dialog/profile-dialog.component';
 
 @Component({
@@ -22,18 +21,6 @@ export class FooterComponent {
       ProfileDialogComponent, {
       width: 'auto',
       height: 'auto'
-    });
-  }
-
-  // constructor(public dialog: MatDialog) { }
-
-  openContactDialog(): void {
-    this.dialog.open(
-      ContactComponent, {
-      width: 'auto',
-      height: 'auto'
-      // enterAnimationDuration,
-      // exitAnimationDuration,
     });
   }
 
