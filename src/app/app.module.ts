@@ -27,6 +27,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { ProfileDialogComponent } from './profile-dialog/profile-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ExtracurricularsComponent } from './extracurriculars/extracurriculars.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ExtracurricularsComponent } from './extracurriculars/extracurriculars.c
     AchievementsComponent,
     SkillsComponent,
     ProfileDialogComponent,
-    ExtracurricularsComponent
+    ExtracurricularsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
