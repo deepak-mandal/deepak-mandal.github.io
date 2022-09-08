@@ -1,20 +1,37 @@
 <mat-tab-group mat-align-tabs="start">
   <mat-tab label="CGI's appreciation">
     <mat-card>
-      <mat-accordion>
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <div mat-card-avatar class="example-header-image"></div>
-              <b>&nbsp;APPLAUD — Celebrating CGI’s values</b>
-            </mat-panel-title>
-            <mat-panel-description>
-              {{panelOpenState ? 'hide' : 'show'}}
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <mat-card><img mat-card-image [src]="cgiAppreciation" [alt]="'CGI'" /> </mat-card>
-        </mat-expansion-panel>
-      </mat-accordion>
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Applaud and external training hours</mat-card-title>
+        <mat-card-subtitle>CGI
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-list role="list">
+          <mat-list-item role="listitem" style="height: auto; padding-top: 8px; padding-bottom: 8px;">  
+            Completed 40+ training hour includes technical and non-technical courses at CGI-skillsoft.
+          </mat-list-item>
+          <mat-list-item role="listitem" style="height: auto; padding-top: 8px; padding-bottom: 8px;">
+            <mat-accordion>
+              <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <!-- <div mat-card-avatar class="example-header-image"></div> -->
+                    APPLAUD — Celebrating CGI’s values
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    {{panelOpenState ? 'hide' : 'show'}}
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <mat-card><img mat-card-image [src]="cgiAppreciation" [alt]="'CGI'" /> </mat-card>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </mat-list-item>
+            
+        </mat-list>
+      </mat-card-content>
+      
     </mat-card>
   </mat-tab>
   <mat-tab label="CoS & CCD">
@@ -27,9 +44,12 @@
       </mat-card-header>
       <mat-card-content>
         <mat-list role="list">
-          <mat-list-item role="listitem">
-              Participated in Football & Yoga student’s activity, and been a part of Community Services during 2017-19 & Participated as a volunteer during the placement season 2019-20 at CCD, IITG
+          <mat-list-item role="listitem" style="height: auto; padding-top: 8px; padding-bottom: 8px;">
+              Participated in Football & Yoga student’s activity, and been a part of Community Services during 2017-19
           </mat-list-item>
+          <mat-list-item role="listitem" style="height: auto; padding-top: 8px; padding-bottom: 8px;">
+            Participated as a volunteer during the placement season 2019-20 at CCD, IITG
+        </mat-list-item>
         </mat-list>
       </mat-card-content>
     </mat-card>

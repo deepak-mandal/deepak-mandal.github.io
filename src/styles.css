@@ -10,3 +10,11 @@ body { margin: 0; padding:20px; font-family: Roboto, "Helvetica Neue", sans-seri
   .mat-card-subtitle{
     color: rgb(82, 54, 171)
   }
+
+  .mat-list-base .mat-list-option {
+    display: block;
+    height: auto;
+    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    padding: 0;
+}
