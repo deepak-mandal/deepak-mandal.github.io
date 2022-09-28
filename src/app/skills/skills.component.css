@@ -118,6 +118,11 @@
   background-size: cover;
 }
 
+.fortran{
+  background-image: url('../images/fortran.png');
+  background-size: cover;
+}
+
 .bootstarp {
   background-image: url('../images/bootstrap.jpeg');
   background-size: cover;
