@@ -104,23 +104,23 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     Organization: 'IIT Guwahati',
-    Certificate: 'Computing Laboratory',
+    Certificate: 'Introduction to Computing + Computing Laboratory',
     Technologies: 'C programming language',
     proof: 'assets/images/iitg.png',
     name: 'Computing Laboratory'
   },
   {
     Organization: 'IITG',
-    Certificate: 'Introduction to Computing',
-    Technologies: 'C',
-    proof: 'assets/images/iitg.png',
-    name: 'Introduction to Computing'
-  },
-  {
-    Organization: 'IITG',
     Certificate: 'Computational (Theory+Lab)',
     Technologies: 'Fortran coding',
     proof: 'assets/images/iitg.png',
-    name: 'Computational'
+    name: 'Introduction to Computing & Computational (Theory+Lab)'
+  },
+  {
+    Organization: 'CGI',
+    Certificate: 'Technical & Non-Technical Courses',
+    Technologies: 'full-stack',
+    proof: 'https://drive.google.com/file/d/1CJ3xWwSiYNTd4XFsGw5MCO_Lvfpan8f9/view?usp=sharing',
+    name: 'https://drive.google.com/file/d/1CJ3xWwSiYNTd4XFsGw5MCO_Lvfpan8f9/view?usp=sharing'
   },
 ];
