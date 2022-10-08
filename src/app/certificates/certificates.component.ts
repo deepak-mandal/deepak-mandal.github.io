@@ -111,8 +111,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
   },
   {
     Organization: 'IITG',
-    Certificate: 'Computational (Theory+Lab)',
-    Technologies: 'Fortran coding',
+    Certificate: 'Computational (Theory+Lab) & Core Mathematics - Calculus, Linear Algebra',
+    Technologies: 'FORTRAN coding',
     proof: 'assets/images/iitg.png',
     name: 'Introduction to Computing & Computational (Theory+Lab)'
   },
