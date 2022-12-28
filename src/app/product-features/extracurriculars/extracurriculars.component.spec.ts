@@ -8,9 +8,9 @@ describe('ExtracurricularsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ExtracurricularsComponent]
+      declarations: [ ExtracurricularsComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   });
 
   beforeEach(() => {

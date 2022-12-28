@@ -10,6 +10,8 @@ import { EducationComponent } from './education/education.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TechSkillsComponent } from './tech-skills/tech-skills.component';
+import { AchievementsComponent } from './achievements/achievements.component';
+import { ExtracurricularsComponent } from './extracurriculars/extracurriculars.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { TechSkillsComponent } from './tech-skills/tech-skills.component';
     ExperiencesComponent,
     ProjectsComponent,
     TechSkillsComponent,
+    AchievementsComponent,
+    ExtracurricularsComponent,
 
   ],
   imports: [
@@ -34,7 +38,9 @@ import { TechSkillsComponent } from './tech-skills/tech-skills.component';
     EducationComponent,
     ExperiencesComponent,
     ProjectsComponent,
-    TechSkillsComponent
+    TechSkillsComponent,
+    AchievementsComponent,
+    ExtracurricularsComponent
   ],
   providers: [
   ]

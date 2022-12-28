@@ -154,8 +154,21 @@ export const SKILLS = {
     LINUX_LOGO: 'assets/images/linux.jpeg',
     WINDOWS: 'Windows',
     WINDOW_LOGO: 'assets/images/window.png',
-
-
 }
 
+export const ACHIEVEMENT = {
+    JEE_2017: 'JEE 2017',
+    JEE: 'Joint Entrance Examination 2017',
+    JEE_ACTIVITY: 'Qualified JEE(Advanced) among 0.15+ million candidates appearing for the test.',
+    IITM_LOGO: 'assets/images/iitm.png',
+}
 
+export const EXTRACURRICULARS ={
+    HEADING:'CGI/IITG',
+    CGI_ACTIVITY_TRAINING: 'Qualified UTAP\'2022 assessment program and Completed 40+ training hour includes technical and non-technical courses at CGI-skillsoft.',
+    CGI_ACTIVITY_APPLAUDS: 'Appreciation/Applaud, CoS, CCD',
+    CGI_APPLAUD: 'Applaud - Celebrating CGI’s values 2022: Got appreciation letter from Manager.',
+    COMMUNITY_SERVICE: 'Participated in Football & Yoga student’s activity, and been a part of Community Services - CoS during 2017-19',
+    IITG_CCD_VOLUNTEER: 'Participated as a volunteer during the placement season 2019-20 at Centre for Career Development - CCD, IITG'
+
+}

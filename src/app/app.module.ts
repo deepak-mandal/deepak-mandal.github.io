@@ -14,13 +14,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FooterComponent } from './footer/footer.component';
 import { CertificatesComponent } from './certificates/certificates.component';
-import { AchievementsComponent } from './achievements/achievements.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { ProfileDialogComponent } from './profile-dialog/profile-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { ExtracurricularsComponent } from './extracurriculars/extracurriculars.component';
 import { ProductFeaturesModule } from './product-features/product-features.module';
 
 
@@ -29,10 +27,7 @@ import { ProductFeaturesModule } from './product-features/product-features.modul
     AppComponent,
     FooterComponent,
     CertificatesComponent,
-    AchievementsComponent,
     ProfileDialogComponent,
-    ExtracurricularsComponent,
-    
   ],
   imports: [
     BrowserModule,
