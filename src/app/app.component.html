@@ -1,10 +1,10 @@
-<app-profile></app-profile>
+<profile></profile>
 <mat-stepper orientation="vertical" #stepper (selectionChange)="selectionChange($event)">
   <mat-step [stepControl]="firstFormGroup" state="edu" label="edu">
     <form [formGroup]="firstFormGroup">
       <ng-template matStepLabel>Education</ng-template>
       <mat-card>
-        <app-education></app-education>
+        <education></education>
       </mat-card>
       <div>
         <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
@@ -15,7 +15,7 @@
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Experiences</ng-template>
       <mat-card>
-        <app-experiences></app-experiences>
+        <experiences></experiences>
       </mat-card>
       <div>
         <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
@@ -27,7 +27,7 @@
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Projects</ng-template>
       <mat-card>
-        <app-projects></app-projects>
+        <projects></projects>
       </mat-card>
       <div>
         <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
@@ -39,7 +39,7 @@
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Technical Skills</ng-template>
       <mat-card>
-        <app-skills></app-skills>
+        <tech-skills></tech-skills>
       </mat-card>
       <div>
         <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>

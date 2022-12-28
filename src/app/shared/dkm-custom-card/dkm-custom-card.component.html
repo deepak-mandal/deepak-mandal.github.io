@@ -1,0 +1,43 @@
+<mat-tab-group mat-align-tabs="start">
+  <span *ngFor="let entity of data">
+    <mat-tab label="{{entity.tabLabel}}">
+      <mat-card>
+        <mat-card-header>
+          <div mat-card-avatar
+            [ngStyle]="{'background-image': 'url(' + entity.imagePathOrUrl + ')', 'background-size': 'cover'  }">
+          </div>
+          <mat-card-title>
+            {{entity.cardTitle}}
+          </mat-card-title>
+          <mat-card-subtitle>
+            {{entity.cardSubTitle?.content}}<i style="float: right;">{{entity.cardSubTitle?.rightContent}}</i>
+          </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          {{entity.cardContentData}}
+          <mat-list role="list" *ngFor="let listData of entity.cardContentList">
+            <mat-list-item role="listitem" class="card-content"
+              style="height: auto; padding-top: 8px; padding-bottom: 8px;">
+              <!-- <li> -->
+              {{listData}}
+              <!-- </li> -->
+            </mat-list-item>
+          </mat-list>
+          <mat-card *ngIf="!!entity.result">
+            <img mat-card-image [src]=entity.result.resultImage [alt]=entity.result.altText />
+          </mat-card>
+        </mat-card-content>
+        <mat-card-actions *ngIf="!!entity.session || !!entity.location"
+          style="margin-bottom: 10px; padding-bottom: 15px;">
+          {{entity.session}}
+          <span *ngIf="!!entity.link">
+            <a href={{entity.link}} target="_blank" style="float:right;">{{entity.location}}</a>
+          </span>
+          <span *ngIf="!entity.link">
+            <i style="float:right;">{{entity.location}}</i>
+          </span>
+        </mat-card-actions>
+      </mat-card>
+    </mat-tab>
+  </span>
+</mat-tab-group>

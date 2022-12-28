@@ -19,9 +19,9 @@ export class CertificatesComponent {
 
   columnsToDisplay = ['Organization', 'Certificate', 'Technologies'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
-  expandedElement!: PeriodicElement | null;
+  expandedElement!: CERTIFICATE_ENTITY | null;
 
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+  dataSource = new MatTableDataSource<CERTIFICATE_ENTITY>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -30,7 +30,7 @@ export class CertificatesComponent {
   }
 }
 
-export interface PeriodicElement {
+export interface CERTIFICATE_ENTITY {
   Organization: String;
   Certificate: string;
   proof: string;
@@ -38,7 +38,7 @@ export interface PeriodicElement {
   name: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
+const ELEMENT_DATA: CERTIFICATE_ENTITY[] = [
   {
     Organization: 'Henry Harvin Analytics Academy',
     Certificate: 'Certified Python Marketing Analytics (CPMA)',

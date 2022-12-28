@@ -1,0 +1,18 @@
+<mat-tab-group mat-align-tabs="start">
+  <span *ngFor="let entity of data">
+    <mat-tab label={{entity.tabLabel}}>
+      <mat-card>
+        <mat-list role="list" *ngFor="let skill of entity.skills">
+          <mat-list-item role="listitem" style="height: auto; padding: 8px;">
+            <mat-card-header>
+              <div mat-card-avatar
+                [ngStyle]="{'background-image': 'url(' + skill.imagePathOrUrl + ')', 'background-size': 'cover'  }">
+              </div>
+              <mat-card-subtitle>{{skill.cardSubTitle}}</mat-card-subtitle>
+            </mat-card-header>
+          </mat-list-item>
+        </mat-list>
+      </mat-card>
+    </mat-tab>
+  </span>
+</mat-tab-group>
