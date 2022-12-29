@@ -1,0 +1,6 @@
+<div style="overflow:auto">
+  <ag-grid-angular style="width: 88vw; height: 70vh;" class="ag-theme-alpine" [rowData]="rowData"
+    [columnDefs]="columnDefs" [defaultColDef]="defaultColDef" (gridReady)="onGridReady($event)"
+    [paginationAutoPageSize]="true" [pagination]="true" (rowClicked)="onRowClicked($event)">
+  </ag-grid-angular>
+</div>

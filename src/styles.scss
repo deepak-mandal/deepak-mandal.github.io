@@ -5,7 +5,7 @@
 // @import "~ag-grid-community/dist/styles/ag-theme-balham.css";
 
 html, body { height: 100%; }
-body { margin: 0; padding:20px; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; padding:10px; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-card-title{
     color: rgb(227, 25, 55);
   }
@@ -21,4 +21,8 @@ body { margin: 0; padding:20px; font-family: Roboto, "Helvetica Neue", sans-seri
     -webkit-tap-highlight-color: transparent;
     width: 100%;
     padding: 0;
+}
+
+.ag-header {
+ color: green;
 }

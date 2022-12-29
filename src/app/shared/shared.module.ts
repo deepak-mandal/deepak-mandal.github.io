@@ -8,6 +8,9 @@ import { DkmTabComponent } from './dkm-tab/dkm-tab.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { DkmCustomCardComponent } from './dkm-custom-card/dkm-custom-card.component';
 import { DkmCustomListComponent } from './dkm-custom-list/dkm-custom-list.component';
+import { DkmDialogComponent } from './dkm-dialog/dkm-dialog.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -16,20 +19,24 @@ import { DkmCustomListComponent } from './dkm-custom-list/dkm-custom-list.compon
     DkmTabComponent,
     DkmCustomCardComponent,
     DkmCustomListComponent,
+    DkmDialogComponent,
     
   ],
   imports: [
     CommonModule,
     MatCardModule,
     MatListModule,
-    MatTabsModule
+    MatTabsModule,
+    MatIconModule,
+    MatDialogModule
   ],
   exports:[
     DkmButtonComponent,
     DkmCardComponent,
     DkmTabComponent,
     DkmCustomCardComponent,
-    DkmCustomListComponent
+    DkmCustomListComponent,
+    DkmDialogComponent
   ]
 })
 export class SharedModule { }

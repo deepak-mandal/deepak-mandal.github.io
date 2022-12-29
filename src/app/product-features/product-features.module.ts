@@ -12,6 +12,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { TechSkillsComponent } from './tech-skills/tech-skills.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { ExtracurricularsComponent } from './extracurriculars/extracurriculars.component';
+import { CertificatesComponent } from './certificates/certificates.component';
+import { AgGridModule } from 'ag-grid-angular';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,8 @@ import { ExtracurricularsComponent } from './extracurriculars/extracurriculars.c
     TechSkillsComponent,
     AchievementsComponent,
     ExtracurricularsComponent,
+    CertificatesComponent,
+    FooterComponent,
 
   ],
   imports: [
@@ -32,6 +37,7 @@ import { ExtracurricularsComponent } from './extracurriculars/extracurriculars.c
     MatCardModule,
     MatIconModule,
     MatDialogModule,
+    AgGridModule
   ],
   exports: [
     ProfileComponent,
@@ -40,7 +46,9 @@ import { ExtracurricularsComponent } from './extracurriculars/extracurriculars.c
     ProjectsComponent,
     TechSkillsComponent,
     AchievementsComponent,
-    ExtracurricularsComponent
+    ExtracurricularsComponent,
+    CertificatesComponent,
+    FooterComponent
   ],
   providers: [
   ]
