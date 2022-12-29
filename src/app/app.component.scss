@@ -1,3 +1,8 @@
+/*  // Core grid CSS, always needed */
+@import 'ag-grid-community/styles/ag-grid.css';
+/* // Optional theme CSS */
+@import 'ag-grid-community/styles/ag-theme-alpine.css'; 
+
 .mat-tab-group {
   margin-bottom: 48px;
 }

@@ -2,11 +2,12 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { ColDef, ColumnApi, GridApi, GridReadyEvent } from 'ag-grid-community';
 
 @Component({
   selector: 'app-certificates',
   templateUrl: './certificates.component.html',
-  styleUrls: ['./certificates.component.css'],
+  styleUrls: ['./certificates.component.scss'],
   animations: [
     trigger('detailExpand', [
       state('collapsed', style({ height: '0px', minHeight: '0' })),
@@ -28,6 +29,36 @@ export class CertificatesComponent {
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
+
+  // 
+  private gridApi!: GridApi;
+  private gridColumnApi!: ColumnApi;
+  columnDefs: ColDef[] = [
+    { field: 'Organization',  },
+    { field: 'Certificate',},
+    { field: 'Technologies', }
+];
+
+public defaultColDef: ColDef = {
+  // width: 150,
+  sortable: true,
+  resizable: true,
+  filter: true,
+  
+};
+
+rowData = ELEMENT_DATA
+
+onGridReady(params: GridReadyEvent) {
+  this.gridApi = params.api;
+  this.gridColumnApi = params.columnApi;
+  params.api.sizeColumnsToFit();
+}
+// [
+//     { make: 'Toyota', model: 'Celica', price: 35000 },
+//     { make: 'Ford', model: 'Mondeo', price: 32000 },
+//     { make: 'Porsche', model: 'Boxster', price: 72000 }
+// ];
 }
 
 export interface CERTIFICATE_ENTITY {

@@ -20,6 +20,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { ProfileDialogComponent } from './profile-dialog/profile-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ProductFeaturesModule } from './product-features/product-features.module';
+import { AgGridModule } from 'ag-grid-angular';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -48,7 +50,8 @@ import { ProductFeaturesModule } from './product-features/product-features.modul
     MatPaginatorModule,
     MatDialogModule,
     ProductFeaturesModule,
-
+    AgGridModule,
+    HttpClientModule
 
   ],
   providers: [],
