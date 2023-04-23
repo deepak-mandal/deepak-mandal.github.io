@@ -35,6 +35,13 @@ export class CertificatesComponent implements OnInit {
 
   rowData: CERTIFICATE_ENTITY[] = [
     {
+      Organization: 'CGI',
+      Certificate: 'Applauds from Greater Toronto Area lead',
+      Technologies: 'Angular v10',
+      proof: 'assets/images/CGI-Appreciation-GTA.png',
+      name: 'Greater Toronto Area'
+    },
+    {
       Organization: 'Henry Harvin Analytics Academy',
       Certificate: 'Certified Python Marketing Analytics (CPMA)',
       Technologies: 'Machine learning technique (ML), Python',
