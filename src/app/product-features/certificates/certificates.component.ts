@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ColDef, ColumnApi, GridApi, GridReadyEvent, SelectionChangedEvent } from 'ag-grid-community';
 import { DkmDialogComponent } from 'src/app/shared/dkm-dialog/dkm-dialog.component';
+import { CertificateViewCellRendererComponent } from '../certificate-view-cell-renderer/certificate-view-cell-renderer.component';
 import { CERTIFICATE_ENTITY } from '../types/product-features.interface';
 
 @Component({
@@ -18,7 +19,7 @@ export class CertificatesComponent implements OnInit {
   private gridApi!: GridApi;
   private gridColumnApi!: ColumnApi;
   columnDefs: ColDef[] = [
-    { field: 'Certificate', },
+    { field: 'Certificate', cellRenderer: CertificateViewCellRendererComponent },
     { field: 'Technologies', },
     { field: 'Organization', },
   ];

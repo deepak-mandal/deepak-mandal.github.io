@@ -15,6 +15,7 @@ import { ExtracurricularsComponent } from './extracurriculars/extracurriculars.c
 import { CertificatesComponent } from './certificates/certificates.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { FooterComponent } from './footer/footer.component';
+import { CertificateViewCellRendererComponent } from './certificate-view-cell-renderer/certificate-view-cell-renderer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FooterComponent } from './footer/footer.component';
     ExtracurricularsComponent,
     CertificatesComponent,
     FooterComponent,
+    CertificateViewCellRendererComponent,
 
   ],
   imports: [
