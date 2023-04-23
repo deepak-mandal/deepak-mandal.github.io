@@ -22,22 +22,22 @@ export class ExperiencesComponent implements OnInit {
         content: EXPERIENCE.SOFTWARE_CONSULTANT,
       },
       cardContentList: [
-        EXPERIENCE.JAVA_FULL_STACK, EXPERIENCE.UI_WORK, EXPERIENCE.DAILY_TASK, EXPERIENCE.TECHNOLOGIES
+        EXPERIENCE.JAVA_FULL_STACK, EXPERIENCE.UI_WORK, EXPERIENCE.BACKEND_WORK, EXPERIENCE.TECHNICAL_ANALYSIS, EXPERIENCE.TECHNOLOGIES
       ],
       session: EXPERIENCE.CGI_SESSION,
       location: EXPERIENCE.ASDC
     },
-    {
-      tabLabel: EXPERIENCE.ACCENTURE,
-      cardTitle: EXPERIENCE.ACCENTURE_SOL,
-      imagePathOrUrl: EXPERIENCE.ACCENTURE_LOGO,
-      cardSubTitle: {
-        content: EXPERIENCE.LEARNING,
-      },
-      cardContentList: [
-        EXPERIENCE.JAVA_ORACLE
-      ],
-      session: EXPERIENCE.ACCENTURE_SESSION,
-    },
+    // {
+    //   tabLabel: EXPERIENCE.ACCENTURE,
+    //   cardTitle: EXPERIENCE.ACCENTURE_SOL,
+    //   imagePathOrUrl: EXPERIENCE.ACCENTURE_LOGO,
+    //   cardSubTitle: {
+    //     content: EXPERIENCE.LEARNING,
+    //   },
+    //   cardContentList: [
+    //     EXPERIENCE.JAVA_ORACLE
+    //   ],
+    //   session: EXPERIENCE.ACCENTURE_SESSION,
+    // },
   ]
 }

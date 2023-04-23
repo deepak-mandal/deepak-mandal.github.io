@@ -23,14 +23,13 @@ export class TechSkillsComponent implements OnInit {
           cardSubTitle: SKILLS.JAVA,
         },
         {
+          imagePathOrUrl: SKILLS.TS,
+          cardSubTitle: SKILLS.TYPESCRIPT,
+        },
+        {
           imagePathOrUrl: SKILLS.PY,
           cardSubTitle: SKILLS.PYTHON,
         },
-        {
-          imagePathOrUrl: SKILLS.TS,
-          cardSubTitle: SKILLS.TYPESCRIPT,
-        }
-        ,
         {
           imagePathOrUrl: SKILLS.JS,
           cardSubTitle: SKILLS.JAVASCRIPT,
@@ -45,12 +44,12 @@ export class TechSkillsComponent implements OnInit {
       tabLabel: SKILLS.WEB_TECHNOLOGIES,
       skills: [
         {
-          imagePathOrUrl: SKILLS.SPRING_LOGO,
-          cardSubTitle: SKILLS.SPRING,
-        },
-        {
           imagePathOrUrl: SKILLS.ANGULAR_LOGO,
           cardSubTitle: SKILLS.ANGULAR,
+        },
+        {
+          imagePathOrUrl: SKILLS.SPRING_LOGO,
+          cardSubTitle: SKILLS.SPRING,
         },
         {
           imagePathOrUrl: SKILLS.HTML_LOGO,
@@ -60,6 +59,14 @@ export class TechSkillsComponent implements OnInit {
         {
           imagePathOrUrl: SKILLS.CSS_LOGO,
           cardSubTitle: SKILLS.CSS,
+        },
+        {
+          imagePathOrUrl: SKILLS.AG_GRID_LOGO,
+          cardSubTitle: SKILLS.AG_GRID,
+        },
+        {
+          imagePathOrUrl: SKILLS.ANGULAR_MATERIALS_LOGO,
+          cardSubTitle: SKILLS.ANGULAR_MATERIALS,
         },
         {
           imagePathOrUrl: SKILLS.BOOTSTRAP_LOGO,
@@ -75,18 +82,35 @@ export class TechSkillsComponent implements OnInit {
           cardSubTitle: SKILLS.ORACLE,
         },
         {
+          imagePathOrUrl: SKILLS.MONGODB_LOGO,
+          cardSubTitle: SKILLS.MONGODB,
+        },
+        {
           imagePathOrUrl: SKILLS.MYSQL_LOGO,
           cardSubTitle: SKILLS.MYSQL,
         },
         {
-          imagePathOrUrl: SKILLS.MONGODB_LOGO,
-          cardSubTitle: SKILLS.MONGODB,
-        }
-        ,
-        {
           imagePathOrUrl: SKILLS.SQLITE_LOGO,
           cardSubTitle: SKILLS.SQLITE,
         },
+      ]
+    },
+    {
+      tabLabel: SKILLS.DEV_OPS,
+      skills: [
+        {
+          imagePathOrUrl: SKILLS.JENKINS_LOGO,
+          cardSubTitle: SKILLS.JENKINS,
+        },
+        {
+          imagePathOrUrl: SKILLS.PUTTY_LOGO,
+          cardSubTitle: SKILLS.PUTTY,
+        },
+        {
+          imagePathOrUrl: SKILLS.WINSCP_LOGO,
+          cardSubTitle: SKILLS.WINSCP,
+        },
+      
       ]
     },
     {

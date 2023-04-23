@@ -7,7 +7,7 @@ export const PROFILE = {
 }
 
 export const EDUCATION = {
-    IIT: 'IIT / B.Tech.',
+    IIT: 'IIT / Engineering',
     IITG: 'Indian Institute of Technology, Guwahati ',
     BTECH: 'Bachelor of Technology',
     SESSION: '2017-2021',
@@ -16,13 +16,14 @@ export const EDUCATION = {
 }
 
 export const EXPERIENCE = {
-    CGI: 'CGI',
+    CGI: 'CGI / Product Engineering',
     CGI_INFO_SYS: 'CGI Information Systems and Management Consultants Pvt. Ltd.',
-    SOFTWARE_CONSULTANT: 'Software Engineer / CONSULTANT / Full Stack Developer',
-    JAVA_FULL_STACK: 'Foundation skills & Java full-stack immersive training including Product Engineering',
-    UI_WORK: 'Worked on Digital Wealth Platform (CGI Wealth360) product features in Angular - Development of new UI screen, Includes building reusable component, services with HTML/SCSS/TS/JS that works in multiple areas of application, service integration with backend API and Testing',
-    DAILY_TASK: 'Development, debugging & Testing using Spring (Java), Angular framework, Oracle database on day-to-day basic in the Portfolio and Trading (Capital Markets) Domains for top largest Canadian bank(s)',
-    TECHNOLOGIES: 'Technologies used: Java, Spring, Angular, TypeScript/JavaScript, Angular materials, AgGrid, SQL/MySQL/Oracle, NoSQL/MongoDB, Git',
+    SOFTWARE_CONSULTANT: 'Software Engineer / CONSULTANT',
+    JAVA_FULL_STACK: 'Worked as a Java full-stack developer with Product Engineering perspective on Digital Wealth Platform (CGI Wealth360) product features in the Global Wealth and Capital Markets domain',
+    UI_WORK: 'Angular – development of new UI screen, Includes building reusable component/service with HTML/SCSS/TS that works in multiple areas of application, service integration with backend API & writing Test cases using Jasmine testing framework',
+    BACKEND_WORK: 'Spring & PL/SQL – development of RESTful web services/API, code fix for bugs',
+    TECHNICAL_ANALYSIS: 'Technical Analysis of epic/user story, bug root cause, creating solution & its implementation',
+    TECHNOLOGIES: 'Development, debugging & Testing using Spring/Java, Angular/TypeScript/JavaScript/AG-Grid/angular-material, SQL/Oracle databases; and collaborating with PuTTY, WinSCP, Jenkins, Bitbucket, Confluence, Jira tools on day-to-day basis in the Agile environment',
     ASDC: 'Asia Pacific Solutions Delivery Center, Bangalore - India',
     CGI_SESSION: 'Sept 2021-present',
     CGI_LOGO: 'assets/images/cgi.png',
@@ -39,14 +40,15 @@ export const PROJECTS = {
     REVIEWBOOK: 'ReviewBook - Java',
     REVIEWBOOK_PLATFORM: 'ReviewBook Platform',
     CGI_PRODUCT_ENGG: 'CGI - Product Engineering',
-    REVIEWBOOK_PROBLEM_STATEMENT: 'Worked on Core Problem - “How to motivate maximum number of consumers to provide genuine reviews and ratings that can influence buying decisions of other consumers”.',
-    REVIEWBOOK_ACTITITY: 'Developed Microservices for Registration, Login, Product Management, Review Management, Recommendation Service, Eureka Server, API Gateway; Angular-Spring framework integration.',
-    REVIEWBOOK_TECHNOLOGIES: 'Technologies used: Backend - Spring Boot, Mongo DB, MySQL, RabbitMQ; Frontend - Angular, DevOps - Docker, AWS.',
+    REVIEWBOOK_PROBLEM_STATEMENT: 'Worked on Core Problem - “How to motivate maximum number of consumers to provide genuine reviews and ratings that can influence buying decisions of other consumers”',
+    REVIEWBOOK_MICROSERVICES: 'Developed microservice architecture for Registration, Login, Product management, Review management services, Eureka server, API Gateway using Spring Boot with NoSQL/MongoDB & SQL/MySQL databases',
+    REVIEWBOOK_ANGULAR_ARCH: 'Developed angular application architecture corresponding to services using angular materials, AG Grid',
+    REVIEWBOOK_TECHNOLOGIES: 'Implemented JWT authentication, microservices communication using RabbitMQ & containerization using Docker',
     REVIEWBOOK_SESSION: 'Dec 2021- Jan 2022',
     REVIEWBOOK_LOCATION: 'https://reviewbook.stackroute.io/',
     CONFERENCE_WEB: 'Conference Website - PHP',
     IITG_WEB: 'Conference Website',
-    DOC_IITG: 'Department of Chemistry, IITG',
+    DOC_IITG: 'Dept. of Chem., IITG',
     CONFERENCE_TEAM: 'Developed PHP based full-stack conference web app with my team members.',
     CONFERENCE_DEV: 'Developed the admin portal for the response to edit/delete.',
     CONFERENCE_TECH: 'Technologies used: Backend - PHP, MySQL; Frontend - HTML, CSS & Bootstrap',
@@ -108,6 +110,10 @@ export const SKILLS = {
     SPRING: 'Spring',
     SPRING_LOGO: 'assets/images/spring.png',
     ANGULAR: 'Angular',
+    AG_GRID: 'AG Grid',
+    AG_GRID_LOGO: 'assets/images/ag_grid.png',
+    ANGULAR_MATERIALS: 'Angular materials',
+    ANGULAR_MATERIALS_LOGO: 'assets/images/angular_material.png',
     ANGULAR_LOGO: 'assets/images/angular.png',
     HTML: 'HTML',
     HTML_LOGO: 'assets/images/html.png',
@@ -154,6 +160,15 @@ export const SKILLS = {
     LINUX_LOGO: 'assets/images/linux.jpeg',
     WINDOWS: 'Windows',
     WINDOW_LOGO: 'assets/images/window.png',
+    DEV_OPS: 'DevOps',
+    PUTTY: 'PuTTY',
+    PUTTY_LOGO: 'assets/images/putty.png',
+    WINSCP: 'WinSCP',
+    WINSCP_LOGO: 'assets/images/winscp.jpg',
+    JENKINS: 'Jenkins',
+    JENKINS_LOGO: 'assets/images/jenkins.png',
+
+
 }
 
 export const ACHIEVEMENT = {
