@@ -3,7 +3,7 @@ export const PROFILE = {
     DEEPAK_MANDAL: "Deepak K. Mandal",
     CGI_IITG: "Software Engineer, CGI || B.Tech, IIT Guwahati",
     PRFILE_PIC: 'assets/images/Deepak_Image.jpg',
-    DESCRIPTION: "Deepak has more than 1 year of experience in Software Engineering. He has significant experties in Java technologies, Data structures and algorithms, Spring & Angular framework, SQL & NoSQL databases as well as in developing, debugging, documenting and testing."
+    DESCRIPTION: "Deepak has more than 2 years of experience in Software Engineering. He has significant experties in Java technologies, Data structures and algorithms, Spring & Angular framework, SQL & NoSQL databases as well as in developing, debugging, documenting and testing."
 }
 
 export const EDUCATION = {
