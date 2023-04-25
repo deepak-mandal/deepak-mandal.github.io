@@ -126,6 +126,20 @@ export class CertificatesComponent implements OnInit {
       proof: 'https://drive.google.com/file/d/1CJ3xWwSiYNTd4XFsGw5MCO_Lvfpan8f9/view?usp=sharing',
       name: 'https://drive.google.com/file/d/1CJ3xWwSiYNTd4XFsGw5MCO_Lvfpan8f9/view?usp=sharing'
     },
+    {
+      Organization: 'CGI',
+      Certificate: 'Applauds from scrum master',
+      Technologies: 'Angular',
+      proof: 'assets/images/Deepak-Apprication.png',
+      name: 'ASDC'
+    },
+    {
+      Organization: 'CGI',
+      Certificate: 'Applauds',
+      Technologies: 'Java',
+      proof: 'assets/images/cgi-applaud4.png',
+      name: ''
+    },
   ];
 
   onGridReady(params: GridReadyEvent) {

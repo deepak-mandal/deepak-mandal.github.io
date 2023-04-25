@@ -11,6 +11,7 @@ import { DkmCustomListComponent } from './dkm-custom-list/dkm-custom-list.compon
 import { DkmDialogComponent } from './dkm-dialog/dkm-dialog.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatListModule,
     MatTabsModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule
   ],
   exports:[
     DkmButtonComponent,

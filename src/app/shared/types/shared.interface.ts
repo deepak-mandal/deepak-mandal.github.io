@@ -8,7 +8,9 @@ export interface ITabCardEntity{
     session?: string;
     link?:string
     location?: string;
-    result?: IResult
+    result?: IResult;
+    isDialog?: boolean;
+    dialogData?: {};
 }
 
 export interface ISubTitleEntity{

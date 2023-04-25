@@ -16,6 +16,11 @@ import { CertificatesComponent } from './certificates/certificates.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { FooterComponent } from './footer/footer.component';
 import { CertificateViewCellRendererComponent } from './certificate-view-cell-renderer/certificate-view-cell-renderer.component';
+import { ReviewDocumentationComponent } from './review-documentation/review-documentation.component';
+import { CommonModule } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -31,15 +36,20 @@ import { CertificateViewCellRendererComponent } from './certificate-view-cell-re
     CertificatesComponent,
     FooterComponent,
     CertificateViewCellRendererComponent,
+    ReviewDocumentationComponent,
 
   ],
   imports: [
+    CommonModule,
     SharedModule,
     MatSidenavModule,
     MatCardModule,
     MatIconModule,
     MatDialogModule,
-    AgGridModule
+    AgGridModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatListModule
   ],
   exports: [
     ProfileComponent,
