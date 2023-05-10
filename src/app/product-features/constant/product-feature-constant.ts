@@ -183,9 +183,9 @@ export const ACHIEVEMENT = {
 
 export const EXTRACURRICULARS ={
     HEADING:'CGI/IITG',
-    CGI_ACTIVITY_TRAINING: 'Qualified UTAP\'2022 assessment program and Completed 40+ training hour includes technical and non-technical courses at CGI-skillsoft.',
+    CGI_ACTIVITY_TRAINING: 'Qualified Unified Talent Assessment Platform - UTAP\'2022 assessment program and Completed many technical and non-technical courses/training at CGI-skillsoft.',
     CGI_ACTIVITY_APPLAUDS: 'Appreciation/Applaud, CoS, CCD',
-    CGI_APPLAUD: 'Applaud - Celebrating CGI’s values 2022: Got appreciation letter from Manager.',
+    CGI_APPLAUD: 'Applaud - Celebrating CGI’s values 2022: Got appreciation letter from scrum master, manager, and Greater Toronto Area lead for the work delivered at CGI.',
     COMMUNITY_SERVICE: 'Participated in Football & Yoga student’s activity, and been a part of Community Services - CoS during 2017-19',
     IITG_CCD_VOLUNTEER: 'Participated as a volunteer during the placement season 2019-20 at Centre for Career Development - CCD, IITG'
 
