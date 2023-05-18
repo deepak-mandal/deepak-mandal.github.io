@@ -23,7 +23,7 @@ export const EXPERIENCE = {
     UI_WORK: 'Angular – development of new UI screen, Includes building reusable component/service with HTML/SCSS/TS that works in multiple areas of application, service integration with backend API & writing Test cases using Jasmine testing framework',
     BACKEND_WORK: 'Spring & PL/SQL – development of RESTful web services/API, code fix for bugs',
     TECHNICAL_ANALYSIS: 'Technical Analysis of epic/user story, bug root cause, creating solution & its implementation',
-    TECHNOLOGIES: 'Development, debugging & Testing using Spring/Java, Angular/TypeScript/JavaScript/AG-Grid/angular-material, SQL/Oracle databases; and collaborating with PuTTY, WinSCP, Jenkins, Bitbucket, Confluence, Jira tools on day-to-day basis in the Agile environment',
+    TECHNOLOGIES: 'Development, debugging & Testing using Spring/Java, Angular/TypeScript/JavaScript, AG-Grid/angular-material, SQL/Oracle databases; and collaborating with PuTTY, WinSCP, Jenkins, Bitbucket, Confluence, Jira, Postman API, CAST Application Intelligence Platform (AIP) tools on day-to-day basis in the Agile environment',
     ASDC: 'Asia Pacific Solutions Delivery Center, Bangalore - India',
     CGI_SESSION: 'Sept 2021-present',
     CGI_LOGO: 'assets/images/cgi.png',
