@@ -2,7 +2,7 @@
   <span *ngFor="let entity of data">
     <mat-tab label="{{entity.tabLabel}}">
       <mat-card>
-        <mat-card-header>
+        <mat-card-header *ngIf="entity.cardTitle">
           <div mat-card-avatar
             [ngStyle]="{'background-image': 'url(' + entity.imagePathOrUrl + ')', 'background-size': 'cover'  }">
           </div>

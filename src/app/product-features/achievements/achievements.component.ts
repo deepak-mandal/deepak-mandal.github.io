@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ITabCardEntity } from 'src/app/shared/types/shared.interface';
-import { ACHIEVEMENT } from '../constant/product-feature-constant';
+import { ACHIEVEMENT, EXPERIENCE } from '../constant/product-feature-constant';
 
 @Component({
   selector: 'achievements',
@@ -20,6 +20,14 @@ export class AchievementsComponent implements OnInit {
       imagePathOrUrl: ACHIEVEMENT.IITM_LOGO,
       cardSubTitle: {
         content: ACHIEVEMENT.JEE_ACTIVITY,
+      }
+    },
+    {
+      tabLabel: ACHIEVEMENT.CGI,
+      cardTitle: ACHIEVEMENT.BRONZE_AWARD,
+      imagePathOrUrl: EXPERIENCE.CGI_LOGO,
+      cardSubTitle: {
+        content: ACHIEVEMENT.BRONZE_AWARD_ACTIVITY,
       }
     }
   ]

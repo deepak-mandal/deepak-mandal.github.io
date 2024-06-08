@@ -37,9 +37,16 @@ export class CertificatesComponent implements OnInit {
   rowData: CERTIFICATE_ENTITY[] = [
     {
       Organization: 'CGI',
-      Certificate: 'Applauds from Greater Toronto Area lead',
-      Technologies: 'Angular v10',
-      proof: 'assets/images/CGI-Appreciation-GTA.png',
+      Certificate: 'Bronze award from president, CGI',
+      Technologies: 'Java, Spring, Angular, SQL',
+      proof: 'assets/images/CGI_Award_ecertificate.png',
+      name: 'Greater Toronto Area'
+    },
+    {
+      Organization: 'CGI',
+      Certificate: 'Applauds from GTA & ASDC',
+      Technologies: 'Java, Spring, Angular, SQL',
+      proof: 'assets/images/applauds.png',
       name: 'Greater Toronto Area'
     },
     {
@@ -77,27 +84,27 @@ export class CertificatesComponent implements OnInit {
       proof: 'assets/images/cpp.png',
       name: 'C/C++'
     },
-    {
-      Organization: 'HackerRank',
-      Certificate: 'Problem Solving',
-      Technologies: 'ds algo',
-      proof: 'assets/images/problem-solving.png',
-      name: 'Python'
-    },
-    {
-      Organization: 'HackerRank',
-      Certificate: 'SQL',
-      Technologies: 'SQL',
-      proof: 'assets/images/sql.png',
-      name: 'SQL'
-    },
-    {
-      Organization: 'HackerRank',
-      Certificate: 'Python',
-      Technologies: 'Python',
-      proof: 'assets/images/Python-basic.png',
-      name: 'Python'
-    },
+    // {
+    //   Organization: 'HackerRank',
+    //   Certificate: 'Problem Solving',
+    //   Technologies: 'ds algo',
+    //   proof: 'assets/images/problem-solving.png',
+    //   name: 'Python'
+    // },
+    // {
+    //   Organization: 'HackerRank',
+    //   Certificate: 'SQL',
+    //   Technologies: 'SQL',
+    //   proof: 'assets/images/sql.png',
+    //   name: 'SQL'
+    // },
+    // {
+    //   Organization: 'HackerRank',
+    //   Certificate: 'Python',
+    //   Technologies: 'Python',
+    //   proof: 'assets/images/Python-basic.png',
+    //   name: 'Python'
+    // },
     {
       Organization: 'RSFM@IITG',
       Certificate: 'LaTeX Workshop',
@@ -107,39 +114,39 @@ export class CertificatesComponent implements OnInit {
     },
     {
       Organization: 'IIT Guwahati',
-      Certificate: 'Introduction to Computing + Computing Laboratory',
-      Technologies: 'C programming language',
-      proof: 'assets/images/iitg.png',
+      Certificate: 'Introduction to Computing + Computing Laboratory, Computational (Theory+Lab) & Core Mathematics - Calculus, Linear Algebra',
+      Technologies: 'C programming language, FORTRAN',
+      proof: 'assets/images/IITG.png',
       name: 'Computing Laboratory'
     },
-    {
-      Organization: 'IITG',
-      Certificate: 'Computational (Theory+Lab) & Core Mathematics - Calculus, Linear Algebra',
-      Technologies: 'FORTRAN coding',
-      proof: 'assets/images/iitg.png',
-      name: 'Introduction to Computing & Computational (Theory+Lab)'
-    },
-    {
-      Organization: 'CGI',
-      Certificate: 'Technical & Non-Technical Courses',
-      Technologies: 'full-stack',
-      proof: 'https://drive.google.com/file/d/1CJ3xWwSiYNTd4XFsGw5MCO_Lvfpan8f9/view?usp=sharing',
-      name: 'https://drive.google.com/file/d/1CJ3xWwSiYNTd4XFsGw5MCO_Lvfpan8f9/view?usp=sharing'
-    },
-    {
-      Organization: 'CGI',
-      Certificate: 'Applauds from scrum master',
-      Technologies: 'Angular',
-      proof: 'assets/images/Deepak-Apprication.png',
-      name: 'ASDC'
-    },
-    {
-      Organization: 'CGI',
-      Certificate: 'Applauds',
-      Technologies: 'Java',
-      proof: 'assets/images/cgi-applaud4.png',
-      name: ''
-    },
+    // {
+    //   Organization: 'IITG',
+    //   Certificate: 'Computational (Theory+Lab) & Core Mathematics - Calculus, Linear Algebra',
+    //   Technologies: 'FORTRAN coding',
+    //   proof: 'assets/images/iitg.png',
+    //   name: 'Introduction to Computing & Computational (Theory+Lab)'
+    // },
+    // {
+    //   Organization: 'CGI',
+    //   Certificate: 'Technical & Non-Technical Courses',
+    //   Technologies: 'full-stack',
+    //   proof: 'https://drive.google.com/file/d/1CJ3xWwSiYNTd4XFsGw5MCO_Lvfpan8f9/view?usp=sharing',
+    //   name: 'https://drive.google.com/file/d/1CJ3xWwSiYNTd4XFsGw5MCO_Lvfpan8f9/view?usp=sharing'
+    // },
+    // {
+    //   Organization: 'CGI',
+    //   Certificate: 'Applauds from scrum master',
+    //   Technologies: 'Angular',
+    //   proof: 'assets/images/Deepak-Apprication.png',
+    //   name: 'ASDC'
+    // },
+    // {
+    //   Organization: 'CGI',
+    //   Certificate: 'Applauds',
+    //   Technologies: 'Java',
+    //   proof: 'assets/images/cgi-applaud4.png',
+    //   name: ''
+    // },
   ];
 
   onGridReady(params: GridReadyEvent) {

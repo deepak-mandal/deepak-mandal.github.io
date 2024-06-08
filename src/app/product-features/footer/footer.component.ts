@@ -10,8 +10,9 @@ import { DkmDialogComponent } from 'src/app/shared/dkm-dialog/dkm-dialog.compone
 export class FooterComponent implements OnInit {
 
 
-
+currentYear:number = 2024;
   ngOnInit(): void {
+    this.currentYear = new Date().getFullYear();
   }
 
   constructor(public dialog: MatDialog) { }

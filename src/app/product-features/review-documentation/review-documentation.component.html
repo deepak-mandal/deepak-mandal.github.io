@@ -47,9 +47,9 @@
 
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>{{data.submitText}}</button>
-  <button mat-raised-button mat-dialog-close><a href={{data.productDoc.url}}
+  <!-- <button mat-raised-button mat-dialog-close><a href={{data.productDoc.url}}
       style="text-decoration:none; background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">
-      <b>{{data.productDoc.url}}</b></a></button>
+      <b>{{data.productDoc.url}}</b></a></button> -->
   <button mat-raised-button [mat-dialog-close]="true" cdkFocusInitial><a href={{data.productDoc.sourceCodeUrl}}
       style="text-decoration:none; background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">
       <b>{{data.productDoc.sourceCodeUrl}}</b></a></button>
