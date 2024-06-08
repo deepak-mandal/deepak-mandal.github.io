@@ -31,8 +31,8 @@ export class TechSkillsComponent implements OnInit {
         //   cardSubTitle: SKILLS.PYTHON,
         // },
         {
-          imagePathOrUrl: SKILLS.JS,
-          cardSubTitle: SKILLS.JAVASCRIPT,
+          imagePathOrUrl: SKILLS.ORACLE_LOGO,
+          cardSubTitle: SKILLS.SQL,
         },
         // {
         //   imagePathOrUrl: SKILLS.PHP_LOGO,
@@ -61,6 +61,10 @@ export class TechSkillsComponent implements OnInit {
           cardSubTitle: SKILLS.CSS,
         },
         {
+          imagePathOrUrl: SKILLS.JS,
+          cardSubTitle: SKILLS.JAVASCRIPT,
+        },
+        {
           imagePathOrUrl: SKILLS.AG_GRID_LOGO,
           cardSubTitle: SKILLS.AG_GRID,
         },
@@ -71,8 +75,27 @@ export class TechSkillsComponent implements OnInit {
         {
           imagePathOrUrl: SKILLS.RABBITMQ_LOGO,
           cardSubTitle: SKILLS.RABBITMQ,
+        },
+        {
+          imagePathOrUrl: SKILLS.RXJS_LOGO,
+          cardSubTitle: SKILLS.RXJS,
         }
-        ,
+        ,{
+          imagePathOrUrl: SKILLS.ANGULAR_TC_LOGO,
+          cardSubTitle: SKILLS.ANGULAR_TC,
+        },
+        {
+          imagePathOrUrl: SKILLS.JUNIT_LOGO,
+          cardSubTitle: SKILLS.JUNIT,
+        },
+        {
+          imagePathOrUrl: SKILLS.ESLINT_LOGO,
+          cardSubTitle: SKILLS.ESLINT,
+        },
+        {
+          imagePathOrUrl: SKILLS.SONAR_LOGO,
+          cardSubTitle: SKILLS.SONAR,
+        }
         // {
         //   imagePathOrUrl: SKILLS.BOOTSTRAP_LOGO,
         //   cardSubTitle: SKILLS.BOOTSTRAP,

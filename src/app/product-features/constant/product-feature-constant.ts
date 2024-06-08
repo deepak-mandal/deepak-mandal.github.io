@@ -117,6 +117,8 @@ export const SKILLS = {
     PY: 'assets/images/py.png',
     JAVASCRIPT: 'JavaScript',
     JS: 'assets/images/js.png',
+    SQL: 'SQL',
+    
     TYPESCRIPT: 'TypeScript',
     TS: 'assets/images/ts.png',
     PHP: 'php',
@@ -136,6 +138,21 @@ export const SKILLS = {
     CSS_LOGO: 'assets/images/scss.png',
     BOOTSTRAP: 'BootStrap',
     BOOTSTRAP_LOGO: 'assets/images/bootstrap.jpeg',
+
+    RXJS: 'RxJs',
+    RXJS_LOGO: 'assets/images/rxjs.png',
+    JUNIT: 'JUnit',
+    JUNIT_LOGO: 'assets/images/JUnit.png',
+    ANGULAR_TC: 'Karma-Jasmine',
+    ANGULAR_TC_LOGO: 'assets/images/angular_tc.png',
+    ESLINT: 'ESLint',
+    ESLINT_LOGO: 'assets/images/eslint.jpg',
+    SONAR: ' SonarLint',
+    SONAR_LOGO: 'assets/images/sonar.svg',
+
+
+
+
     DB: 'Database management',
 
     ORACLE: 'Oracle',
