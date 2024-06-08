@@ -1,9 +1,9 @@
 
 export const PROFILE = {
     DEEPAK_MANDAL: "Deepak K. Mandal",
-    CGI_IITG: "Software Engineer, CGI || B.Tech, IIT Guwahati",
+    CGI_IITG: "Sr. Software Engineer, CGI || B.Tech, IIT Guwahati",
     PRFILE_PIC: 'assets/images/Deepak_Image.jpg',
-    DESCRIPTION: "Deepak has more than 2 years of experience in Software Engineering. He has significant experties in Java technologies, Data structures and algorithms, Spring & Angular framework, SQL & NoSQL databases as well as in developing, debugging, documenting and testing."
+    DESCRIPTION: "3+ years of Professional experience in software engineering including significant expertise in Java technologies, SQL, Spring & Angular framework; with strong engineering Academic background from IIT Guwahati."
 }
 
 export const EDUCATION = {
@@ -25,7 +25,7 @@ export const EXPERIENCE = {
     TECHNICAL_ANALYSIS: 'Technical Analysis of epic/user story, bug root cause, creating solution & its implementation',
     TECHNOLOGIES: 'Development, debugging & Testing using Spring/Java, Angular/TypeScript/JavaScript, AG-Grid/angular-material, SQL/Oracle databases; and collaborating with PuTTY, WinSCP, Jenkins, Bitbucket, Confluence, Jira, Postman API, CAST Application Intelligence Platform (AIP) tools on day-to-day basis in the Agile environment',
     ASDC: 'Asia Pacific Solutions Delivery Center, Bangalore - India',
-    CGI_SESSION: 'Sept 2021-present',
+    CGI_SESSION: '2021 - present',
     CGI_LOGO: 'assets/images/cgi.png',
     ACCENTURE: 'Accenture',
     ACCENTURE_SOL: 'Accenture Solutions Pvt. Ltd.',
