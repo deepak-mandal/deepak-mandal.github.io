@@ -13,6 +13,8 @@ export class ExperiencesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  cgiImagePathOrUrl= EXPERIENCE.CGI_LOGO;
   experiencesData: ITabCardEntity[] = [
     {
       tabLabel: EXPERIENCE.CGI,
@@ -38,17 +40,6 @@ export class ExperiencesComponent implements OnInit {
       session: EXPERIENCE.CGI_SESSION,
       location: EXPERIENCE.ASDC
     },
-    // {
-    //   tabLabel: EXPERIENCE.ACCENTURE,
-    //   cardTitle: EXPERIENCE.ACCENTURE_SOL,
-    //   imagePathOrUrl: EXPERIENCE.ACCENTURE_LOGO,
-    //   cardSubTitle: {
-    //     content: EXPERIENCE.LEARNING,
-    //   },
-    //   cardContentList: [
-    //     EXPERIENCE.JAVA_ORACLE
-    //   ],
-    //   session: EXPERIENCE.ACCENTURE_SESSION,
-    // },
+  
   ]
 }

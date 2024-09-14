@@ -1,1 +1,89 @@
-<dkm-custom-card [data] = "projectData"></dkm-custom-card>
+<!-- <dkm-custom-card [data]="projectData"></dkm-custom-card> -->
+<!-- <hr> -->
+<mat-tab-group mat-align-tabs="start">
+    <span>
+        <mat-tab label="ReviewBook - CGI">
+            <mat-card>
+                <mat-card-header>
+                    <div mat-card-avatar
+                        [ngStyle]="{'background-image': 'url(' + cgiImagePathOrUrl + ')', 'background-size': 'cover'  }">
+                    </div>
+                    <mat-card-title>
+                        ReviewBook Platform
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        CGI - Product Engineering
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <ul>
+                        <li style="height: auto; padding-top: 8px; padding-bottom: 8px;">
+                            <b><i>Analyzed, designed & developed</i></b> a product to the core problem - “How to
+                            motivate maximum
+                            number of consumers to provide genuine reviews and ratings that can influence buying
+                            decisions of other consumers”.'
+                        </li>
+                        <li style="height: auto; padding-top: 8px; padding-bottom: 8px;">
+                            Designed <b><i>Architecture diagram, Database data model</i></b> & schema by analyzing
+                            business
+                            requirement/high-level features.
+                        </li>
+                        <li style="height: auto; padding-top: 8px; padding-bottom: 8px;">
+                            Developed microservice architecture for Registration, Login, Product management, Review
+                            management services, Eureka server, API Gateway using Spring Boot with <b><i>NoSQL/MongoDB &
+                                    SQL/MySQL</i></b> databases. Implemented user authentication using JWT,
+                            <b><i>microservices communication</i></b>
+                            using RabbitMQ queuing system & <b><i>containerization</i></b> using Docker'
+                        </li>
+                        <li style="height: auto; padding-top: 8px; padding-bottom: 8px;">
+                            <b><i>Designed & built Restful APIs</i></b> that involves CRUD operations. Designed
+                            <b><i>angular application architecture</i></b> & developed <b><i>single page
+                                    application</i></b> corresponding to services using angular
+                            materials, AG Grid; implemented custom, shared module features.'
+                        </li>
+                    </ul>
+                </mat-card-content>
+                <mat-card-actions style="margin-bottom: 10px; padding-bottom: 15px;">
+                    Jul. 2021- Sept. 2021
+                    <span>
+                        <button mat-raised-button (click)="openDialog()"
+                            style="float: right; text-decoration:none; background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">
+                            Product overview</button>
+                    </span>
+                </mat-card-actions>
+            </mat-card>
+        </mat-tab>
+        <mat-tab label="CRSI Conference Website - IITG">
+            <mat-card>
+                <mat-card-header>
+                    <div mat-card-avatar
+                        [ngStyle]="{'background-image': 'url(' + iitgImagePathOrUrl + ')', 'background-size': 'cover'  }">
+                    </div>
+                    <mat-card-title>
+                        Conference Website
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        IITG
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <ul>
+                        <li style="height: auto; padding-top: 8px; padding-bottom: 8px;">
+                            Developed PHP based <b><i>full-stack</i></b> web application for CRSI NSC-27 and 15th
+                            CRSI-RSC joint
+                            symposium.
+                        </li>
+                        <li style="height: auto; padding-top: 8px; padding-bottom: 8px;">Developed the admin portal for
+                            the response to edit/ delete using PHP, MySQL; HTML, CSS & Bootstrap</li>
+                    </ul>
+                </mat-card-content>
+                <mat-card-actions style="margin-bottom: 10px; padding-bottom: 15px;">
+                    April 2020-June 2020
+                    <span>
+                        <i style="float:right;">IIT Guwahati</i>
+                    </span>
+                </mat-card-actions>
+            </mat-card>
+        </mat-tab>
+    </span>
+</mat-tab-group>

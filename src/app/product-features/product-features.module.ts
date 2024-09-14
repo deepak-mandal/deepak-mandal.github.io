@@ -21,6 +21,7 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { MatListModule } from '@angular/material/list';
     AgGridModule,
     MatButtonModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatTabsModule
   ],
   exports: [
     ProfileComponent,

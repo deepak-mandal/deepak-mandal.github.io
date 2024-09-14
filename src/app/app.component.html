@@ -6,9 +6,9 @@
       <mat-card>
         <education></education>
       </mat-card>
-      <div>
+      <!-- <div>
         <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
-      </div>
+      </div> -->
     </form>
   </mat-step>
   <mat-step [stepControl]="secondFormGroup" state="exp" label="exp">
@@ -17,10 +17,10 @@
       <mat-card>
         <experiences></experiences>
       </mat-card>
-      <div>
+      <!-- <div>
         <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
         <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
-      </div>
+      </div> -->
     </form>
   </mat-step>
   <mat-step [stepControl]="secondFormGroup" state="proj" label="proj">
@@ -29,10 +29,10 @@
       <mat-card>
         <projects></projects>
       </mat-card>
-      <div>
+      <!-- <div>
         <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
         <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
-      </div>
+      </div> -->
     </form>
   </mat-step>
   <mat-step [stepControl]="secondFormGroup" state="skill" label="skill">
@@ -41,10 +41,10 @@
       <mat-card>
         <tech-skills></tech-skills>
       </mat-card>
-      <div>
+      <!-- <div>
         <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
         <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
-      </div>
+      </div> -->
     </form>
   </mat-step>
   <mat-step [stepControl]="secondFormGroup" state="certi" label="certi">
@@ -53,10 +53,10 @@
       <mat-card>
         <certificates></certificates>
       </mat-card>
-      <div>
+      <!-- <div>
         <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
         <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
-      </div>
+      </div> -->
     </form>
   </mat-step>
   <mat-step [stepControl]="secondFormGroup" state="ach" label="ach">
@@ -65,13 +65,13 @@
       <mat-card>
         <achievements></achievements>
       </mat-card>
-      <div>
+      <!-- <div>
         <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
         <button mat-raised-button color="accent" matStepperNext style="margin:10px">Next</button>
-      </div>
+      </div> -->
     </form>
   </mat-step>
-  <mat-step [stepControl]="secondFormGroup" state="extra" label="extra">
+  <!-- <mat-step [stepControl]="secondFormGroup" state="extra" label="extra">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Extracurriculars</ng-template>
       <mat-card>
@@ -80,9 +80,9 @@
       <div>
         <button mat-raised-button color="primary" matStepperPrevious style="margin:10px">Back</button>
         <button mat-raised-button (click)="stepper.reset()" color="accent">Navigate to Top</button>
-      </div>
+      </div> 
     </form>
-  </mat-step>
+  </mat-step> -->
   <ng-template matStepperIcon="edu">
     <mat-icon>school</mat-icon>
   </ng-template>

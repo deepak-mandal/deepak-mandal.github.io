@@ -208,7 +208,7 @@ export const SKILLS = {
 export const ACHIEVEMENT = {
     JEE_2017: 'JEE 2017',
     JEE: 'Joint Entrance Examination 2017',
-    JEE_ACTIVITY: 'Qualified JEE(Advanced) among 0.15+ million candidates appearing for the test.',
+    JEE_ACTIVITY: 'Qualified JEE(Main) & JEE(Advanced) among 1.18 million candidates',//'Qualified JEE(Advanced) among 0.15+ million candidates appearing for the test.',
     IITM_LOGO: 'assets/images/iitm.png',
     CGI: 'CGI 2023',
     BRONZE_AWARD: 'Bronze award',

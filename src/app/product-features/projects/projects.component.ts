@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ITabCardEntity } from 'src/app/shared/types/shared.interface';
 import { EDUCATION, EXPERIENCE, PROFILE, PROJECTS } from '../constant/product-feature-constant';
+import { MatDialog } from '@angular/material/dialog';
+import { ReviewDocumentationComponent } from '../review-documentation/review-documentation.component';
 
 @Component({
   selector: 'projects',
@@ -9,10 +11,30 @@ import { EDUCATION, EXPERIENCE, PROFILE, PROJECTS } from '../constant/product-fe
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
+
+  @Input() data!: ITabCardEntity[];
+
+
+
+
+  openDialog(): void {
+    this.dialog.open(
+      ReviewDocumentationComponent, {
+      width: 'auto',
+      height: 'auto',
+      data: {
+        title: 'ReviewBook - Product Overview',
+        submitText: 'Close'
+
+      }
+    });
+  }
+  cgiImagePathOrUrl = EXPERIENCE.CGI_LOGO
+  iitgImagePathOrUrl = EDUCATION.IITG_LOGO
   projectData: ITabCardEntity[] = [
     {
       tabLabel: PROJECTS.REVIEWBOOK,
