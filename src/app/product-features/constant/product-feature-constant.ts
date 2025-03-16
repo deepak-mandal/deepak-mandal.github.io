@@ -206,13 +206,13 @@ export const SKILLS = {
 }
 
 export const ACHIEVEMENT = {
-    JEE_2017: 'JEE 2017',
+    JEE_2017: 'JEE',
     JEE: 'Joint Entrance Examination 2017',
     JEE_ACTIVITY: 'Qualified JEE(Main) & JEE(Advanced) among 1.18 million candidates',//'Qualified JEE(Advanced) among 0.15+ million candidates appearing for the test.',
     IITM_LOGO: 'assets/images/iitm.png',
-    CGI: 'CGI 2023',
+    CGI: 'CGI',
     BRONZE_AWARD: 'Bronze award',
-    BRONZE_AWARD_ACTIVITY: ' Received bronze award from president for the excellent work delivered at CGI'
+    BRONZE_AWARD_ACTIVITY: 'Received bronze award from president (FY23) and SVP (FY24) & applauds from managers for the excellent work delivered'
 }
 
 export const EXTRACURRICULARS ={
