@@ -37,8 +37,15 @@ export class CertificatesComponent implements OnInit {
   rowData: CERTIFICATE_ENTITY[] = [
     {
       Organization: 'CGI',
+      Certificate: 'Bronze award from SVP, CGI',
+      Technologies: 'Java 8, Spring Boot v3, Angular v17, MS SQL',
+      proof: 'assets/images/CGI-Bronze_Award_Certificate-F2024.png',
+      name: 'Greater Toronto Area'
+    },
+    {
+      Organization: 'CGI',
       Certificate: 'Bronze award from president, CGI',
-      Technologies: 'Java, Spring, Angular, SQL',
+      Technologies: 'Java, Spring, Angular, SQL (Oracle)',
       proof: 'assets/images/CGI_Award_ecertificate.png',
       name: 'Greater Toronto Area'
     },
