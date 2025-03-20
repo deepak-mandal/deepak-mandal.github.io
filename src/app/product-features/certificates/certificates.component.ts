@@ -54,7 +54,14 @@ export class CertificatesComponent implements OnInit {
       Certificate: 'Applauds from GTA & ASDC',
       Technologies: 'Java, Spring, Angular, SQL',
       proof: 'assets/images/applauds.png',
-      name: 'Greater Toronto Area'
+      name: 'Wealth360 - Greater Toronto Area'
+    },
+    {
+      Organization: 'CGI',
+      Certificate: 'Applauds from managers',
+      Technologies: 'Angular, Leadership',
+      proof: 'assets/images/applauds-feb2025.png',
+      name: 'DataCycle360 - European solutions'
     },
     {
       Organization: 'Henry Harvin Analytics Academy',
