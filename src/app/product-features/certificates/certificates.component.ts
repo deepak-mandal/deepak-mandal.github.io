@@ -36,67 +36,74 @@ export class CertificatesComponent implements OnInit {
 
   rowData: CERTIFICATE_ENTITY[] = [
     {
-      Organization: 'CGI',
+      Organization: 'Asia Pacific Solutions Delivery Center (ASDC), CGI',
       Certificate: 'Bronze award from SVP, CGI',
       Technologies: 'Java 8, Spring Boot v3, Angular v17, MS SQL',
       proof: 'assets/images/CGI-Bronze_Award_Certificate-F2024.png',
-      name: 'Greater Toronto Area'
+      name: ''
     },
     {
-      Organization: 'CGI',
+      Organization: 'Collaboration with CGI and Microsoft',
+      Certificate: 'AI Powered Software Development',
+      Technologies: 'AI, Java, Azure',
+      proof: 'assets/images/AI.png',
+      name: ''
+    },
+    {
+      Organization: 'Greater Toronto Area (GTA), CGI',
       Certificate: 'Bronze award from president, CGI',
       Technologies: 'Java, Spring, Angular, SQL (Oracle)',
       proof: 'assets/images/CGI_Award_ecertificate.png',
-      name: 'Greater Toronto Area'
+      name: ''
     },
     {
-      Organization: 'CGI',
-      Certificate: 'Applauds from GTA & ASDC',
-      Technologies: 'Java, Spring, Angular, SQL',
-      proof: 'assets/images/applauds.png',
-      name: 'Wealth360 - Greater Toronto Area'
-    },
-    {
-      Organization: 'CGI',
-      Certificate: 'Applauds from managers',
-      Technologies: 'Angular, Leadership',
+      Organization: 'CGI DataCycle360 Mobile UI app - European solutions',
+      Certificate: 'Leadership in localization feature',
+      Technologies: 'Angular, Nginx (deployment configuration, and production mode testing of Multiple locale simultaneously in local), External static(MSAL authentication client specific) package.json file configuration based on dev, test, prod/client mode',
       proof: 'assets/images/applauds-feb2025.png',
-      name: 'DataCycle360 - European solutions'
+      name: ''
+    },
+    {
+      Organization: 'CGI Wealth360 - Greater Toronto Area',
+      Certificate: 'Applauds from GTA & ASDC',
+      Technologies: 'Java, Spring, Angular, SQL; Angular v8 to v10 upgrade of Hybrid application consisting of AngularJS & Angular 2+; Production/Client fixes',
+      proof: 'assets/images/applauds.png',
+      name: ''
     },
     {
       Organization: 'Henry Harvin Analytics Academy',
       Certificate: 'Certified Python Marketing Analytics (CPMA)',
       Technologies: 'Machine learning technique (ML), Python',
       proof: 'assets/images/cpma.png',
-      name: 'CPMA'
+      name: ''
     },
     {
       Organization: 'Internshala Trainings',
       Certificate: 'Programming in Python',
       Technologies: 'Python, SQLite, GUI - PyQt',
       proof: 'assets/images/python.png',
-      name: 'Python'
+      name: ''
     },
     {
       Organization: 'Udemy',
       Certificate: 'Data Structures and Algorithms',
       Technologies: 'Python, DS-Algo',
       proof: 'assets/images/data-structures-and-algorithms.png',
-      name: 'ds-algo'
+      name: ''
     },
     {
       Organization: 'Internshala Trainings',
       Certificate: 'Web Development',
       Technologies: 'PHP, MySQL, HTML, CSS, Bootstrap',
       proof: 'assets/images/php_cert.png',
-      name: 'PHP'
+      name: ''
     },
     {
       Organization: 'Internshala Trainings',
       Certificate: 'Programming with C/C++',
       Technologies: 'C, C++',
       proof: 'assets/images/cpp.png',
-      name: 'C/C++'
+      name: ''
     },
     // {
     //   Organization: 'HackerRank',
