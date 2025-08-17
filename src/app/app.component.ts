@@ -1,3 +1,4 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { StepperSelectionEvent, STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { HttpClient } from '@angular/common/http';
 import { Component, Injectable, ViewChild } from '@angular/core';
@@ -20,12 +21,32 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   title = 'Deepak Mandal | CGI | IIT Guwahati';
 
+  stepperOrientation: 'horizontal' | 'vertical' = 'vertical';
+  isLinear = false;
+
   firstFormGroup!: FormGroup;
   secondFormGroup!: FormGroup;
 
   constructor(private _formBuilder: FormBuilder,
-    private http: HttpClient
-    ) { }
+    private http: HttpClient,
+    private breakpointObserver: BreakpointObserver
+    ) {
+      this.breakpointObserver.observe([
+      Breakpoints.Handset
+    ]).subscribe(result => {
+      if (result.matches) {
+        // Mobile view
+        this.stepperOrientation = 'horizontal';
+        this.isLinear = true;
+      } else {
+        // Tablet/Laptop view
+        this.stepperOrientation = 'vertical';
+        this.isLinear = false;
+      }
+    });
+
+     }
+
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
       firstCtrl: ['', Validators.required],
@@ -37,8 +58,8 @@ export class AppComponent {
 
   iconValue = 'school';
   selectionChange(event: StepperSelectionEvent) {
-    console.log(event.selectedStep.label);
-    let stepLabel = event.selectedStep.label
+    console.log(event.selectedStep.state);
+    let stepLabel = event.selectedStep.state;
     if (stepLabel == "edu") {
       this.iconValue = 'school'
     }

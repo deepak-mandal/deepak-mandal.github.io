@@ -1,8 +1,8 @@
 <profile></profile>
-<mat-stepper orientation="vertical" #stepper (selectionChange)="selectionChange($event)">
-  <mat-step [stepControl]="firstFormGroup" state="edu" label="edu">
+<mat-stepper [orientation]="stepperOrientation" #stepper (selectionChange)="selectionChange($event)">
+  <mat-step [stepControl]="firstFormGroup" state="edu" label="">
     <form [formGroup]="firstFormGroup">
-      <ng-template matStepLabel>Education</ng-template>
+      <ng-template matStepLabel *ngIf="!isLinear">Education</ng-template>
       <mat-card>
         <education></education>
       </mat-card>
@@ -11,9 +11,9 @@
       </div> -->
     </form>
   </mat-step>
-  <mat-step [stepControl]="secondFormGroup" state="exp" label="exp">
+  <mat-step [stepControl]="secondFormGroup" state="exp" label="">
     <form [formGroup]="secondFormGroup">
-      <ng-template matStepLabel>Experiences</ng-template>
+      <ng-template matStepLabel *ngIf="!isLinear">Experiences</ng-template>
       <mat-card>
         <experiences></experiences>
       </mat-card>
@@ -23,9 +23,9 @@
       </div> -->
     </form>
   </mat-step>
-  <mat-step [stepControl]="secondFormGroup" state="proj" label="proj">
+  <mat-step [stepControl]="secondFormGroup" state="proj" label="">
     <form [formGroup]="secondFormGroup">
-      <ng-template matStepLabel>Projects</ng-template>
+      <ng-template matStepLabel *ngIf="!isLinear">Projects</ng-template>
       <mat-card>
         <projects></projects>
       </mat-card>
@@ -35,9 +35,9 @@
       </div> -->
     </form>
   </mat-step>
-  <mat-step [stepControl]="secondFormGroup" state="skill" label="skill">
+  <mat-step [stepControl]="secondFormGroup" state="skill" label="">
     <form [formGroup]="secondFormGroup">
-      <ng-template matStepLabel>Technical Skills</ng-template>
+      <ng-template matStepLabel *ngIf="!isLinear">Technical Skills</ng-template>
       <mat-card>
         <tech-skills></tech-skills>
       </mat-card>
@@ -47,9 +47,9 @@
       </div> -->
     </form>
   </mat-step>
-  <mat-step [stepControl]="secondFormGroup" state="certi" label="certi">
+  <mat-step [stepControl]="secondFormGroup" state="certi" label="">
     <form [formGroup]="secondFormGroup">
-      <ng-template matStepLabel>Certifications</ng-template>
+      <ng-template matStepLabel *ngIf="!isLinear">Certifications</ng-template>
       <mat-card>
         <certificates></certificates>
       </mat-card>
@@ -59,9 +59,9 @@
       </div> -->
     </form>
   </mat-step>
-  <mat-step [stepControl]="secondFormGroup" state="ach" label="ach">
+  <mat-step [stepControl]="secondFormGroup" state="ach" label="">
     <form [formGroup]="secondFormGroup">
-      <ng-template matStepLabel>Achievements</ng-template>
+      <ng-template matStepLabel *ngIf="!isLinear">Achievements</ng-template>
       <mat-card>
         <achievements></achievements>
       </mat-card>
