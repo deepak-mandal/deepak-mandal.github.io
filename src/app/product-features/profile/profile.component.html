@@ -1,5 +1,17 @@
 <div style="margin-bottom: 10px;">
-    <dkm-card [cardTitle]="profileTitle" [cardSubTitle]="profileSubTitle" [cardContentData]="profileContentData"
-    [imagePathOrUrl]="profilePath">
-</dkm-card>
+    <mat-card>
+  <mat-card-header>
+    <div mat-card-avatar [ngStyle]="{'background-image': 'url(' + profilePath + ')', 'background-size': 'cover'  }">
+    </div>
+    <mat-card-title>
+      {{profileTitle}}
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{profileSubTitle}}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <span *ngIf="totalExperiences>0">{{totalExperiences}} years of </span>Professional experience in software engineering including significant expertise in Java technologies, SQL, Spring & Angular framework; with strong engineering Academic background from IIT Guwahati.
+  </mat-card-content>
+</mat-card>
 </div>
