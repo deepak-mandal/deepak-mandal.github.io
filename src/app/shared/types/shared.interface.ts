@@ -11,6 +11,7 @@ export interface ITabCardEntity{
     result?: IResult;
     isDialog?: boolean;
     dialogData?: {};
+    matCardTitleLink?: string;
 }
 
 export interface ISubTitleEntity{

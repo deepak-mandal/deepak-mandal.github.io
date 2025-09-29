@@ -12,7 +12,8 @@ export const EDUCATION = {
     BTECH: 'Bachelor of Technology',
     SESSION: '2017-2021',
     IITG_LOGO: 'assets/images/IITG.png',
-    SENIOR_SECONDARY: 'Senior Secondary'
+    SENIOR_SECONDARY: 'Senior Secondary',
+    IITG_LINK: 'https://www.iitg.ac.in/'
 }
 
 export const EXPERIENCE = {

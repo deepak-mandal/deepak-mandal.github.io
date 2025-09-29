@@ -91,6 +91,13 @@ export class CertificatesComponent implements OnInit {
       proof: 'assets/images/data-structures-and-algorithms.png',
       name: ''
     },
+     {
+      Organization: 'CGI',
+      Certificate: 'Product Engineering',
+      Technologies: 'Java, Spring Boot, Angular, SQL',
+      proof: 'assets/images/cgi-4th-yearbook.jpg',
+      name: ''
+    },
     {
       Organization: 'Internshala Trainings',
       Certificate: 'Web Development',

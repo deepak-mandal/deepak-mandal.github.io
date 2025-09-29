@@ -22,7 +22,8 @@ export class EducationComponent implements OnInit {
       cardSubTitle: {
         content: EDUCATION.BTECH,
         rightContent: EDUCATION.SESSION
-      }
+      },
+      matCardTitleLink: EDUCATION.IITG_LINK,
     },
   ]
  

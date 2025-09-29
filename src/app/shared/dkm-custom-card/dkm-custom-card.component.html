@@ -7,7 +7,8 @@
             [ngStyle]="{'background-image': 'url(' + entity.imagePathOrUrl + ')', 'background-size': 'cover'  }">
           </div>
           <mat-card-title>
-            {{entity.cardTitle}}
+            <span *ngIf="!entity.matCardTitleLink">{{entity.cardTitle}}</span>
+            <span><a class="no_href_style" *ngIf="entity.matCardTitleLink" class="no_href_style" href={{entity.matCardTitleLink}} target="_blank"> {{entity.cardTitle}}</a></span>
           </mat-card-title>
           <mat-card-subtitle>
             {{entity.cardSubTitle?.content}}<i style="float: right;">{{entity.cardSubTitle?.rightContent}}</i>
