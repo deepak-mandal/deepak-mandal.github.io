@@ -38,7 +38,7 @@ export const EXPERIENCE = {
     TECHNOLOGIES: 'Development, debugging & Testing using Spring/Java, Angular/TypeScript/JavaScript, AG-Grid/angular-material, SQL/Oracle databases; and collaborating with PuTTY, WinSCP, Jenkins, Bitbucket, Confluence, Jira, Postman API, CAST Application Intelligence Platform (AIP) tools on day-to-day basis in the Agile environment',
     ASDC: 'Asia Pacific Solutions Delivery Center, Bangalore - India',
     CGI_SESSION: '2021 - present',
-    CGI_LOGO: 'assets/images/cgi.png',
+    CGI_LOGO: 'assets/images/logo_cgi_color.png',
     ACCENTURE: 'Accenture',
     ACCENTURE_SOL: 'Accenture Solutions Pvt. Ltd.',
     LEARNING: 'Pre-Onboard Learning',
