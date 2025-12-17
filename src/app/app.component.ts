@@ -58,7 +58,6 @@ export class AppComponent {
 
   iconValue = 'school';
   selectionChange(event: StepperSelectionEvent) {
-    console.log(event.selectedStep.state);
     let stepLabel = event.selectedStep.state;
     if (stepLabel == "edu") {
       this.iconValue = 'school'

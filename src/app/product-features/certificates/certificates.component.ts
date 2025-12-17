@@ -21,7 +21,7 @@ export class CertificatesComponent implements OnInit {
   columnDefs: ColDef[] = [
     { field: 'Certificate', cellRenderer: CertificateViewCellRendererComponent },
     { field: 'Technologies', },
-    { field: 'Organization', },
+    // { field: 'Organization', },
   ];
 
   public defaultColDef: ColDef = {

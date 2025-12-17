@@ -1,7 +1,12 @@
 <span>
-    <span>{{ cellValue }}</span
-    >&nbsp;
-    <mat-icon class="viscol"> visibility </mat-icon>
-  </span>
+  <span>{{ cellValue }}</span>&nbsp;
+  <img
+    [src]="params?.data?.proof"
+    [alt]="cellValue || 'Certificate preview'"
+    title="View certificate"
+    class="viscol-img"
+    loading="lazy"
+  />
+</span>
 
   
