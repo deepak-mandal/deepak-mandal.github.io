@@ -3,8 +3,8 @@
 }
 
 .viscol-img {
-    width: 64px;
-    height: auto;
+    width: auto;
+    height: -webkit-fill-available;
     object-fit: cover;
     vertical-align: middle;
     display: inline-block;
