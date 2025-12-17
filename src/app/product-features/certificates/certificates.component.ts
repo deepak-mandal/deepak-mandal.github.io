@@ -72,7 +72,7 @@ export class CertificatesComponent implements OnInit {
     },
     {
       Organization: 'Henry Harvin Analytics Academy',
-      Certificate: 'Certified Python Marketing Analytics (CPMA)',
+      Certificate: 'Certified Python Marketing Analyst',
       Technologies: 'Machine learning technique (ML), Python',
       proof: 'assets/images/cpma.png',
       name: ''
