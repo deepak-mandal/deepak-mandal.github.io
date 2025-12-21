@@ -44,7 +44,7 @@ export class CertificatesComponent implements OnInit {
     },
     {
       Organization: 'Collaboration with CGI and Microsoft',
-      Certificate: 'AI Powered Software Development',
+      Certificate: 'AI Powered Software Development (CGI)',
       Technologies: 'AI, Java, Azure',
       proof: 'assets/images/AI.png',
       name: ''
@@ -134,16 +134,23 @@ export class CertificatesComponent implements OnInit {
     //   name: 'Python'
     // },
     {
-      Organization: 'RSFM@IITG',
-      Certificate: 'LaTeX Workshop',
+      Organization: 'CGI',
+      Certificate: 'Java full-stack training - Spring & Angular',
+      Technologies: 'Java, SQL, Spring, Angular',
+      proof: 'assets/images/cgi.png',
+      name: 'LaTeX'
+    },
+    {
+      Organization: 'RSFM, IITG',
+      Certificate: 'LaTeX Workshop @ IITG',
       Technologies: 'LaTeX',
       proof: 'assets/images/latex.jpg',
       name: 'LaTeX'
     },
     {
       Organization: 'IIT Guwahati',
-      Certificate: 'Introduction to Computing + Computing Laboratory, Computational (Theory+Lab) & Core Mathematics - Calculus, Linear Algebra',
-      Technologies: 'C programming language, FORTRAN',
+      Certificate: 'Introduction to Computing - Data structures & algorithms, Computing Laboratory, Computational (Theory+Lab) & Core Mathematics - Calculus, Linear Algebra',
+      Technologies: 'C, C++, FORTRAN',
       proof: 'assets/images/IITG.png',
       name: 'Computing Laboratory'
     },
