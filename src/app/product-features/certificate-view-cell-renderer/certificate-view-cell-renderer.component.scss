@@ -3,11 +3,15 @@
 }
 
 .viscol-img {
-    width: auto;
-    height: -webkit-fill-available;
+    width: 32px;
+    height: 32px;
     object-fit: cover;
     vertical-align: middle;
     display: inline-block;
-    margin-left: 4px;
+    margin-right: 8px;
     cursor: pointer;
+    border-radius: 4px;
 }
+
+.cert-cell { display: inline-flex; align-items: center; }
+.cert-text { display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 220px; vertical-align: middle; }

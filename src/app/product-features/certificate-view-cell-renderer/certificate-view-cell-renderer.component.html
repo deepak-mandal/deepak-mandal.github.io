@@ -1,5 +1,4 @@
-<span>
-  <span>{{ cellValue }}</span>&nbsp;
+<span class="cert-cell">
   <img
     [src]="params?.data?.proof"
     [alt]="cellValue || 'Certificate preview'"
@@ -7,6 +6,7 @@
     class="viscol-img"
     loading="lazy"
   />
+  <span class="cert-text">{{ cellValue }}</span>
 </span>
 
   

@@ -2,8 +2,14 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
 import { ProfileComponent } from './profile/profile.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatStepperModule } from '@angular/material/stepper';
 import { ProfileSidenavComponent } from './profile-sidenav/profile-sidenav.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { EducationComponent } from './education/education.component';
@@ -22,6 +28,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
+import { ResumeComponent } from './resume/resume.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -38,11 +46,14 @@ import { MatTabsModule } from '@angular/material/tabs';
     FooterComponent,
     CertificateViewCellRendererComponent,
     ReviewDocumentationComponent,
+    ResumeComponent,
+    HomeComponent,
 
   ],
   imports: [
     CommonModule,
     SharedModule,
+    ReactiveFormsModule,
     MatSidenavModule,
     MatCardModule,
     MatIconModule,
@@ -52,6 +63,11 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatDividerModule,
     MatListModule,
     MatTabsModule
+    ,MatStepperModule,
+    MatFormFieldModule,
+    MatInputModule
+    ,MatChipsModule
+    ,MatTableModule
   ],
   exports: [
     ProfileComponent,
