@@ -1,0 +1,28 @@
+.fixed-resume-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 12px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixed-resume-button:hover {
+  background-color: green;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.fixed-resume-button mat-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
