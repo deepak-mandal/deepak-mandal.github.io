@@ -43,6 +43,13 @@ export class CertificatesComponent implements OnInit {
       name: ''
     },
     {
+      Organization: 'IIT Guwahati',
+      Certificate: 'Introduction to Computing - Data structures & algorithms, Computing Laboratory, Computational (Theory+Lab) & Core Mathematics - Calculus, Linear Algebra',
+      Technologies: 'C, C++, FORTRAN',
+      proof: 'assets/images/IITG.png',
+      name: 'Computing Laboratory'
+    },
+    {
       Organization: 'Collaboration with CGI and Microsoft',
       Certificate: 'AI Powered Software Development (CGI)',
       Technologies: 'AI, Java, Azure',
@@ -147,13 +154,7 @@ export class CertificatesComponent implements OnInit {
       proof: 'assets/images/latex.jpg',
       name: 'LaTeX'
     },
-    {
-      Organization: 'IIT Guwahati',
-      Certificate: 'Introduction to Computing - Data structures & algorithms, Computing Laboratory, Computational (Theory+Lab) & Core Mathematics - Calculus, Linear Algebra',
-      Technologies: 'C, C++, FORTRAN',
-      proof: 'assets/images/IITG.png',
-      name: 'Computing Laboratory'
-    },
+    
     // {
     //   Organization: 'IITG',
     //   Certificate: 'Computational (Theory+Lab) & Core Mathematics - Calculus, Linear Algebra',
