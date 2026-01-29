@@ -15,6 +15,7 @@ export class ExperiencesComponent implements OnInit {
   }
 
   cgiImagePathOrUrl= EXPERIENCE.CGI_LOGO;
+  evImagePathOrUrl = EXPERIENCE.EV_LOGO;
   experiencesData: ITabCardEntity[] = [
     {
       tabLabel: EXPERIENCE.CGI,

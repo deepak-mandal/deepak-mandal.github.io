@@ -1,7 +1,7 @@
 
 export const PROFILE = {
     DEEPAK_MANDAL: "Deepak K. Mandal",
-    CGI_IITG: "Sr. Software Engineer, CGI || B.Tech, IIT Guwahati",
+    CGI_IITG: "Product Technical Analyst, Edgeverve (Infosys) | Former Sr. Software Engineer, CGI | B.Tech, IIT Guwahati",
     PRFILE_PIC: 'assets/images/Deepak_Image.jpg',
     DESCRIPTION: "~ 4 years of Professional experience in software engineering including significant expertise in Java technologies, SQL, Spring & Angular framework; with strong engineering Academic background from IIT Guwahati."
 }
@@ -17,6 +17,7 @@ export const EDUCATION = {
 }
 
 export const EXPERIENCE = {
+EV_LOGO: 'assets/images/ev1.png',
     CGI: 'CGI / Product Engineering',
     CGI_INFO_SYS: 'CGI Information Systems and Management Consultants Pvt. Ltd.',
     SOFTWARE_CONSULTANT: 'Senior Software Engineer / CONSULTANT',
