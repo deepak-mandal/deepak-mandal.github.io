@@ -189,7 +189,7 @@ export const SKILLS = {
     FORTRAN_LOGO: 'assets/images/fortran.png',
     EXCEL: 'MS Excel',
     EXCEL_LOGO: 'assets/images/excel.png',
-    DS_ALGO: 'Data structures & Algorithms',
+    DS_ALGO: 'Data structures & Algorithms, System Design',
     DS_ALGO_LOGO: 'assets/images/ds_algo.png',
     OS: 'Operating system',
     LINUX: 'Linux',
