@@ -7,7 +7,7 @@
 // @import "~ag-grid-community/dist/styles/ag-theme-balham.css";
 
 html, body { height: 100%; }
-body { margin: 0; padding:10px; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; padding:5px; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-card-title{
     color: rgb(227, 25, 55);
   }
@@ -32,4 +32,24 @@ body { margin: 0; padding:10px; font-family: Roboto, "Helvetica Neue", sans-seri
 
 .ag-header {
  color: green;
+}
+
+.mat-card{
+  padding: 10px !important;
+}
+
+.mat-vertical-content {
+    padding: 0 10px 10px 10px !important;
+}
+
+.mat-vertical-content-container {
+margin-left: 20px !important;
+}
+
+.mat-stepper-label-position-bottom .mat-horizontal-stepper-header, .mat-vertical-stepper-header{
+  padding: 10px !important;
+}
+
+.mat-tab-body-content {
+    overflow: visible !important;
 }

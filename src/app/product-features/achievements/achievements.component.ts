@@ -15,19 +15,19 @@ export class AchievementsComponent implements OnInit {
   }
   achievementData: ITabCardEntity[] = [
     {
-      tabLabel: ACHIEVEMENT.JEE_2017,
-      cardTitle: ACHIEVEMENT.JEE,
-      imagePathOrUrl: ACHIEVEMENT.IITM_LOGO,
-      cardSubTitle: {
-        content: ACHIEVEMENT.JEE_ACTIVITY,
-      }
-    },
-    {
       tabLabel: ACHIEVEMENT.CGI,
       cardTitle: ACHIEVEMENT.BRONZE_AWARD,
       imagePathOrUrl: EXPERIENCE.CGI_LOGO,
       cardSubTitle: {
         content: ACHIEVEMENT.BRONZE_AWARD_ACTIVITY,
+      }
+    },
+    {
+      tabLabel: ACHIEVEMENT.JEE_2017,
+      cardTitle: ACHIEVEMENT.JEE,
+      imagePathOrUrl: ACHIEVEMENT.IITM_LOGO,
+      cardSubTitle: {
+        content: ACHIEVEMENT.JEE_ACTIVITY,
       }
     }
   ]

@@ -38,8 +38,8 @@ export class HomeComponent implements OnInit {
      ]).subscribe(result => {
        if (result.matches) {
          // Mobile view
-         this.stepperOrientation = 'horizontal';
-         this.isLinear = true;
+        //  this.stepperOrientation = 'horizontal';
+        //  this.isLinear = true;
        } else {
          // Tablet/Laptop view
          this.stepperOrientation = 'vertical';

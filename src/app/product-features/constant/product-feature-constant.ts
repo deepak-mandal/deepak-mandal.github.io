@@ -7,7 +7,7 @@ export const PROFILE = {
 }
 
 export const EDUCATION = {
-    IIT: 'IIT / Engineering',
+    IIT: 'Engineering',
     IITG: 'Indian Institute of Technology, Guwahati ',
     BTECH: 'Bachelor of Technology',
     SESSION: '2017-2021',
