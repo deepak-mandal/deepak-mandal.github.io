@@ -23,21 +23,13 @@ export class TechSkillsComponent implements OnInit {
           cardSubTitle: SKILLS.JAVA,
         },
         {
-          imagePathOrUrl: SKILLS.TS,
-          cardSubTitle: SKILLS.TYPESCRIPT,
-        },
-        // {
-        //   imagePathOrUrl: SKILLS.PY,
-        //   cardSubTitle: SKILLS.PYTHON,
-        // },
-        {
           imagePathOrUrl: SKILLS.ORACLE_LOGO,
           cardSubTitle: SKILLS.SQL,
         },
-        // {
-        //   imagePathOrUrl: SKILLS.PHP_LOGO,
-        //   cardSubTitle: SKILLS.PHP,
-        // },
+        {
+          imagePathOrUrl: SKILLS.TS,
+          cardSubTitle: SKILLS.TYPESCRIPT,
+        }
       ]
     },
     {
@@ -95,11 +87,11 @@ export class TechSkillsComponent implements OnInit {
         {
           imagePathOrUrl: SKILLS.SONAR_LOGO,
           cardSubTitle: SKILLS.SONAR,
-        }
-        // {
-        //   imagePathOrUrl: SKILLS.BOOTSTRAP_LOGO,
-        //   cardSubTitle: SKILLS.BOOTSTRAP,
-        // },
+        },
+        {
+          imagePathOrUrl: SKILLS.BOOTSTRAP_LOGO,
+          cardSubTitle: SKILLS.BOOTSTRAP,
+        },
       ]
     },
     {
@@ -117,14 +109,14 @@ export class TechSkillsComponent implements OnInit {
           imagePathOrUrl: SKILLS.MONGODB_LOGO,
           cardSubTitle: SKILLS.MONGODB,
         },
-        // {
-        //   imagePathOrUrl: SKILLS.MYSQL_LOGO,
-        //   cardSubTitle: SKILLS.MYSQL,
-        // },
-        // {
-        //   imagePathOrUrl: SKILLS.SQLITE_LOGO,
-        //   cardSubTitle: SKILLS.SQLITE,
-        // },
+        {
+          imagePathOrUrl: SKILLS.MYSQL_LOGO,
+          cardSubTitle: SKILLS.MYSQL,
+        },
+        {
+          imagePathOrUrl: SKILLS.SQLITE_LOGO,
+          cardSubTitle: SKILLS.SQLITE,
+        },
       ]
     },
     {
@@ -138,75 +130,68 @@ export class TechSkillsComponent implements OnInit {
           imagePathOrUrl: SKILLS.GIT_LOGO,
           cardSubTitle: SKILLS.GIT,
         },
-        // {
-        //   imagePathOrUrl: SKILLS.FORTRAN_LOGO,
-        //   cardSubTitle: SKILLS.FORTRAN,
-        // },
-        
         {
           imagePathOrUrl: SKILLS.DOCKER_LOGO,
           cardSubTitle: SKILLS.DOCKER,
         },
-        // {
-        //   imagePathOrUrl: SKILLS.PUTTY_LOGO,
-        //   cardSubTitle: SKILLS.PUTTY,
-        // },
-        // {
-        //   imagePathOrUrl: SKILLS.WINSCP_LOGO,
-        //   cardSubTitle: SKILLS.WINSCP,
-        // },
+        {
+          imagePathOrUrl: SKILLS.PUTTY_LOGO,
+          cardSubTitle: SKILLS.PUTTY,
+        },
+        {
+          imagePathOrUrl: SKILLS.WINSCP_LOGO,
+          cardSubTitle: SKILLS.WINSCP,
+        },
       
       ]
     },
-    // {
-    //   tabLabel: SKILLS.ANALYTICAL_TOOLS,
-    //   skills: [
-    //     // {
-    //     //   imagePathOrUrl: SKILLS.PANDAS_LOGO,
-    //     //   cardSubTitle: SKILLS.PANDAS,
-    //     // },
-    //     // {
-    //     //   imagePathOrUrl: SKILLS.NUMPY_LOGO,
-    //     //   cardSubTitle: SKILLS.NUMPY,
-    //     // },
-    //     // {
-    //     //   imagePathOrUrl: SKILLS.MATPLOTLIB_LOGO,
-    //     //   cardSubTitle: SKILLS.MATPLOTLIB,
-    //     // }
-    //     // ,
-    //     // {
-    //     //   imagePathOrUrl: SKILLS.ML_LOGO,
-    //     //   cardSubTitle: SKILLS.OTHER_ML,
-    //     // },
-    //     {
-    //       imagePathOrUrl: SKILLS.EXCEL_LOGO,
-    //       cardSubTitle: SKILLS.EXCEL,
-    //     },
-    //   ]
-    // },
+    {
+      tabLabel: SKILLS.ANALYTICAL_TOOLS,
+      skills: [
+        {
+          imagePathOrUrl: SKILLS.PANDAS_LOGO,
+          cardSubTitle: SKILLS.PANDAS,
+        },
+        {
+          imagePathOrUrl: SKILLS.NUMPY_LOGO,
+          cardSubTitle: SKILLS.NUMPY,
+        },
+        {
+          imagePathOrUrl: SKILLS.MATPLOTLIB_LOGO,
+          cardSubTitle: SKILLS.MATPLOTLIB,
+        }
+        ,
+        {
+          imagePathOrUrl: SKILLS.ML_LOGO,
+          cardSubTitle: SKILLS.OTHER_ML,
+        },
+        {
+          imagePathOrUrl: SKILLS.EXCEL_LOGO,
+          cardSubTitle: SKILLS.EXCEL,
+        },
+      ]
+    },
     {
       tabLabel: SKILLS.MISCELLANEOUS,
-      skills: [
-        // {
-        //   imagePathOrUrl: SKILLS.GIT_LOGO,
-        //   cardSubTitle: SKILLS.GIT,
-        // },
-        // // {
-        // //   imagePathOrUrl: SKILLS.FORTRAN_LOGO,
-        // //   cardSubTitle: SKILLS.FORTRAN,
-        // // },
-        // {
-        //   imagePathOrUrl: SKILLS.RABBITMQ_LOGO,
-        //   cardSubTitle: SKILLS.RABBITMQ,
-        // }
-        // ,
-        // {
-        //   imagePathOrUrl: SKILLS.DOCKER_LOGO,
-        //   cardSubTitle: SKILLS.DOCKER,
-        // },
+      skills: [       
+        
         {
           imagePathOrUrl: PROFILE.PRFILE_PIC,
           cardSubTitle: SKILLS.DS_ALGO,
+        },
+         {
+          imagePathOrUrl: SKILLS.PY,
+          cardSubTitle: SKILLS.PYTHON,
+        },
+
+         {
+          imagePathOrUrl: SKILLS.FORTRAN_LOGO,
+          cardSubTitle: SKILLS.FORTRAN,
+        },
+       
+        {
+          imagePathOrUrl: SKILLS.PHP_LOGO,
+          cardSubTitle: SKILLS.PHP,
         },
       ]
     },

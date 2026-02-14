@@ -35,6 +35,11 @@ export class ProjectsComponent implements OnInit {
   }
   cgiImagePathOrUrl = EXPERIENCE.CGI_LOGO
   iitgImagePathOrUrl = EDUCATION.IITG_LOGO
+  NLPimagePathOrUrl = PROJECTS.NLP_LOGO
+  PYimagePathOrUrl = PROJECTS.INTERNSHALA_LOGO
+  MLPimagePathOrUrl = PROFILE.PRFILE_PIC
+  resultImage = PROJECTS.ANALYSIS_WORD_CLOUD
+   
   projectData: ITabCardEntity[] = [
     {
       tabLabel: PROJECTS.REVIEWBOOK,
@@ -70,87 +75,87 @@ export class ProjectsComponent implements OnInit {
       session: PROJECTS.CONFERENCE_SESSION,
       location: PROJECTS.CONFERENCE_LOCATION
     },
-    // {
-    //   tabLabel: PROJECTS.NLP,
-    //   cardTitle: PROJECTS.NLP_TITLE,
-    //   imagePathOrUrl: PROJECTS.NLP_LOGO,
-    //   cardSubTitle: {
-    //     content: PROJECTS.NLP_DUEDASH,
-    //   },
-    //   cardContentList: [
-    //     PROJECTS.NLP_ACTIVITY_TEXT, PROJECTS.NLP_ACTIVITY_IMAGE, PROJECTS.NLP_TECH
-    //   ],
-    //   session: PROJECTS.NLP_SESSION,
-    //   link: PROJECTS.NLP_LOCATION,
-    //   location: PROJECTS.NLP_LOCATION
-    // },
-    // {
-    //   tabLabel: PROJECTS.CRICKET_GAME,
-    //   cardTitle: PROJECTS.CRICKET_GAME_PY,
-    //   imagePathOrUrl: PROJECTS.INTERNSHALA_LOGO,
-    //   cardSubTitle: {
-    //     content: PROJECTS.INTERNSHALA,
-    //   },
-    //   cardContentList: [
-    //     PROJECTS.CRICKET_GAME_ACTIVITY
-    //   ],
-    //   session: PROJECTS.CRICKET_GAME_SESSION,
-    //   link: PROJECTS.CRICKET_GAME_LOCATION,
-    //   location: PROJECTS.CRICKET_GAME_LOCATION,
-    //   result:{
-    //     resultImage: PROJECTS.CRICKET_GAME_RESULT,
-    //     altText: ''
-    //   }
-    // },
-    // {
-    //   tabLabel: PROJECTS.ML,
-    //   cardTitle: PROJECTS.ML_PREDICTION,
-    //   imagePathOrUrl: PROFILE.PRFILE_PIC,
-    //   cardSubTitle: {
-    //     content: PROJECTS.ML_TECH,
-    //   },
-    //   cardContentList: [
-    //     PROJECTS.ML_ACTIVITY
-    //   ],
-    //   session: PROJECTS.ML_SESSION,
-    //   link: PROJECTS.ML_LOCATION,
-    //   location: PROJECTS.ML_LOCATION,
+    {
+      tabLabel: PROJECTS.NLP,
+      cardTitle: PROJECTS.NLP_TITLE,
+      imagePathOrUrl: PROJECTS.NLP_LOGO,
+      cardSubTitle: {
+        content: PROJECTS.NLP_DUEDASH,
+      },
+      cardContentList: [
+        PROJECTS.NLP_ACTIVITY_TEXT, PROJECTS.NLP_ACTIVITY_IMAGE, PROJECTS.NLP_TECH
+      ],
+      session: PROJECTS.NLP_SESSION,
+      link: PROJECTS.NLP_LOCATION,
+      location: PROJECTS.NLP_LOCATION
+    },
+    {
+      tabLabel: PROJECTS.CRICKET_GAME,
+      cardTitle: PROJECTS.CRICKET_GAME_PY,
+      imagePathOrUrl: PROJECTS.INTERNSHALA_LOGO,
+      cardSubTitle: {
+        content: PROJECTS.INTERNSHALA,
+      },
+      cardContentList: [
+        PROJECTS.CRICKET_GAME_ACTIVITY
+      ],
+      session: PROJECTS.CRICKET_GAME_SESSION,
+      link: PROJECTS.CRICKET_GAME_LOCATION,
+      location: PROJECTS.CRICKET_GAME_LOCATION,
+      result:{
+        resultImage: PROJECTS.CRICKET_GAME_RESULT,
+        altText: ''
+      }
+    },
+    {
+      tabLabel: PROJECTS.ML,
+      cardTitle: PROJECTS.ML_PREDICTION,
+      imagePathOrUrl: PROFILE.PRFILE_PIC,
+      cardSubTitle: {
+        content: PROJECTS.ML_TECH,
+      },
+      cardContentList: [
+        PROJECTS.ML_ACTIVITY
+      ],
+      session: PROJECTS.ML_SESSION,
+      link: PROJECTS.ML_LOCATION,
+      location: PROJECTS.ML_LOCATION,
       
-    // },
-    // {
-    //   tabLabel: PROJECTS.AUTOMATION,
-    //   cardTitle: PROJECTS.AUTOMATION_PY,
-    //   imagePathOrUrl: PROFILE.PRFILE_PIC,
-    //   cardSubTitle: {
-    //     content: PROJECTS.SELF_PACED_PROJECT
-    //   },
-    //   cardContentList: [
-    //     PROJECTS.AUTOMATION_ACTIVITY, PROJECTS.AUTOMATION_FEATURE, PROJECTS.AUTOMATION_TECH
-    //   ],
-    //   session: PROJECTS.AUTOMATION_SESSION,
-    //   link: PROJECTS.AUTOMATION_LOCATION,
-    //   location: PROJECTS.AUTOMATION_LOCATION,
+    },
+    {
+      tabLabel: PROJECTS.AUTOMATION,
+      cardTitle: PROJECTS.AUTOMATION_PY,
+      imagePathOrUrl: PROFILE.PRFILE_PIC,
+      cardSubTitle: {
+        content: PROJECTS.SELF_PACED_PROJECT
+      },
+      cardContentList: [
+        PROJECTS.AUTOMATION_ACTIVITY, PROJECTS.AUTOMATION_FEATURE, PROJECTS.AUTOMATION_TECH
+      ],
+      session: PROJECTS.AUTOMATION_SESSION,
+      link: PROJECTS.AUTOMATION_LOCATION,
+      location: PROJECTS.AUTOMATION_LOCATION,
      
-    // },
-    // {
-    //   tabLabel: PROJECTS.ANALYSIS,
-    //   cardTitle: PROJECTS.ANALYSIS_MINING,
-    //   imagePathOrUrl: PROFILE.PRFILE_PIC,
-    //   cardSubTitle: {
-    //     content: PROJECTS.SELF_PACED_PROJECT
-    //   },
-    //   cardContentList: [
-    //     PROJECTS.ANALYSIS_ACTIVITY, PROJECTS.ANALYSIS_TECH
-    //   ],
-    //   session: PROJECTS.ANALYSIS_SESSION,
-    //   link: PROJECTS.ANALYSIS_LOCATION,
-    //   location: PROJECTS.ANALYSIS_LOCATION,
-    //   result: {
-    //     resultImage: PROJECTS.ANALYSIS_WORD_CLOUD,
-    //     altText:''
-    //   }
+    },
+    {
+      tabLabel: PROJECTS.ANALYSIS,
+      cardTitle: PROJECTS.ANALYSIS_MINING,
+      imagePathOrUrl: PROFILE.PRFILE_PIC,
+      cardSubTitle: {
+        content: PROJECTS.SELF_PACED_PROJECT
+      },
+      cardContentList: [
+        PROJECTS.ANALYSIS_ACTIVITY, PROJECTS.ANALYSIS_TECH
+      ],
+      session: PROJECTS.ANALYSIS_SESSION,
+      link: PROJECTS.ANALYSIS_LOCATION,
+      location: PROJECTS.ANALYSIS_LOCATION,
+      result: {
+        resultImage: PROJECTS.ANALYSIS_WORD_CLOUD,
+        altText:''
+      }
      
-    // },
+    },
     
   ]
 }

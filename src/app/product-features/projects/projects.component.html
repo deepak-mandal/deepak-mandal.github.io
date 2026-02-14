@@ -1,77 +1,289 @@
 <!-- <dkm-custom-card [data]="projectData"></dkm-custom-card> -->
 <!-- <hr> -->
 <mat-tab-group mat-align-tabs="start">
-    <span>
-        <mat-tab label="ReviewBook">
-            <mat-card>
-                <mat-card-header>
-                    <div mat-card-avatar
-                        [ngStyle]="{'background-image': 'url(' + cgiImagePathOrUrl + ')', 'background-size': 'cover'  }">
-                    </div>
-                    <mat-card-title>
-                        ReviewBook Platform
-                    </mat-card-title>
-                    <mat-card-subtitle>
-                        CGI - Product Engineering
-                    </mat-card-subtitle>
-                </mat-card-header>
-                <mat-card-content>
-                    <ul>
-                        <li style="height: auto; padding-top: 8px; padding-bottom: 8px;">
-                            <b><i>Designed & developed</i></b> an app where user can provide genuine reviews and ratings that can influence buying decision of other consumers
-                        </li>
-                        <li style="height: auto; padding-top: 8px; padding-bottom: 8px;">
-                            Designed Architecture diagram, <b><i>Database data model</i></b> & schema by analyzing business requirement/high-level features.
-                        </li>
-                        <li style="height: auto; padding-top: 8px; padding-bottom: 8px;">
-                            Developed <b><i>microservice architecture</i></b> for Registration, Login, Product management, Review management services using Spring Boot with <b><i>NoSQL/MongoDB & SQL/MySQL</i></b> databases. <b><i>JWT</i></b> authentication, <b><i>microservices communication</i></b> using RabbitMQ; Docker
-                        </li>
-                        <li style="height: auto; padding-top: 8px; padding-bottom: 8px;">
-                            <b><i>Built Restful APIs</i></b> that involves CRUD operations. Designed <b><i>angular application architecture</i></b> including <b><i>single page application</i></b> corresponding to services using HTML, <b><i>CSS</i></b>, Bootstrap, angular materials, AG Grid; implemented custom, shared module features.
-                        </li>
-                    </ul>
-                </mat-card-content>
-                <mat-card-actions style="margin-bottom: 10px; padding-bottom: 15px;">
-                    Jul. 2021- Sept. 2021
-                    <span>
-                        <button mat-raised-button (click)="openDialog()"
-                            style="float: right; text-decoration:none; background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">
-                            Product overview</button>
-                    </span>
-                </mat-card-actions>
-            </mat-card>
-        </mat-tab>
-        <mat-tab label="CRSI Conference - IITG">
-            <mat-card>
-                <mat-card-header>
-                    <div mat-card-avatar
-                        [ngStyle]="{'background-image': 'url(' + iitgImagePathOrUrl + ')', 'background-size': 'cover'  }">
-                    </div>
-                    <mat-card-title>
-                        Conference Website
-                    </mat-card-title>
-                    <mat-card-subtitle>
-                        IITG
-                    </mat-card-subtitle>
-                </mat-card-header>
-                <mat-card-content>
-                    <ul>
-                        <li style="height: auto; padding-top: 8px; padding-bottom: 8px;">
-                            Developed PHP based <b><i>full-stack</i></b> web application for CRSI NSC-27 and 15th
-                            CRSI-RSC joint
-                            symposium.
-                        </li>
-                        <li style="height: auto; padding-top: 8px; padding-bottom: 8px;">Developed the admin portal for
-                            the response to edit/ delete using PHP, MySQL; HTML, CSS & Bootstrap</li>
-                    </ul>
-                </mat-card-content>
-                <mat-card-actions style="margin-bottom: 10px; padding-bottom: 15px;">
-                    April 2020-June 2020
-                    <span>
-                        <i style="float:right;">IIT Guwahati</i>
-                    </span>
-                </mat-card-actions>
-            </mat-card>
-        </mat-tab>
-    </span>
+  <mat-tab label="ReviewBook">
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar
+          [ngStyle]="{'background-image': 'url(' + cgiImagePathOrUrl + ')', 'background-size': 'cover'  }">
+        </div>
+        <mat-card-title>
+          ReviewBook Platform
+        </mat-card-title>
+        <mat-card-subtitle>
+          CGI - Product Engineering
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li class="content-style">
+            <b><i>Designed & developed</i></b> an app where user can provide genuine reviews and ratings
+            that can influence buying decision of other consumers
+          </li>
+          <li class="content-style">
+            Designed Architecture diagram, <b><i>Database data model</i></b> & schema by analyzing business
+            requirement/high-level features.
+          </li>
+          <li class="content-style">
+            Developed <b><i>microservice architecture</i></b> for Registration, Login, Product management,
+            Review management services using Spring Boot with <b><i>NoSQL/MongoDB & SQL/MySQL</i></b>
+            databases. <b><i>JWT</i></b> authentication, <b><i>microservices communication</i></b> using
+            RabbitMQ; Docker
+          </li>
+          <li class="content-style">
+            <b><i>Built Restful APIs</i></b> that involves CRUD operations. Designed <b><i>angular
+                application architecture</i></b> including <b><i>single page application</i></b>
+            corresponding to services using HTML, <b><i>CSS</i></b>, Bootstrap, angular materials, AG Grid;
+            implemented custom, shared module features.
+          </li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions class="cart-action">
+        <div class="action-footer">
+          <div>Jul. 2021- Sept. 2021</div>
+          <div>
+            <button mat-raised-button (click)="openDialog()"
+              style="text-decoration:none; background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">
+              Product overview</button>
+          </div>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="CRSI Conference - IITG">
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar
+          [ngStyle]="{'background-image': 'url(' + iitgImagePathOrUrl + ')', 'background-size': 'cover'  }">
+        </div>
+        <mat-card-title>
+          Conference Website
+        </mat-card-title>
+        <mat-card-subtitle>
+          IITG
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li class="content-style">
+            Developed PHP based <b><i>full-stack</i></b> web application for CRSI NSC-27 and 15th
+            CRSI-RSC joint
+            symposium.
+          </li>
+          <li class="content-style">Developed the admin portal for
+            the response to edit/ delete using PHP, MySQL; HTML, CSS & Bootstrap</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions class="cart-action">
+        April 2020-June 2020
+        <span>
+          <i class="right-align">IIT Guwahati</i>
+        </span>
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="NLP">
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar
+          [ngStyle]="{'background-image': 'url(' + NLPimagePathOrUrl + ')', 'background-size': 'cover'  }">
+        </div>
+        <mat-card-title>
+          Web and PDF file Data Extraction - NLP
+        </mat-card-title>
+        <mat-card-subtitle>
+          DueDash
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li class="content-style">
+            Summarization of Text:- Generated the summary from the Source text either web link or PDF file.
+            Further Drawn their Word Cloud
+          </li>
+          <li class="content-style">Text and Image Extraction from any Web Link or URL:- Extraced Images and
+            text data from the web Links and PDF files.</li>
+          <li class="content-style">
+            Technologies used: Python3, BeautifulSoup/bs4, PyPDF2, SpaCy, NLTK, WordCloud, NumPy, Shutil,
+            OS, parse, requests
+          </li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions class="cart-action">
+        <div class="action-footer">
+          <div>
+            May 2021
+          </div>
+          <div>
+            <a href="https://github.com/deepak-mandal/DueDash-Germany"
+              target="_blank">https://github.com/deepak-mandal/DueDash-Germany</a>
+          </div>
+        </div>
+
+
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Python">
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar
+          [ngStyle]="{'background-image': 'url(' + PYimagePathOrUrl + ')', 'background-size': 'cover'  }">
+        </div>
+        <mat-card-title>
+          Fantasy Cricket Game
+        </mat-card-title>
+        <mat-card-subtitle>
+          Internshala Trainings
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li class="content-style">
+            Developed a Python-based desktop application using PyQt framework with SQLite Database.
+          </li>
+
+        </ul>
+      </mat-card-content>
+      <mat-card-actions class="cart-action">
+        <div class="action-footer">
+          <div>
+            July 2020
+          </div>
+          <div>
+            <a href="https://github.com/deepak-mandal/Game" target="_blank">https://github.com/deepak-mandal/Game</a>
+          </div>
+        </div>
+
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Machine learning">
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar
+          [ngStyle]="{'background-image': 'url(' + MLPimagePathOrUrl + ')', 'background-size': 'cover'  }">
+        </div>
+        <mat-card-title>
+          House Price Prediction
+        </mat-card-title>
+        <mat-card-subtitle>
+          Self-paced project using Machine learning technique
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li class="content-style">
+            Built a Linear Regression Model to Predict the Sale Price of the House based on its characteristics.
+          </li>
+
+        </ul>
+      </mat-card-content>
+      <mat-card-actions class="cart-action">
+        <div class="action-footer">
+          <div>
+            April 2021-May 2021
+          </div>
+          <div>
+            <a href="https://github.com/deepak-mandal/SalePricePrediction"
+              target="_blank">https://github.com/deepak-mandal/SalePricePrediction</a>
+          </div>
+        </div>
+
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Automation">
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar
+          [ngStyle]="{'background-image': 'url(' + MLPimagePathOrUrl + ')', 'background-size': 'cover'  }">
+        </div>
+        <mat-card-title>
+          Email Automation with Python
+        </mat-card-title>
+        <mat-card-subtitle>
+          Self-paced project
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li class="content-style">
+            Automating emails by the help of Python, smtplib, Linux & Window OS, HTML, CSS, with attachments using
+            Encrypted connections.
+          </li>
+
+          <li class="content-style">
+            Extracted emails automatically from the Linkedin Post using selenium, chrome automated test software, re,
+            pandas
+          </li>
+          <li class="content-style">
+            Features:- Multiple emails can in one go or on single click, The delivered email is of personalised type
+            i.e. "to" for each single email_Id but not "bcc" or "cc" e-mail type
+          </li>
+
+        </ul>
+      </mat-card-content>
+      <mat-card-actions class="cart-action">
+        <div class="action-footer">
+          <div>
+            2020
+          </div>
+          <div>
+            <a href="https://github.com/deepak-mandal/Email-Automation-with-Python"
+              target="_blank">https://github.com/deepak-mandal/Email-Automation-with-Python</a>
+          </div>
+        </div>
+
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Text Analysis">
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar
+          [ngStyle]="{'background-image': 'url(' + MLPimagePathOrUrl + ')', 'background-size': 'cover'  }">
+        </div>
+        <mat-card-title>
+          Wikipedia Text Analytics and Mining
+        </mat-card-title>
+        <mat-card-subtitle>
+          Henry Harvin Academy
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li class="content-style">
+            Analysed the unstructured data (article) using text mining and created the Word Cloud out of that; to
+            understand what these article trying to say, rather than reading the entire article.
+          </li>
+
+          <li class="content-style">
+            Technologies used: Python3, WordCloud
+          </li>
+
+          <img [src]="resultImage" style="width: 85vw; height: auto;">
+
+
+        </ul>
+      </mat-card-content>
+      <mat-card-actions class="cart-action">
+        <div class="action-footer">
+          <div>
+            Dec 2020
+          </div>
+          <div>
+            <a href="https://github.com/deepak-mandal/Word-Cloud-from-Text-Mining"
+              target="_blank">https://github.com/deepak-mandal/Word-Cloud-from-Text-Mining</a>
+          </div>
+        </div>
+
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+
 </mat-tab-group>

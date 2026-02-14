@@ -1,0 +1,15 @@
+.content-style{
+    height: auto; padding-top: 8px; padding-bottom: 8px;
+}
+
+.cart-action{
+    margin-bottom: 10px; padding-bottom: 15px;
+}
+
+.right-align{
+    float:right;
+}
+
+.action-footer{
+    display: flex; flex-direction: row; justify-content: space-between; align-items: baseline;
+}
