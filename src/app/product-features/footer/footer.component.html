@@ -45,10 +45,17 @@
     </div>
     <div style="text-align: center ;">
       <mat-card-subtitle>
-        &copy; 2020 - {{currentYear}}
-        <b (click)="openDialog()" class="blackletter-font"
-          style="text-decoration:none; background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-text-fill-color: transparent; -webkit-background-clip: text; background-clip: text;">
-          DEEPAK MANDAL</b>
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: baseline;">
+          <div>
+            &copy; 2020 - {{currentYear}} &nbsp;
+          </div>
+          <div>
+            <h1 (click)="openDialog()" class="blackletter-font deepak-font"
+              style="text-decoration:none; background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-text-fill-color: transparent; -webkit-background-clip: text; background-clip: text;">
+              DEEPAK MANDAL</h1>
+          </div>
+        </div>
+
         <!-- . For queries contact  -->
         <!-- <a href="mailto:dkmiitg@gmail.com">
               <b
