@@ -18,37 +18,29 @@ import { MatPaginatorModule as MatPaginatorModule } from '@angular/material/pagi
 import { MatDialogModule as MatDialogModule } from '@angular/material/dialog';
 import { ProductFeaturesModule } from './product-features/product-features.module';
 import { AgGridModule } from 'ag-grid-angular';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 
-@NgModule({
-  declarations: [
-    AppComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatButtonModule,
-    MatTabsModule,
-    MatListModule,
-    MatStepperModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatNativeDateModule,
-    MatFormFieldModule,
-    MatIconModule,
-    MatTableModule,
-    MatExpansionModule,
-    MatPaginatorModule,
-    MatDialogModule,
-    ProductFeaturesModule,
-    AgGridModule,
-    HttpClientModule
-
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatCardModule,
+        MatButtonModule,
+        MatTabsModule,
+        MatListModule,
+        MatStepperModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MatNativeDateModule,
+        MatFormFieldModule,
+        MatIconModule,
+        MatTableModule,
+        MatExpansionModule,
+        MatPaginatorModule,
+        MatDialogModule,
+        ProductFeaturesModule,
+        AgGridModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
