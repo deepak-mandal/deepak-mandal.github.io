@@ -10,6 +10,11 @@
     float:right;
 }
 
-.action-footer{
+/* .action-footer{
     display: flex; flex-direction: row; justify-content: space-between; align-items: baseline;
-}
+    background-color: red; padding: 20px; margin: 20px;
+} */
+
+.mat-mdc-card-actions{
+    justify-content: flex-end !important;
+}   

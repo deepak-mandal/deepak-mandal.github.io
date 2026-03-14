@@ -2,9 +2,9 @@
 <mat-stepper [orientation]="stepperOrientation" #stepper (selectionChange)="selectionChange($event)">
   <mat-step [stepControl]="firstFormGroup" state="edu" label="">
     <form [formGroup]="firstFormGroup">
-      @if (!isLinear) {
+      <!-- @if (!isLinear) { -->
         <ng-template matStepLabel>Education</ng-template>
-      }
+      <!-- } -->
       <mat-card>
         <education></education>
       </mat-card>
@@ -15,9 +15,9 @@
 </mat-step>
 <mat-step [stepControl]="secondFormGroup" state="exp" label="">
   <form [formGroup]="secondFormGroup">
-    @if (!isLinear) {
+    <!-- @if (!isLinear) { -->
       <ng-template matStepLabel>Experiences</ng-template>
-    }
+    <!-- } -->
     <mat-card>
       <experiences></experiences>
     </mat-card>
@@ -29,9 +29,9 @@
 </mat-step>
 <mat-step [stepControl]="secondFormGroup" state="proj" label="">
   <form [formGroup]="secondFormGroup">
-    @if (!isLinear) {
+    <!-- @if (!isLinear) { -->
       <ng-template matStepLabel>Projects</ng-template>
-    }
+    <!-- } -->
     <mat-card>
       <projects></projects>
     </mat-card>
@@ -43,9 +43,9 @@
 </mat-step>
 <mat-step [stepControl]="secondFormGroup" state="skill" label="">
   <form [formGroup]="secondFormGroup">
-    @if (!isLinear) {
+    <!-- @if (!isLinear) { -->
       <ng-template matStepLabel>Technical Skills</ng-template>
-    }
+    <!-- } -->
     <mat-card>
       <tech-skills></tech-skills>
     </mat-card>
@@ -57,9 +57,9 @@
 </mat-step>
 <mat-step [stepControl]="secondFormGroup" state="certi" label="">
   <form [formGroup]="secondFormGroup">
-    @if (!isLinear) {
+    <!-- @if (!isLinear) { -->
       <ng-template matStepLabel>Certifications</ng-template>
-    }
+    <!-- } -->
     <mat-card>
       <certificates></certificates>
     </mat-card>
@@ -71,9 +71,9 @@
 </mat-step>
 <mat-step [stepControl]="secondFormGroup" state="ach" label="">
   <form [formGroup]="secondFormGroup">
-    @if (!isLinear) {
+    <!-- @if (!isLinear) { -->
       <ng-template matStepLabel>Achievements</ng-template>
-    }
+    <!-- } -->
     <mat-card>
       <achievements></achievements>
     </mat-card>

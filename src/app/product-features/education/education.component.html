@@ -1,1 +1,22 @@
-<dkm-custom-card [data] = "educationData"></dkm-custom-card>
+<!-- <dkm-custom-card [data] = "educationData"></dkm-custom-card>-->
+
+<mat-card>
+          @if (educationData.cardTitle) {
+            <mat-card-header>
+              <div mat-card-avatar
+                [ngStyle]="{'background-image': 'url(' + educationData.imagePathOrUrl + ')', 'background-size': 'cover'  }">
+              </div>
+              <mat-card-title>
+                @if (!educationData.matCardTitleLink) {
+                  <span>{{educationData.cardTitle}}</span>
+                }
+                <span>@if (educationData.matCardTitleLink) {
+                  <a class="no_href_style" href={{educationData.matCardTitleLink}} target="_blank"> {{educationData.cardTitle}}</a>
+                }</span>
+              </mat-card-title>
+              <mat-card-subtitle>
+                {{educationData?.cardSubTitle?.content || ''}}<i style="float: right;">{{educationData?.cardSubTitle?.rightContent || ''}}</i>
+              </mat-card-subtitle>
+            </mat-card-header>
+          }
+      </mat-card>

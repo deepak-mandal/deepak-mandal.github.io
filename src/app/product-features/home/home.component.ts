@@ -8,7 +8,7 @@ import { AgGridAngular } from 'ag-grid-angular';
 import { CellClickedEvent, ColDef, GridReadyEvent } from 'ag-grid-community';
 import { Observable } from 'rxjs';
 import { ProfileComponent } from '../profile/profile.component';
-import { MatStepper, MatStep, MatStepLabel, MatStepperIcon } from '@angular/material/stepper';
+import { MatStepper, MatStep, MatStepLabel, MatStepperIcon, MatStepperModule } from '@angular/material/stepper';
 
 import { MatCard } from '@angular/material/card';
 import { EducationComponent } from '../education/education.component';
@@ -30,7 +30,7 @@ import { FooterComponent } from '../footer/footer.component';
             useValue: { displayDefaultIndicatorType: false },
         },
     ],
-    imports: [ProfileComponent, MatStepper, MatStep, ReactiveFormsModule, MatStepLabel, MatCard, EducationComponent, ExperiencesComponent, ProjectsComponent, TechSkillsComponent, CertificatesComponent, AchievementsComponent, MatStepperIcon, MatIcon, FooterComponent]
+    imports: [ProfileComponent, MatStepper, MatStepperModule, MatStep, ReactiveFormsModule, MatStepLabel, MatCard, EducationComponent, ExperiencesComponent, ProjectsComponent, TechSkillsComponent, CertificatesComponent, AchievementsComponent, MatStepperIcon, MatIcon, FooterComponent]
 })
 export class HomeComponent implements OnInit {
 
@@ -96,6 +96,5 @@ export class HomeComponent implements OnInit {
        this.iconValue = 'public'
      }
    }
- 
 
 }

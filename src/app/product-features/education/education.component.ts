@@ -2,12 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { ITabCardEntity } from 'src/app/shared/types/shared.interface';
 import { EDUCATION } from '../constant/product-feature-constant';
 import { DkmCustomCardComponent } from '../../shared/dkm-custom-card/dkm-custom-card.component';
+import { MatCardModule } from '@angular/material/card';
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'education',
     templateUrl: './education.component.html',
     styleUrls: ['./education.component.css'],
-    imports: [DkmCustomCardComponent]
+    imports: [MatCardModule, CommonModule]
 })
 export class EducationComponent implements OnInit {
 
@@ -16,7 +18,7 @@ export class EducationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  educationData: ITabCardEntity[] = [
+  educationData: ITabCardEntity =
     {
       tabLabel: EDUCATION.IIT,
       cardTitle: EDUCATION.IITG,
@@ -26,7 +28,6 @@ export class EducationComponent implements OnInit {
         rightContent: EDUCATION.SESSION
       },
       matCardTitleLink: EDUCATION.IITG_LINK,
-    },
-  ]
+    }
  
 }

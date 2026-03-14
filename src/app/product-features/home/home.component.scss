@@ -17,6 +17,7 @@
 ::ng-deep .mat-vertical-stepper-content {
   visibility: visible !important;
   height: 100% !important;
+  overflow: visible !important;
 }
 
 ::ng-deep .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
