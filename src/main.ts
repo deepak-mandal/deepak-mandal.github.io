@@ -1,4 +1,4 @@
-import { enableProdMode, importProvidersFrom } from '@angular/core';
+import { enableProdMode, importProvidersFrom, provideZoneChangeDetection } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 
@@ -29,7 +29,7 @@ if (environment.production) {
 
 bootstrapApplication(AppComponent, {
     providers: [
-        importProvidersFrom(BrowserModule, AppRoutingModule, MatCardModule, MatButtonModule, MatTabsModule, MatListModule, MatStepperModule, FormsModule, ReactiveFormsModule, MatNativeDateModule, MatFormFieldModule, MatIconModule, MatTableModule, MatExpansionModule, MatPaginatorModule, MatDialogModule, AgGridModule),
+        provideZoneChangeDetection(),importProvidersFrom(BrowserModule, AppRoutingModule, MatCardModule, MatButtonModule, MatTabsModule, MatListModule, MatStepperModule, FormsModule, ReactiveFormsModule, MatNativeDateModule, MatFormFieldModule, MatIconModule, MatTableModule, MatExpansionModule, MatPaginatorModule, MatDialogModule, AgGridModule),
         provideHttpClient(withInterceptorsFromDi()),
         provideAnimations()
     ]
