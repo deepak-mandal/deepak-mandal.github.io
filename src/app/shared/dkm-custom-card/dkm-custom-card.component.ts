@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { ReviewDocumentationComponent } from 'src/app/product-features/review-documentation/review-documentation.component';
 import { ITabCardEntity } from '../types/shared.interface';
 
