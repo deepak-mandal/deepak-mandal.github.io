@@ -3,7 +3,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { StepperSelectionEvent, STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { HttpClient } from '@angular/common/http';
 import { Injectable, ViewChild } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { AgGridAngular } from 'ag-grid-angular';
 import { CellClickedEvent, ColDef, GridReadyEvent } from 'ag-grid-community';
 import { Observable } from 'rxjs';
@@ -26,10 +26,10 @@ export class HomeComponent implements OnInit {
    stepperOrientation: 'horizontal' | 'vertical' = 'vertical';
    isLinear = false;
  
-   firstFormGroup!: FormGroup;
-   secondFormGroup!: FormGroup;
+   firstFormGroup!: UntypedFormGroup;
+   secondFormGroup!: UntypedFormGroup;
  
-   constructor(private _formBuilder: FormBuilder,
+   constructor(private _formBuilder: UntypedFormBuilder,
      private http: HttpClient,
      private breakpointObserver: BreakpointObserver
      ) {
