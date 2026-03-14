@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ITabCardEntity } from 'src/app/shared/types/shared.interface';
 import { EDUCATION } from '../constant/product-feature-constant';
+import { DkmCustomCardComponent } from '../../shared/dkm-custom-card/dkm-custom-card.component';
 
 @Component({
     selector: 'education',
     templateUrl: './education.component.html',
     styleUrls: ['./education.component.css'],
-    standalone: false
+    imports: [DkmCustomCardComponent]
 })
 export class EducationComponent implements OnInit {
 

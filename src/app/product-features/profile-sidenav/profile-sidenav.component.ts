@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
+import { MatCard, MatCardImage } from '@angular/material/card';
 
 @Component({
     selector: 'profile-sidenav',
     templateUrl: './profile-sidenav.component.html',
     styleUrls: ['./profile-sidenav.component.css'],
-    standalone: false
+    imports: [MatCard, MatCardImage]
 })
 export class ProfileSidenavComponent implements OnInit {
 

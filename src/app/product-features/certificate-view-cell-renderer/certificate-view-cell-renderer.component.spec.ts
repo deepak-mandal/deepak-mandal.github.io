@@ -8,8 +8,8 @@ describe('CertificateViewCellRendererComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CertificateViewCellRendererComponent ]
-    })
+    imports: [CertificateViewCellRendererComponent]
+})
     .compileComponents();
   });
 

@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ITabCardEntity } from 'src/app/shared/types/shared.interface';
 import { ACHIEVEMENT, EXPERIENCE } from '../constant/product-feature-constant';
+import { DkmCustomCardComponent } from '../../shared/dkm-custom-card/dkm-custom-card.component';
 
 @Component({
     selector: 'achievements',
     templateUrl: './achievements.component.html',
     styleUrls: ['./achievements.component.css'],
-    standalone: false
+    imports: [DkmCustomCardComponent]
 })
 export class AchievementsComponent implements OnInit {
 

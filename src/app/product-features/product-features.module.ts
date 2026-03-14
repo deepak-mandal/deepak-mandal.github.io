@@ -32,55 +32,50 @@ import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [
-
-    ProfileComponent,
-    ProfileSidenavComponent,
-    EducationComponent,
-    ExperiencesComponent,
-    ProjectsComponent,
-    TechSkillsComponent,
-    AchievementsComponent,
-    ExtracurricularsComponent,
-    CertificatesComponent,
-    FooterComponent,
-    CertificateViewCellRendererComponent,
-    ReviewDocumentationComponent,
-    ResumeComponent,
-    HomeComponent,
-
-  ],
-  imports: [
-    CommonModule,
-    SharedModule,
-    ReactiveFormsModule,
-    MatSidenavModule,
-    MatCardModule,
-    MatIconModule,
-    MatDialogModule,
-    AgGridModule,
-    MatButtonModule,
-    MatDividerModule,
-    MatListModule,
-    MatTabsModule
-    ,MatStepperModule,
-    MatFormFieldModule,
-    MatInputModule
-    ,MatChipsModule
-    ,MatTableModule
-  ],
-  exports: [
-    ProfileComponent,
-    EducationComponent,
-    ExperiencesComponent,
-    ProjectsComponent,
-    TechSkillsComponent,
-    AchievementsComponent,
-    ExtracurricularsComponent,
-    CertificatesComponent,
-    FooterComponent
-  ],
-  providers: [
-  ]
+    imports: [
+        CommonModule,
+        SharedModule,
+        ReactiveFormsModule,
+        MatSidenavModule,
+        MatCardModule,
+        MatIconModule,
+        MatDialogModule,
+        AgGridModule,
+        MatButtonModule,
+        MatDividerModule,
+        MatListModule,
+        MatTabsModule,
+        MatStepperModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatChipsModule,
+        MatTableModule,
+        ProfileComponent,
+        ProfileSidenavComponent,
+        EducationComponent,
+        ExperiencesComponent,
+        ProjectsComponent,
+        TechSkillsComponent,
+        AchievementsComponent,
+        ExtracurricularsComponent,
+        CertificatesComponent,
+        FooterComponent,
+        CertificateViewCellRendererComponent,
+        ReviewDocumentationComponent,
+        ResumeComponent,
+        HomeComponent
+    ],
+    exports: [
+        ProfileComponent,
+        EducationComponent,
+        ExperiencesComponent,
+        ProjectsComponent,
+        TechSkillsComponent,
+        AchievementsComponent,
+        ExtracurricularsComponent,
+        CertificatesComponent,
+        FooterComponent
+    ],
+    providers: []
 })
 export class ProductFeaturesModule { }

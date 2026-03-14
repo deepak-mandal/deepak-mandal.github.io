@@ -8,8 +8,8 @@ describe('DkmTabComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DkmTabComponent ]
-    })
+    imports: [DkmTabComponent]
+})
     .compileComponents();
   });
 

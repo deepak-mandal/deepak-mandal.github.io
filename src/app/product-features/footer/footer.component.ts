@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog as MatDialog } from '@angular/material/dialog';
 import { DkmDialogComponent } from 'src/app/shared/dkm-dialog/dkm-dialog.component';
+import { MatCard, MatCardSubtitle } from '@angular/material/card';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
     selector: 'footer',
     templateUrl: './footer.component.html',
     styleUrls: ['./footer.component.scss'],
-    standalone: false
+    imports: [MatCard, MatIcon, MatCardSubtitle]
 })
 export class FooterComponent implements OnInit {
 

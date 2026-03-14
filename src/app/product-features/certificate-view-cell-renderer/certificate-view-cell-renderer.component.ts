@@ -5,8 +5,7 @@ import { ICellRendererParams } from 'ag-grid-community';
 @Component({
     selector: 'app-certificate-view-cell-renderer',
     templateUrl: './certificate-view-cell-renderer.component.html',
-    styleUrls: ['./certificate-view-cell-renderer.component.scss'],
-    standalone: false
+    styleUrls: ['./certificate-view-cell-renderer.component.scss']
 })
 export class CertificateViewCellRendererComponent implements ICellRendererAngularComp {
   public cellValue!: string;

@@ -7,8 +7,7 @@ interface Project { title: string; summary: string }
 @Component({
     selector: 'app-resume',
     templateUrl: './resume.component.html',
-    styleUrls: ['./resume.component.scss'],
-    standalone: false
+    styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
 

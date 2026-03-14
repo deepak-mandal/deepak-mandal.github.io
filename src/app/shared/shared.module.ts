@@ -14,31 +14,28 @@ import { MatDialogModule as MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule as MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-  declarations: [
-    DkmCardComponent,
-    DkmButtonComponent,
-    DkmTabComponent,
-    DkmCustomCardComponent,
-    DkmCustomListComponent,
-    DkmDialogComponent,
-    
-  ],
-  imports: [
-    CommonModule,
-    MatCardModule,
-    MatListModule,
-    MatTabsModule,
-    MatIconModule,
-    MatDialogModule,
-    MatButtonModule
-  ],
-  exports:[
-    DkmButtonComponent,
-    DkmCardComponent,
-    DkmTabComponent,
-    DkmCustomCardComponent,
-    DkmCustomListComponent,
-    DkmDialogComponent
-  ]
+    imports: [
+        CommonModule,
+        MatCardModule,
+        MatListModule,
+        MatTabsModule,
+        MatIconModule,
+        MatDialogModule,
+        MatButtonModule,
+        DkmCardComponent,
+        DkmButtonComponent,
+        DkmTabComponent,
+        DkmCustomCardComponent,
+        DkmCustomListComponent,
+        DkmDialogComponent
+    ],
+    exports: [
+        DkmButtonComponent,
+        DkmCardComponent,
+        DkmTabComponent,
+        DkmCustomCardComponent,
+        DkmCustomListComponent,
+        DkmDialogComponent
+    ]
 })
 export class SharedModule { }

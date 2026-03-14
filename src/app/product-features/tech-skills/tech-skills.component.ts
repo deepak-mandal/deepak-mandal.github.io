@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ITabCardListEntity } from 'src/app/shared/types/shared.interface';
 import { PROFILE, SKILLS } from '../constant/product-feature-constant';
+import { DkmCustomListComponent } from '../../shared/dkm-custom-list/dkm-custom-list.component';
 
 @Component({
     selector: 'tech-skills',
     templateUrl: './tech-skills.component.html',
     styleUrls: ['./tech-skills.component.css'],
-    standalone: false
+    imports: [DkmCustomListComponent]
 })
 export class TechSkillsComponent implements OnInit {
 

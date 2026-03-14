@@ -4,12 +4,13 @@ import { ColDef, ColumnApi, GridApi, GridReadyEvent, SelectionChangedEvent } fro
 import { DkmDialogComponent } from 'src/app/shared/dkm-dialog/dkm-dialog.component';
 import { CertificateViewCellRendererComponent } from '../certificate-view-cell-renderer/certificate-view-cell-renderer.component';
 import { CERTIFICATE_ENTITY } from '../types/product-features.interface';
+import { AgGridModule } from 'ag-grid-angular';
 
 @Component({
     selector: 'certificates',
     templateUrl: './certificates.component.html',
     styleUrls: ['./certificates.component.scss'],
-    standalone: false
+    imports: [AgGridModule]
 })
 export class CertificatesComponent implements OnInit {
 

@@ -3,12 +3,16 @@ import { ITabCardEntity } from 'src/app/shared/types/shared.interface';
 import { EDUCATION, EXPERIENCE, PROFILE, PROJECTS } from '../constant/product-feature-constant';
 import { MatDialog as MatDialog } from '@angular/material/dialog';
 import { ReviewDocumentationComponent } from '../review-documentation/review-documentation.component';
+import { MatTabGroup, MatTab } from '@angular/material/tabs';
+import { MatCard, MatCardHeader, MatCardAvatar, MatCardTitle, MatCardSubtitle, MatCardContent, MatCardActions } from '@angular/material/card';
+import { NgStyle } from '@angular/common';
+import { MatButton } from '@angular/material/button';
 
 @Component({
     selector: 'projects',
     templateUrl: './projects.component.html',
     styleUrls: ['./projects.component.css'],
-    standalone: false
+    imports: [MatTabGroup, MatTab, MatCard, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent, MatCardActions, MatButton]
 })
 export class ProjectsComponent implements OnInit {
 

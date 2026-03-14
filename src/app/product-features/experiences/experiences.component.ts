@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ITabCardEntity } from 'src/app/shared/types/shared.interface';
 import { EXPERIENCE } from '../constant/product-feature-constant';
+import { MatCard, MatCardHeader, MatCardAvatar, MatCardTitle, MatCardSubtitle, MatCardContent, MatCardActions } from '@angular/material/card';
+import { NgStyle } from '@angular/common';
+import { MatDivider } from '@angular/material/list';
 
 @Component({
     selector: 'experiences',
     templateUrl: './experiences.component.html',
     styleUrls: ['./experiences.component.css'],
-    standalone: false
+    imports: [MatCard, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent, MatCardActions, MatDivider]
 })
 export class ExperiencesComponent implements OnInit {
 

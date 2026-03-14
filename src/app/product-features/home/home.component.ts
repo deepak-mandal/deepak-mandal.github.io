@@ -3,10 +3,22 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { StepperSelectionEvent, STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { HttpClient } from '@angular/common/http';
 import { Injectable, ViewChild } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { AgGridAngular } from 'ag-grid-angular';
 import { CellClickedEvent, ColDef, GridReadyEvent } from 'ag-grid-community';
 import { Observable } from 'rxjs';
+import { ProfileComponent } from '../profile/profile.component';
+import { MatStepper, MatStep, MatStepLabel, MatStepperIcon } from '@angular/material/stepper';
+import { NgIf } from '@angular/common';
+import { MatCard } from '@angular/material/card';
+import { EducationComponent } from '../education/education.component';
+import { ExperiencesComponent } from '../experiences/experiences.component';
+import { ProjectsComponent } from '../projects/projects.component';
+import { TechSkillsComponent } from '../tech-skills/tech-skills.component';
+import { CertificatesComponent } from '../certificates/certificates.component';
+import { AchievementsComponent } from '../achievements/achievements.component';
+import { MatIcon } from '@angular/material/icon';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
     selector: 'app-home',
@@ -18,7 +30,7 @@ import { Observable } from 'rxjs';
             useValue: { displayDefaultIndicatorType: false },
         },
     ],
-    standalone: false
+    imports: [ProfileComponent, MatStepper, MatStep, ReactiveFormsModule, NgIf, MatStepLabel, MatCard, EducationComponent, ExperiencesComponent, ProjectsComponent, TechSkillsComponent, CertificatesComponent, AchievementsComponent, MatStepperIcon, MatIcon, FooterComponent]
 })
 export class HomeComponent implements OnInit {
 

@@ -8,8 +8,8 @@ describe('ExtracurricularsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ExtracurricularsComponent ]
-    })
+    imports: [ExtracurricularsComponent]
+})
     .compileComponents();
   });
 

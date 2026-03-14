@@ -8,8 +8,8 @@ describe('DkmCustomCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DkmCustomCardComponent ]
-    })
+    imports: [DkmCustomCardComponent]
+})
     .compileComponents();
   });
 
