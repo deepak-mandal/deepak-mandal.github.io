@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "deepakmandal:build:production"
+              "buildTarget": "deepakmandal:build:production"
             },
             "development": {
-              "browserTarget": "deepakmandal:build:development"
+              "buildTarget": "deepakmandal:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "deepakmandal:build"
+            "buildTarget": "deepakmandal:build"
           }
         },
         "test": {
