@@ -6,9 +6,10 @@ import { CertificateViewCellRendererComponent } from '../certificate-view-cell-r
 import { CERTIFICATE_ENTITY } from '../types/product-features.interface';
 
 @Component({
-  selector: 'certificates',
-  templateUrl: './certificates.component.html',
-  styleUrls: ['./certificates.component.scss']
+    selector: 'certificates',
+    templateUrl: './certificates.component.html',
+    styleUrls: ['./certificates.component.scss'],
+    standalone: false
 })
 export class CertificatesComponent implements OnInit {
 

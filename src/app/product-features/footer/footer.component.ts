@@ -3,9 +3,10 @@ import { MatDialog as MatDialog } from '@angular/material/dialog';
 import { DkmDialogComponent } from 'src/app/shared/dkm-dialog/dkm-dialog.component';
 
 @Component({
-  selector: 'footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+    selector: 'footer',
+    templateUrl: './footer.component.html',
+    styleUrls: ['./footer.component.scss'],
+    standalone: false
 })
 export class FooterComponent implements OnInit {
 

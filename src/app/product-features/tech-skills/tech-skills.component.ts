@@ -3,9 +3,10 @@ import { ITabCardListEntity } from 'src/app/shared/types/shared.interface';
 import { PROFILE, SKILLS } from '../constant/product-feature-constant';
 
 @Component({
-  selector: 'tech-skills',
-  templateUrl: './tech-skills.component.html',
-  styleUrls: ['./tech-skills.component.css']
+    selector: 'tech-skills',
+    templateUrl: './tech-skills.component.html',
+    styleUrls: ['./tech-skills.component.css'],
+    standalone: false
 })
 export class TechSkillsComponent implements OnInit {
 

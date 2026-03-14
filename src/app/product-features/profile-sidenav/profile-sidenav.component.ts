@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
-  selector: 'profile-sidenav',
-  templateUrl: './profile-sidenav.component.html',
-  styleUrls: ['./profile-sidenav.component.css']
+    selector: 'profile-sidenav',
+    templateUrl: './profile-sidenav.component.html',
+    styleUrls: ['./profile-sidenav.component.css'],
+    standalone: false
 })
 export class ProfileSidenavComponent implements OnInit {
 

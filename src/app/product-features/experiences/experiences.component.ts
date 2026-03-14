@@ -3,9 +3,10 @@ import { ITabCardEntity } from 'src/app/shared/types/shared.interface';
 import { EXPERIENCE } from '../constant/product-feature-constant';
 
 @Component({
-  selector: 'experiences',
-  templateUrl: './experiences.component.html',
-  styleUrls: ['./experiences.component.css']
+    selector: 'experiences',
+    templateUrl: './experiences.component.html',
+    styleUrls: ['./experiences.component.css'],
+    standalone: false
 })
 export class ExperiencesComponent implements OnInit {
 

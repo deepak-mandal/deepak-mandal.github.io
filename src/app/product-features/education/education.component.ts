@@ -3,9 +3,10 @@ import { ITabCardEntity } from 'src/app/shared/types/shared.interface';
 import { EDUCATION } from '../constant/product-feature-constant';
 
 @Component({
-  selector: 'education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css']
+    selector: 'education',
+    templateUrl: './education.component.html',
+    styleUrls: ['./education.component.css'],
+    standalone: false
 })
 export class EducationComponent implements OnInit {
 

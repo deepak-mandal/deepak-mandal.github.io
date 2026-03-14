@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dkm-button',
-  templateUrl: './dkm-button.component.html',
-  styleUrls: ['./dkm-button.component.css']
+    selector: 'app-dkm-button',
+    templateUrl: './dkm-button.component.html',
+    styleUrls: ['./dkm-button.component.css'],
+    standalone: false
 })
 export class DkmButtonComponent implements OnInit {
 

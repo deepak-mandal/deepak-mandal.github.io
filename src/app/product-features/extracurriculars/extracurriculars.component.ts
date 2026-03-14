@@ -3,9 +3,10 @@ import { ITabCardEntity } from 'src/app/shared/types/shared.interface';
 import { EXPERIENCE, EXTRACURRICULARS } from '../constant/product-feature-constant';
 
 @Component({
-  selector: 'extracurriculars',
-  templateUrl: './extracurriculars.component.html',
-  styleUrls: ['./extracurriculars.component.css']
+    selector: 'extracurriculars',
+    templateUrl: './extracurriculars.component.html',
+    styleUrls: ['./extracurriculars.component.css'],
+    standalone: false
 })
 export class ExtracurricularsComponent implements OnInit {
 

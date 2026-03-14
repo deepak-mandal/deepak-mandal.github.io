@@ -9,15 +9,16 @@ import { CellClickedEvent, ColDef, GridReadyEvent } from 'ag-grid-community';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss'],
     providers: [
-      {
-        provide: STEPPER_GLOBAL_OPTIONS,
-        useValue: { displayDefaultIndicatorType: false },
-      },
+        {
+            provide: STEPPER_GLOBAL_OPTIONS,
+            useValue: { displayDefaultIndicatorType: false },
+        },
     ],
+    standalone: false
 })
 export class HomeComponent implements OnInit {
 

@@ -3,9 +3,10 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA as MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 @Component({
-  selector: 'app-dkm-dialog',
-  templateUrl: './dkm-dialog.component.html',
-  styleUrls: ['./dkm-dialog.component.scss']
+    selector: 'app-dkm-dialog',
+    templateUrl: './dkm-dialog.component.html',
+    styleUrls: ['./dkm-dialog.component.scss'],
+    standalone: false
 })
 export class DkmDialogComponent {
 

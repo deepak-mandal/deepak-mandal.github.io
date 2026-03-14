@@ -5,9 +5,10 @@ import { MatDialog as MatDialog } from '@angular/material/dialog';
 import { ReviewDocumentationComponent } from '../review-documentation/review-documentation.component';
 
 @Component({
-  selector: 'projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+    selector: 'projects',
+    templateUrl: './projects.component.html',
+    styleUrls: ['./projects.component.css'],
+    standalone: false
 })
 export class ProjectsComponent implements OnInit {
 

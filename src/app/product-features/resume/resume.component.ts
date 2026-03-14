@@ -5,9 +5,10 @@ interface Education { degree: string; institute: string; percentage?: string; ye
 interface Project { title: string; summary: string }
 
 @Component({
-  selector: 'app-resume',
-  templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.scss']
+    selector: 'app-resume',
+    templateUrl: './resume.component.html',
+    styleUrls: ['./resume.component.scss'],
+    standalone: false
 })
 export class ResumeComponent implements OnInit {
 

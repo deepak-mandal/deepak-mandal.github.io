@@ -4,9 +4,10 @@ import { ReviewDocumentationComponent } from 'src/app/product-features/review-do
 import { ITabCardEntity } from '../types/shared.interface';
 
 @Component({
-  selector: 'dkm-custom-card',
-  templateUrl: './dkm-custom-card.component.html',
-  styleUrls: ['./dkm-custom-card.component.css']
+    selector: 'dkm-custom-card',
+    templateUrl: './dkm-custom-card.component.html',
+    styleUrls: ['./dkm-custom-card.component.css'],
+    standalone: false
 })
 export class DkmCustomCardComponent implements OnInit {
 
