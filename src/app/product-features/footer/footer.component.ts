@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
 import { DkmDialogComponent } from 'src/app/shared/dkm-dialog/dkm-dialog.component';
 
 @Component({
