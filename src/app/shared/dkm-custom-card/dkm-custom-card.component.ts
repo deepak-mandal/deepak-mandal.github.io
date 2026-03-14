@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ReviewDocumentationComponent } from 'src/app/product-features/review-documentation/review-documentation.component';
 import { ITabCardEntity } from '../types/shared.interface';
 import { MatTabGroup, MatTab } from '@angular/material/tabs';
-import { NgFor, NgIf, NgStyle } from '@angular/common';
+import { NgStyle } from '@angular/common';
 import { MatCard, MatCardHeader, MatCardAvatar, MatCardTitle, MatCardSubtitle, MatCardContent, MatCardImage, MatCardActions } from '@angular/material/card';
 import { MatList, MatListItem } from '@angular/material/list';
 import { MatButton } from '@angular/material/button';
@@ -12,7 +12,7 @@ import { MatButton } from '@angular/material/button';
     selector: 'dkm-custom-card',
     templateUrl: './dkm-custom-card.component.html',
     styleUrls: ['./dkm-custom-card.component.css'],
-    imports: [MatTabGroup, NgFor, MatTab, MatCard, NgIf, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent, MatList, MatListItem, MatCardImage, MatCardActions, MatButton]
+    imports: [MatTabGroup, MatTab, MatCard, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent, MatList, MatListItem, MatCardImage, MatCardActions, MatButton]
 })
 export class DkmCustomCardComponent implements OnInit {
 

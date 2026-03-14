@@ -3,19 +3,21 @@
 </a>
 
 <div style="margin-bottom: 10px;">
-    <mat-card>
-  <mat-card-header>
-    <div mat-card-avatar [ngStyle]="{'background-image': 'url(' + profilePath + ')', 'background-size': 'cover'  }" role="img" aria-label="Deepak Mandal">
-    </div>
-    <mat-card-title>
-      Deepak Mandal
-    </mat-card-title>
-    <mat-card-subtitle>
-      {{profileSubTitle}}
-    </mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <span *ngIf="totalExperiences>0">{{totalExperiences}} years of </span>Professional experience in software engineering including significant expertise in Java technologies, SQL, Spring & Angular framework; with strong engineering Academic background from IIT Guwahati.
-  </mat-card-content>
-</mat-card>
-</div>
+  <mat-card>
+    <mat-card-header>
+      <div mat-card-avatar [ngStyle]="{'background-image': 'url(' + profilePath + ')', 'background-size': 'cover'  }" role="img" aria-label="Deepak Mandal">
+      </div>
+      <mat-card-title>
+        Deepak Mandal
+      </mat-card-title>
+      <mat-card-subtitle>
+        {{profileSubTitle}}
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      @if (totalExperiences>0) {
+        <span>{{totalExperiences}} years of </span>
+        }Professional experience in software engineering including significant expertise in Java technologies, SQL, Spring & Angular framework; with strong engineering Academic background from IIT Guwahati.
+      </mat-card-content>
+    </mat-card>
+  </div>

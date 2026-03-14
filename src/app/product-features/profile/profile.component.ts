@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { PROFILE } from '../constant/product-feature-constant';
 import { MatIcon } from '@angular/material/icon';
 import { MatCard, MatCardHeader, MatCardAvatar, MatCardTitle, MatCardSubtitle, MatCardContent } from '@angular/material/card';
-import { NgStyle, NgIf } from '@angular/common';
+import { NgStyle } from '@angular/common';
 
 @Component({
     selector: 'profile',
     templateUrl: './profile.component.html',
     styleUrls: ['./profile.component.css'],
-    imports: [MatIcon, MatCard, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent, NgIf]
+    imports: [MatIcon, MatCard, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent]
 })
 export class ProfileComponent implements OnInit{
 

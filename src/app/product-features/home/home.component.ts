@@ -9,7 +9,7 @@ import { CellClickedEvent, ColDef, GridReadyEvent } from 'ag-grid-community';
 import { Observable } from 'rxjs';
 import { ProfileComponent } from '../profile/profile.component';
 import { MatStepper, MatStep, MatStepLabel, MatStepperIcon } from '@angular/material/stepper';
-import { NgIf } from '@angular/common';
+
 import { MatCard } from '@angular/material/card';
 import { EducationComponent } from '../education/education.component';
 import { ExperiencesComponent } from '../experiences/experiences.component';
@@ -30,7 +30,7 @@ import { FooterComponent } from '../footer/footer.component';
             useValue: { displayDefaultIndicatorType: false },
         },
     ],
-    imports: [ProfileComponent, MatStepper, MatStep, ReactiveFormsModule, NgIf, MatStepLabel, MatCard, EducationComponent, ExperiencesComponent, ProjectsComponent, TechSkillsComponent, CertificatesComponent, AchievementsComponent, MatStepperIcon, MatIcon, FooterComponent]
+    imports: [ProfileComponent, MatStepper, MatStep, ReactiveFormsModule, MatStepLabel, MatCard, EducationComponent, ExperiencesComponent, ProjectsComponent, TechSkillsComponent, CertificatesComponent, AchievementsComponent, MatStepperIcon, MatIcon, FooterComponent]
 })
 export class HomeComponent implements OnInit {
 
@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit {
      ) {
        this.breakpointObserver.observe([
        Breakpoints.Handset
-     ]).subscribe(result => {
+     ]).subscribe((result: { matches: any; }) => {
        if (result.matches) {
          // Mobile view
         //  this.stepperOrientation = 'horizontal';

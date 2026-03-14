@@ -1,8 +1,8 @@
 <mat-tab-group mat-align-tabs="start">
-  <span *ngFor="let label of tabLabelList">
-
-    <mat-tab label="{{label}}">
-      <!-- <mat-card class="example-card">
+  @for (label of tabLabelList; track label) {
+    <span>
+      <mat-tab label="{{label}}">
+        <!-- <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Indian Institute of Technology, Guwahati </mat-card-title>
@@ -11,9 +11,10 @@
       </mat-card> -->
     </mat-tab>
   </span>
-    
-    <!-- <mat-tab label="Senior Secondary">
-    </mat-tab>
-    <mat-tab label="Secondary">
-    </mat-tab> -->
-  </mat-tab-group>
+}
+
+<!-- <mat-tab label="Senior Secondary">
+</mat-tab>
+<mat-tab label="Secondary">
+</mat-tab> -->
+</mat-tab-group>
