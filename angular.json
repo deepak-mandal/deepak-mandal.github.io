@@ -20,7 +20,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/deepakmandal",
+            "outputPath": {
+              "base": "dist/deepakmandal",
+              "browser": ""
+            },
             "index": "src/index.html",
             "polyfills": [
               "src/polyfills.ts"
