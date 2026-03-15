@@ -1,6 +1,17 @@
-<div style="overflow:auto">
-  <ag-grid-angular style="width: 88vw; height: 70vh;" class="ag-theme-alpine" [rowData]="rowData"
-    [columnDefs]="columnDefs" [defaultColDef]="defaultColDef" (gridReady)="onGridReady($event)"
-    [paginationAutoPageSize]="true" [pagination]="true">
-  </ag-grid-angular>
-</div>
+<mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+  <!-- leaf node - hidden, rendered inside parent -->
+  <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding style="display:none"></mat-tree-node>
+  <!-- expandable node with inline chips -->
+  <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>
+    <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'Toggle ' + node.technologies">
+      <mat-icon>{{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}</mat-icon>
+    </button>
+    <strong>{{node.technologies}}</strong>
+    <ng-container *ngIf="isLeafParent(node)">
+      <span *ngFor="let child of getChildren(node)" class="tech-chip">
+        <img *ngIf="child.proof" [src]="child.proof" style="width:18px;height:18px;border-radius:50%;margin-right:4px;">
+        {{child.technologies}}
+      </span>
+    </ng-container>
+  </mat-tree-node>
+</mat-tree>

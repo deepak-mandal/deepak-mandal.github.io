@@ -1,0 +1,11 @@
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  background: #f3f0ff;
+  color: rgb(82, 54, 171);
+  border-radius: 16px;
+  padding: 2px 10px 2px 6px;
+  margin: 2px 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
