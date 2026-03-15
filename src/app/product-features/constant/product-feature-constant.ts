@@ -178,7 +178,7 @@ export const SKILLS = {
     NUMPY_LOGO: 'assets/images/numpy.png',
     MATPLOTLIB: 'Matplotlib',
     MATPLOTLIB_LOGO: 'assets/images/matplotlib.png',
-    OTHER_ML: 'scikit-learn, Machine Learning',
+    OTHER_ML: 'scikit-learn',
     
     ML_LOGO: 'assets/images/ml.jpeg',
     MISCELLANEOUS: 'Miscellaneous',
