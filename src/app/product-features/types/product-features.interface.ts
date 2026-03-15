@@ -1,5 +1,5 @@
 export interface CERTIFICATE_ENTITY {
-    Organization: String;
+    Organization: string;
     Certificate: string;
     proof: string;
     Technologies: string;
@@ -7,7 +7,7 @@ export interface CERTIFICATE_ENTITY {
   }
 
   export interface SKILL_ENTITY {
-    skill: String;
+    skill: string;
     technologies: TECH[];
   }
 

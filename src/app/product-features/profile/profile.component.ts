@@ -17,7 +17,7 @@ export class ProfileComponent implements OnInit{
   profileSubTitle: string = PROFILE.CGI_IITG
   profileContentData: string = PROFILE.DESCRIPTION
   profilePath: string = PROFILE.PRFILE_PIC
-  resumePath: string = "https://iitgoffice-my.sharepoint.com/:b:/g/personal/deepa170122014_alumni_iitg_ac_in/IQALExhbpbJuQKhkxcF5SqwHAY8vUBDEr0Z6zP-83J9L8WQ?e=wagGbH";
+  resumePath = "https://iitgoffice-my.sharepoint.com/:b:/g/personal/deepa170122014_alumni_iitg_ac_in/IQALExhbpbJuQKhkxcF5SqwHAY8vUBDEr0Z6zP-83J9L8WQ?e=wagGbH";
 
   ngOnInit(): void {
     const startDate = new Date(2021, 8, 27); // Months are 0-based: 8 = September

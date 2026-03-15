@@ -13,7 +13,7 @@ import { MatIcon } from '@angular/material/icon';
 export class FooterComponent implements OnInit {
 
 
-currentYear:number = 2024;
+currentYear = 2024;
   ngOnInit(): void {
     this.currentYear = new Date().getFullYear();
   }

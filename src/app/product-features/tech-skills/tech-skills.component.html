@@ -2,16 +2,18 @@
   <!-- leaf node - hidden, rendered inside parent -->
   <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding style="display:none"></mat-tree-node>
   <!-- expandable node with inline chips -->
-  <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>
-    <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'Toggle ' + node.technologies">
-      <mat-icon>{{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}</mat-icon>
-    </button>
-    <strong>{{node.technologies}}</strong>
-    <ng-container *ngIf="isLeafParent(node)">
-      <span *ngFor="let child of getChildren(node)" class="tech-chip">
-        <img *ngIf="child.proof" [src]="child.proof" style="width:18px;height:18px;border-radius:50%;margin-right:4px;">
-        {{child.technologies}}
-      </span>
-    </ng-container>
+  <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding class="tree-node-wrap">
+    <div class="node-row">
+      <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'Toggle ' + node.technologies">
+        <mat-icon>{{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}</mat-icon>
+      </button>
+      <strong class="node-label">{{node.technologies}}</strong>
+      <div class="chip-wrap" *ngIf="isLeafParent(node)">
+        <span *ngFor="let child of getChildren(node)" class="tech-chip">
+          <img *ngIf="child.proof" [src]="child.proof" class="chip-img">
+          {{child.technologies}}
+        </span>
+      </div>
+    </div>
   </mat-tree-node>
 </mat-tree>

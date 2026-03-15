@@ -1,5 +1,5 @@
 import { NgStyle } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDivider } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
@@ -15,7 +15,7 @@ import { StepperSelectionEvent } from '@angular/cdk/stepper';
   templateUrl: './cgi-experience.component.html',
   styleUrl: './cgi-experience.component.scss',
 })
-export class DkmCgiExperienceComponent {
+export class DkmCgiExperienceComponent implements OnInit {
   cgiImagePathOrUrl = EXPERIENCE.CGI_LOGO;
   stepperOrientation: 'horizontal' | 'vertical' = 'vertical';
   isLinear = false;
@@ -53,7 +53,7 @@ export class DkmCgiExperienceComponent {
 
   iconValue = 'school';
   selectionChange(event: StepperSelectionEvent) {
-    let stepLabel = event.selectedStep.state;
+    const stepLabel = event.selectedStep.state;
     if (stepLabel == "edu") {
       this.iconValue = 'school'
     }

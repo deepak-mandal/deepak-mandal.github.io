@@ -5,11 +5,9 @@ import { FlatTreeControl } from '@angular/cdk/tree';
 import { MatTreeFlatDataSource, MatTreeFlattener, MatTreeModule } from '@angular/material/tree';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { ColDef, GridApi, GridReadyEvent } from 'ag-grid-community';
 import { AgGridModule } from 'ag-grid-angular';
-import { PROFILE, SKILLS } from '../constant/product-feature-constant';
+import { SKILLS } from '../constant/product-feature-constant';
 import { SkillsFlatNode, TechNode } from '../types/product-features.interface';
-import { TechCellRendererComponent } from '../tech-cell-renderer/tech-cell-renderer.component';
 
 @Component({
   selector: 'tech-skills',
