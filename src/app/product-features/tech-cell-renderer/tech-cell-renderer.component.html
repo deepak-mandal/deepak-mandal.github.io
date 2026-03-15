@@ -1,0 +1,6 @@
+<div class="tech-cell">
+  <span *ngFor="let t of techs" class="tech-chip">
+    <img *ngIf="t.proof" [src]="t.proof" [alt]="t.technologies" class="tech-img" loading="lazy" />
+    <span class="tech-label">{{ t.technologies }}</span>
+  </span>
+</div>

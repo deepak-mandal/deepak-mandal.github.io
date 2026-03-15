@@ -18,3 +18,11 @@
 .mat-mdc-card-actions{
     justify-content: flex-end !important;
 }   
+
+
+.stepper-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}

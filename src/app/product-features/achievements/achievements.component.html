@@ -1,1 +1,32 @@
-<dkm-custom-card [data] = "achievementData"></dkm-custom-card>
+<!-- <dkm-custom-card [data] = "achievementData"></dkm-custom-card> -->
+
+
+   <mat-stepper [orientation]="stepperOrientation" #stepper>
+     <mat-step state="cgi" label="">
+        <ng-template matStepLabel ><b class="red">Bronze award  &nbsp;(FY 23 & FY24)</b>
+         </ng-template>
+        <p class="blue">Received bronze award from president (FY23) and SVP (FY24) & applauds from managers for the excellent work delivered</p>
+         
+
+      </mat-step>
+      <mat-step state="jee" label="">
+        <ng-template matStepLabel><b class="red">Joint Entrance Examination &nbsp;(2017)</b></ng-template>
+        <!-- <mat-card> -->
+         <p class="blue">Qualified JEE(Main) & JEE(Advanced) among 1.18 million candidates
+         </p>
+        <!-- </mat-card> -->
+      </mat-step>
+     
+
+      <ng-template matStepperIcon="jee"><img [src]="iitmLogo" class="stepper-icon"></ng-template>
+      <ng-template matStepperIcon="cgi"><img [src]="cgiLogo" class="stepper-icon"></ng-template>
+      <ng-template matStepperIcon="done" let-index="index">
+        <img [src]="index === 0 ? cgiLogo : iitmLogo" class="stepper-icon">
+      </ng-template>
+      <ng-template matStepperIcon="edit" let-index="index">
+        <img [src]="index === 0 ? cgiLogo : iitmLogo" class="stepper-icon">
+      </ng-template>
+      <ng-template matStepperIcon="number" let-index="index">
+        <img [src]="index === 0 ? cgiLogo : iitmLogo" class="stepper-icon">
+      </ng-template>
+    </mat-stepper>

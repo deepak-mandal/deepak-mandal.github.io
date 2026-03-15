@@ -3,18 +3,24 @@ import { ITabCardEntity } from 'src/app/shared/types/shared.interface';
 import { EDUCATION, EXPERIENCE, PROFILE, PROJECTS } from '../constant/product-feature-constant';
 import { MatDialog } from '@angular/material/dialog';
 import { ReviewDocumentationComponent } from '../review-documentation/review-documentation.component';
-import { MatTabGroup, MatTab } from '@angular/material/tabs';
-import { MatCard, MatCardHeader, MatCardAvatar, MatCardTitle, MatCardSubtitle, MatCardContent, MatCardActions } from '@angular/material/card';
-import { NgStyle } from '@angular/common';
+import { MatTabGroup, MatTab, MatTabsModule } from '@angular/material/tabs';
+import { MatCard, MatCardHeader, MatCardAvatar, MatCardTitle, MatCardSubtitle, MatCardContent, MatCardActions, MatCardModule } from '@angular/material/card';
+import { CommonModule, NgStyle } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatStepperModule } from '@angular/material/stepper';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
     selector: 'projects',
     templateUrl: './projects.component.html',
     styleUrls: ['./projects.component.css'],
     standalone: true,
-    imports: [MatDialogModule, MatTabGroup, MatTab, MatCard, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent, MatCardActions, MatButtonModule]
+    imports: [MatTabsModule, MatCardModule, MatIconModule,
+    CommonModule, MatExpansionModule, MatDividerModule, MatStepperModule, ReactiveFormsModule]
 })
 export class ProjectsComponent implements OnInit {
 

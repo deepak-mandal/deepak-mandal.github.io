@@ -2,19 +2,281 @@ import { Component, OnInit } from '@angular/core';
 import { ITabCardListEntity } from 'src/app/shared/types/shared.interface';
 import { PROFILE, SKILLS } from '../constant/product-feature-constant';
 import { DkmCustomListComponent } from '../../shared/dkm-custom-list/dkm-custom-list.component';
+import { ColDef, ColumnApi, GridApi, GridReadyEvent } from 'ag-grid-community';
+import { SKILL_ENTITY } from '../types/product-features.interface';
+import { MatDialog } from '@angular/material/dialog';
+import { AgGridModule } from 'ag-grid-angular';
+import { TechCellRendererComponent } from '../tech-cell-renderer/tech-cell-renderer.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-    selector: 'tech-skills',
-    templateUrl: './tech-skills.component.html',
-    styleUrls: ['./tech-skills.component.css'],
-    imports: [DkmCustomListComponent]
+  selector: 'tech-skills',
+  templateUrl: './tech-skills.component.html',
+  styleUrls: ['./tech-skills.component.css'],
+  imports: [AgGridModule, FormsModule]
 })
 export class TechSkillsComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
+  pageSizeOptions = [10, 25, 50, 100];
+  pageSize = 10;
+
+  private gridApi!: GridApi;
+  private gridColumnApi!: ColumnApi;
+  columnDefs: ColDef[] = [
+    { field: 'skill', width: 30 },
+    { field: 'technologies', cellRenderer: TechCellRendererComponent },
+  ];
+
+  public defaultColDef: ColDef = {
+    // width: 150,
+    sortable: true,
+    resizable: true,
+    filter: true,
+    // cellClass: 'custom-color'
+    cellStyle: { color: 'rgb(82, 54, 171)' }
+
+  };
+
+  rowData: SKILL_ENTITY[] = [
+    {
+      skill: SKILLS.PROGRAMMING_LANGUAGE,
+      technologies: [
+        {
+          technologies: SKILLS.JAVA,
+          proof: SKILLS.JAVA_LOGO,
+        },
+        {
+          technologies: SKILLS.SQL,
+          proof: SKILLS.ORACLE_LOGO,
+        },
+        {
+          technologies: SKILLS.TYPESCRIPT,
+          proof: SKILLS.TS,
+        },
+      ]
+    },
+    {
+      skill: SKILLS.FRAMEWORK,
+      technologies: [{
+        technologies: SKILLS.SPRING,
+        proof: SKILLS.SPRING_LOGO,
+      },
+      {
+        technologies: SKILLS.ANGULAR,
+        proof: SKILLS.ANGULAR_LOGO,
+      },],
+    },
+    {
+      skill: SKILLS.WEB_TECHNOLOGIES,
+      technologies: [{
+        technologies: SKILLS.HTML,
+        proof: SKILLS.HTML_LOGO,
+      },
+      {
+        technologies: SKILLS.CSS,
+        proof: SKILLS.CSS_LOGO,
+      },
+      {
+        technologies: SKILLS.JAVASCRIPT,
+        proof: SKILLS.JS,
+      },
+
+      ],
+    },
+
+    {
+      skill: SKILLS.WEB_TECHNOLOGIES_BACKEND,
+      technologies: [
+        {
+          technologies: SKILLS.RABBITMQ,
+          proof: SKILLS.RABBITMQ_LOGO,
+        }],
+    },
+    {
+      skill: SKILLS.WEB_TECHNOLOGIES_FRONTEND,
+      technologies: [
+        {
+          technologies: SKILLS.AG_GRID,
+          proof: SKILLS.AG_GRID_LOGO,
+        },
+        {
+          technologies: SKILLS.ANGULAR_MATERIALS,
+          proof: SKILLS.ANGULAR_MATERIALS_LOGO,
+        },
+        {
+          technologies: SKILLS.RXJS,
+          proof: SKILLS.RXJS_LOGO,
+        },
+        {
+          technologies: SKILLS.BOOTSTRAP,
+          proof: SKILLS.BOOTSTRAP_LOGO,
+        },
+      ],
+    },
+    {
+      skill: SKILLS.TESTING,
+      technologies: [
+        {
+          technologies: SKILLS.ANGULAR_TC,
+          proof: SKILLS.ANGULAR_TC_LOGO,
+        },
+        {
+          technologies: SKILLS.JUNIT,
+          proof: SKILLS.JUNIT_LOGO,
+        },
+        {
+          technologies: SKILLS.ESLINT,
+          proof: SKILLS.ESLINT_LOGO,
+        },
+        {
+          technologies: SKILLS.SONAR,
+          proof: SKILLS.SONAR_LOGO,
+        },
+      ]
+    },
+    {
+      skill: SKILLS.DB,
+      technologies: [
+        {
+          technologies: SKILLS.ORACLE,
+          proof: SKILLS.ORACLE_LOGO,
+        },
+        {
+          technologies: SKILLS.MS_SQL,
+          proof: SKILLS.MS_SQL_LOGO,
+        },
+        {
+          technologies: SKILLS.MONGODB,
+          proof: SKILLS.MONGODB_LOGO,
+        },
+        {
+          technologies: SKILLS.MYSQL,
+          proof: SKILLS.MYSQL_LOGO,
+        },
+        {
+          technologies: SKILLS.SQLITE,
+          proof: SKILLS.SQLITE_LOGO,
+        },
+      ]
+    },
+    {
+      skill: SKILLS.DEV_OPS,
+      technologies: [
+        {
+          technologies: SKILLS.JENKINS,
+          proof: SKILLS.JENKINS_LOGO,
+        },
+        {
+          technologies: SKILLS.GIT,
+          proof: SKILLS.GIT_LOGO,
+        },
+        {
+          technologies: SKILLS.DOCKER,
+          proof: SKILLS.DOCKER_LOGO,
+        },
+        {
+          technologies: SKILLS.PUTTY,
+          proof: SKILLS.PUTTY_LOGO,
+        },
+        {
+          technologies: SKILLS.WINSCP,
+          proof: SKILLS.WINSCP_LOGO,
+        },
+      ]
+    },
+    {
+      skill: SKILLS.ANALYTICAL_TOOLS,
+      technologies: [
+        {
+          technologies: SKILLS.PANDAS,
+          proof: SKILLS.PANDAS_LOGO,
+        },
+        {
+          technologies: SKILLS.NUMPY,
+          proof: SKILLS.NUMPY_LOGO,
+        },
+        {
+          technologies: SKILLS.MATPLOTLIB,
+          proof: SKILLS.MATPLOTLIB_LOGO,
+        },
+        {
+          technologies: SKILLS.OTHER_ML,
+          proof: SKILLS.ML_LOGO,
+        },
+        {
+          technologies: SKILLS.EXCEL,
+          proof: SKILLS.EXCEL_LOGO,
+        },
+      ]
+    },
+    {
+      skill: SKILLS.MISCELLANEOUS,
+      technologies: [
+        {
+          technologies: SKILLS.FORTRAN,
+          proof: SKILLS.FORTRAN_LOGO,
+        },
+        {
+          technologies: SKILLS.PHP,
+          proof: SKILLS.PHP_LOGO,
+        },
+        {
+          technologies: SKILLS.PYTHON,
+          proof: SKILLS.PY,
+        }
+      ]
+    },
+    {
+      skill: SKILLS.DSA,
+      technologies: [
+        {
+          technologies: SKILLS.DS_ALGO,
+          proof: PROFILE.PRFILE_PIC,
+        }
+      ]
+    },
+    {
+      skill: SKILLS.OS,
+      technologies: [
+        {
+          technologies: SKILLS.LINUX,
+          proof: SKILLS.LINUX_LOGO,
+        },
+        {
+          technologies: SKILLS.WINDOWS,
+          proof: SKILLS.WINDOW_LOGO,
+        }
+      ]
+    },
+  ];
+
+  onPageSizeChange(size: number) {
+    this.gridApi.paginationSetPageSize(Number(size));
+  }
+
+  onGridReady(params: GridReadyEvent) {
+    this.gridApi = params.api;
+    this.gridColumnApi = params.columnApi;
+    params.api.sizeColumnsToFit();
+  }
+  // onRowClicked(event: any) {
+  //   this.dialog.open(
+  //     DkmDialogComponent, {
+  //     width: 'auto',
+  //     height: 'auto',
+  //     data: {
+  //       title: 'Certificate',
+  //       imageUrl: event.data.proof,
+  //       altText: event.data.Technologies,
+  //       content: event.data.Certificate,
+  //     }
+  //   });
+  // }
 
   technicalSkillsData: ITabCardListEntity[] = [
     {
@@ -74,7 +336,7 @@ export class TechSkillsComponent implements OnInit {
           imagePathOrUrl: SKILLS.RXJS_LOGO,
           cardSubTitle: SKILLS.RXJS,
         }
-        ,{
+        , {
           imagePathOrUrl: SKILLS.ANGULAR_TC_LOGO,
           cardSubTitle: SKILLS.ANGULAR_TC,
         },
@@ -144,7 +406,7 @@ export class TechSkillsComponent implements OnInit {
           imagePathOrUrl: SKILLS.WINSCP_LOGO,
           cardSubTitle: SKILLS.WINSCP,
         },
-      
+
       ]
     },
     {
@@ -175,22 +437,22 @@ export class TechSkillsComponent implements OnInit {
     },
     {
       tabLabel: SKILLS.MISCELLANEOUS,
-      skills: [       
-        
+      skills: [
+
         {
           imagePathOrUrl: PROFILE.PRFILE_PIC,
           cardSubTitle: SKILLS.DS_ALGO,
         },
-         {
+        {
           imagePathOrUrl: SKILLS.PY,
           cardSubTitle: SKILLS.PYTHON,
         },
 
-         {
+        {
           imagePathOrUrl: SKILLS.FORTRAN_LOGO,
           cardSubTitle: SKILLS.FORTRAN,
         },
-       
+
         {
           imagePathOrUrl: SKILLS.PHP_LOGO,
           cardSubTitle: SKILLS.PHP,
@@ -208,7 +470,7 @@ export class TechSkillsComponent implements OnInit {
           imagePathOrUrl: SKILLS.WINDOW_LOGO,
           cardSubTitle: SKILLS.WINDOWS,
         },
-      
+
       ]
     },
 

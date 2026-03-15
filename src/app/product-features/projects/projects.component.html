@@ -1,7 +1,11 @@
-<!-- <dkm-custom-card [data]="projectData"></dkm-custom-card> -->
-<!-- <hr> -->
-<mat-tab-group mat-align-tabs="start">
-  <mat-tab label="ReviewBook">
+<mat-accordion [multi]="true">
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <img [src]="cgiImagePathOrUrl" class="stepper-icon"> &nbsp; ReviewBook Platform
+      </mat-panel-title>
+      <mat-panel-description>(Sept. 2021)</mat-panel-description>
+    </mat-expansion-panel-header>
     <mat-card>
       <mat-card-header>
         <div mat-card-avatar
@@ -40,16 +44,24 @@
       </mat-card-content>
       <mat-card-actions class="cart-action">
         <div>
-            <a href="https://github.com/deepak-mandal/ReviewBook" target="_blank">https://github.com/deepak-mandal/ReviewBook</a>
-            <!-- <button mat-raised-button (click)="openDialog()"
+          <a href="https://github.com/deepak-mandal/ReviewBook"
+            target="_blank">https://github.com/deepak-mandal/ReviewBook</a>
+          <!-- <button mat-raised-button (click)="openDialog()"
               style="background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); 
                color: white;">
               Product overview</button> -->
         </div>
       </mat-card-actions>
     </mat-card>
-  </mat-tab>
-  <mat-tab label="CRSI Conference - IITG">
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <img [src]="iitgImagePathOrUrl" class="stepper-icon"> &nbsp; CRSI Conference
+      </mat-panel-title>
+      <mat-panel-description>April 2020-June 2020</mat-panel-description>
+    </mat-expansion-panel-header>
     <mat-card>
       <mat-card-header>
         <div mat-card-avatar
@@ -74,14 +86,21 @@
         </ul>
       </mat-card-content>
       <mat-card-actions class="cart-action">
-        April 2020-June 2020
+
         <span>
           <i class="right-align">IIT Guwahati</i>
         </span>
       </mat-card-actions>
     </mat-card>
-  </mat-tab>
-  <mat-tab label="NLP">
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <img [src]="NLPimagePathOrUrl" class="stepper-icon"> &nbsp; Web and PDF file Data Extraction - NLP
+      </mat-panel-title>
+      <mat-panel-description>May 2021</mat-panel-description>
+    </mat-expansion-panel-header>
     <mat-card>
       <mat-card-header>
         <div mat-card-avatar
@@ -111,9 +130,6 @@
       <mat-card-actions class="cart-action">
         <div class="action-footer">
           <div>
-            May 2021
-          </div>
-          <div>
             <a href="https://github.com/deepak-mandal/DueDash-Germany"
               target="_blank">https://github.com/deepak-mandal/DueDash-Germany</a>
           </div>
@@ -122,22 +138,58 @@
 
       </mat-card-actions>
     </mat-card>
-  </mat-tab>
+  </mat-expansion-panel>
 
-  <mat-tab label="Python">
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <img [src]="resultImage" class="stepper-icon"> &nbsp; House Price Prediction (Machine learning)
+      </mat-panel-title>
+      <mat-panel-description>Jul. 2020 - Dec. 2020</mat-panel-description>
+    </mat-expansion-panel-header>
     <mat-card>
       <mat-card-header>
         <div mat-card-avatar
-          [ngStyle]="{'background-image': 'url(' + PYimagePathOrUrl + ')', 'background-size': 'cover'  }">
+          [ngStyle]="{'background-image': 'url(' + resultImage + ')', 'background-size': 'cover'  }">
         </div>
         <mat-card-title>
-          Fantasy Cricket Game
+          House Price Prediction
         </mat-card-title>
         <mat-card-subtitle>
-          Internshala Trainings
+           Henry Harvin Academy (CPMA)
         </mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
+        <ul>
+          <li class="content-style">
+            Built a Linear Regression Model to Predict the Sale Price of the House based on its characteristics.
+          </li>
+
+        </ul>
+
+        <br/>
+        <h2>Wikipedia Text Analytics and Mining</h2>
+          <ul>
+          <li class="content-style">
+            Analysed the unstructured data (article) using text mining and created the Word Cloud out of that; to
+            understand what these article trying to say, rather than reading the entire article.
+          </li>
+
+          <li class="content-style">
+            Technologies used: Python3, WordCloud
+          </li>
+        </ul>
+
+        <br/>
+        <h2>Email Automation with Python</h2>
+        <ul>
+          <li class="content-style">
+           Email automation including extraction of emails from Linkedin Post using selenium, chrome automated test software, re, pandas, Python, smtplib, Linux & Window OS, HTML, CSS, with attachments using Encrypted connections.
+          </li>
+        </ul>
+
+        <br/>
+        <h2> Fantasy Cricket Game (Internshala)</h2>
         <ul>
           <li class="content-style">
             Developed a Python-based desktop application using PyQt framework with SQLite Database.
@@ -148,7 +200,16 @@
       <mat-card-actions class="cart-action">
         <div class="action-footer">
           <div>
-            July 2020
+            <a href="https://github.com/deepak-mandal/SalePricePrediction"
+              target="_blank">https://github.com/deepak-mandal/SalePricePrediction</a>
+          </div>
+           <div>
+            <a href="https://github.com/deepak-mandal/Word-Cloud-from-Text-Mining"
+              target="_blank">https://github.com/deepak-mandal/Word-Cloud-from-Text-Mining</a>
+          </div>
+          <div>
+            <a href="https://github.com/deepak-mandal/Email-Automation-with-Python"
+              target="_blank">https://github.com/deepak-mandal/Email-Automation-with-Python</a>
           </div>
           <div>
             <a href="https://github.com/deepak-mandal/Game" target="_blank">https://github.com/deepak-mandal/Game</a>
@@ -157,132 +218,6 @@
 
       </mat-card-actions>
     </mat-card>
-  </mat-tab>
+  </mat-expansion-panel>
 
-  <mat-tab label="Machine learning">
-    <mat-card>
-      <mat-card-header>
-        <div mat-card-avatar
-          [ngStyle]="{'background-image': 'url(' + MLPimagePathOrUrl + ')', 'background-size': 'cover'  }">
-        </div>
-        <mat-card-title>
-          House Price Prediction
-        </mat-card-title>
-        <mat-card-subtitle>
-          Self-paced project using Machine learning technique
-        </mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <ul>
-          <li class="content-style">
-            Built a Linear Regression Model to Predict the Sale Price of the House based on its characteristics.
-          </li>
-
-        </ul>
-      </mat-card-content>
-      <mat-card-actions class="cart-action">
-        <div class="action-footer">
-          <div>
-            April 2021-May 2021
-          </div>
-          <div>
-            <a href="https://github.com/deepak-mandal/SalePricePrediction"
-              target="_blank">https://github.com/deepak-mandal/SalePricePrediction</a>
-          </div>
-        </div>
-
-      </mat-card-actions>
-    </mat-card>
-  </mat-tab>
-
-  <mat-tab label="Automation">
-    <mat-card>
-      <mat-card-header>
-        <div mat-card-avatar
-          [ngStyle]="{'background-image': 'url(' + MLPimagePathOrUrl + ')', 'background-size': 'cover'  }">
-        </div>
-        <mat-card-title>
-          Email Automation with Python
-        </mat-card-title>
-        <mat-card-subtitle>
-          Self-paced project
-        </mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <ul>
-          <li class="content-style">
-            Automating emails by the help of Python, smtplib, Linux & Window OS, HTML, CSS, with attachments using
-            Encrypted connections.
-          </li>
-
-          <li class="content-style">
-            Extracted emails automatically from the Linkedin Post using selenium, chrome automated test software, re,
-            pandas
-          </li>
-          <li class="content-style">
-            Features:- Multiple emails can in one go or on single click, The delivered email is of personalised type
-            i.e. "to" for each single email_Id but not "bcc" or "cc" e-mail type
-          </li>
-
-        </ul>
-      </mat-card-content>
-      <mat-card-actions class="cart-action">
-        <div class="action-footer">
-          <div>
-            2020
-          </div>
-          <div>
-            <a href="https://github.com/deepak-mandal/Email-Automation-with-Python"
-              target="_blank">https://github.com/deepak-mandal/Email-Automation-with-Python</a>
-          </div>
-        </div>
-
-      </mat-card-actions>
-    </mat-card>
-  </mat-tab>
-
-  <mat-tab label="Text Analysis">
-    <mat-card>
-      <mat-card-header>
-        <div mat-card-avatar
-          [ngStyle]="{'background-image': 'url(' + MLPimagePathOrUrl + ')', 'background-size': 'cover'  }">
-        </div>
-        <mat-card-title>
-          Wikipedia Text Analytics and Mining
-        </mat-card-title>
-        <mat-card-subtitle>
-          Henry Harvin Academy
-        </mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <ul>
-          <li class="content-style">
-            Analysed the unstructured data (article) using text mining and created the Word Cloud out of that; to
-            understand what these article trying to say, rather than reading the entire article.
-          </li>
-
-          <li class="content-style">
-            Technologies used: Python3, WordCloud
-          </li>
-
-          <img [src]="resultImage" style="width: 85vw; height: auto;">
-
-
-        </ul>
-      </mat-card-content>
-      <mat-card-actions class="cart-action">
-        <div class="action-footer">
-          <div>
-            Dec 2020
-          </div>
-          <div>
-            <a href="https://github.com/deepak-mandal/Word-Cloud-from-Text-Mining"
-              target="_blank">https://github.com/deepak-mandal/Word-Cloud-from-Text-Mining</a>
-          </div>
-        </div>
-
-      </mat-card-actions>
-    </mat-card>
-  </mat-tab>
-
-</mat-tab-group>
+</mat-accordion>

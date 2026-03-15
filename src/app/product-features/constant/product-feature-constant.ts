@@ -113,6 +113,7 @@ export const PROJECTS = {
 
 export const SKILLS = {
     PROGRAMMING_LANGUAGE: 'Programming languages',
+    TESTING: 'Testing & lint',
     JAVA: 'Java',
     JAVA_LOGO: 'assets/images/java.png',
     PYTHON: 'Python',
@@ -126,6 +127,9 @@ export const SKILLS = {
     PHP: 'php',
     PHP_LOGO: 'assets/images/php.png',
     WEB_TECHNOLOGIES: 'Web technologies',
+    WEB_TECHNOLOGIES_BACKEND: 'Backend',
+    FRAMEWORK: 'Frameworks',
+    WEB_TECHNOLOGIES_FRONTEND: 'Frontend',
     SPRING: 'Spring',
     SPRING_LOGO: 'assets/images/spring.png',
     ANGULAR: 'Angular',
@@ -174,10 +178,11 @@ export const SKILLS = {
     NUMPY_LOGO: 'assets/images/numpy.png',
     MATPLOTLIB: 'Matplotlib',
     MATPLOTLIB_LOGO: 'assets/images/matplotlib.png',
-    OTHER_ML: 'scikit-learn, NLTK, SpaCy, WordCloud, BeautifulSoup, Natural Language Processing (NLP), Seaborn, Machine Learning',
+    OTHER_ML: 'scikit-learn, Machine Learning',
     
     ML_LOGO: 'assets/images/ml.jpeg',
     MISCELLANEOUS: 'Miscellaneous',
+    DSA: 'DSA, LLD, HLD',
 
     RABBITMQ: 'RabbitMQ',
     RABBITMQ_LOGO: 'assets/images/rabbitmq.png',
@@ -189,7 +194,7 @@ export const SKILLS = {
     FORTRAN_LOGO: 'assets/images/fortran.png',
     EXCEL: 'MS Excel',
     EXCEL_LOGO: 'assets/images/excel.png',
-    DS_ALGO: 'Data structures & Algorithms, System Design(LLD & HLD)',
+    DS_ALGO: 'Data structures & Algorithms, System Design',
     DS_ALGO_LOGO: 'assets/images/ds_algo.png',
     OS: 'Operating system',
     LINUX: 'Linux',
