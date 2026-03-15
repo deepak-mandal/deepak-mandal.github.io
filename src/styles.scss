@@ -39,7 +39,7 @@ body { margin: 0; padding:5px; font-family: Roboto, "Helvetica Neue", sans-serif
 }
 
 .mat-vertical-content {
-    padding: 0 10px 10px 10px !important;
+    padding: 5px !important;
 }
 
 .mat-vertical-content-container {
@@ -58,4 +58,24 @@ margin-left: 20px !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent !important;
+}
+
+.mat-expansion-panel-header{
+  padding: 0 10px !important;
+}
+
+.mat-expansion-panel-body {
+    padding: 0 10px 10px !important;
+}
+
+.mat-mdc-card-header {
+    padding: 5px !important;
+}
+
+.mat-mdc-card-content {
+    padding: 0 10px !important;
+}
+
+.mat-h2, .mat-headline-6, .mat-typography .mat-h2, .mat-typography .mat-headline-6, .mat-typography h2 {
+    margin: 5px !important;
 }
