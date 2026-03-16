@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EdgeverveExperienceComponent } from './edgeverve-experience.component';
+import { DkmEdgeverveExperienceComponent } from './edgeverve-experience.component';
 
 describe('EdgeverveExperienceComponent', () => {
-  let component: EdgeverveExperienceComponent;
-  let fixture: ComponentFixture<EdgeverveExperienceComponent>;
+  let component: DkmEdgeverveExperienceComponent;
+  let fixture: ComponentFixture<DkmEdgeverveExperienceComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EdgeverveExperienceComponent]
+      imports: [DkmEdgeverveExperienceComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
-    fixture = TestBed.createComponent(EdgeverveExperienceComponent);
+    fixture = TestBed.createComponent(DkmEdgeverveExperienceComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

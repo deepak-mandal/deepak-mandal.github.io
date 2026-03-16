@@ -8,9 +8,9 @@ describe('ProfileSidenavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [ProfileSidenavComponent]
-})
-    .compileComponents();
+      imports: [ProfileSidenavComponent]
+    })
+      .compileComponents();
   });
 
   beforeEach(() => {

@@ -5,15 +5,15 @@ import { MatCard, MatCardSubtitle } from '@angular/material/card';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({
-    selector: 'footer',
-    templateUrl: './footer.component.html',
-    styleUrls: ['./footer.component.scss'],
-    imports: [MatCard, MatIcon, MatCardSubtitle]
+  selector: 'footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.scss'],
+  imports: [MatCard, MatIcon, MatCardSubtitle]
 })
 export class FooterComponent implements OnInit {
 
 
-currentYear = 2024;
+  currentYear = 2024;
   ngOnInit(): void {
     this.currentYear = new Date().getFullYear();
   }

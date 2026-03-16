@@ -14,36 +14,36 @@ import { FooterComponent } from '../footer/footer.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 
 @Component({
-    selector: 'app-home',
-    templateUrl: './home.component.html',
-    styleUrls: ['./home.component.scss'],
-    standalone: true,
-    imports: [
-      ProfileComponent,
-      MatCard,
-      EducationComponent,
-      ExperiencesComponent,
-      ProjectsComponent,
-      TechSkillsComponent,
-      CertificatesComponent,
-      AchievementsComponent,
-      MatIcon,
-      FooterComponent,
-      MatExpansionModule,
-      MatCardModule,
-      MatIconModule
-    ]
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
+  standalone: true,
+  imports: [
+    ProfileComponent,
+    MatCard,
+    EducationComponent,
+    ExperiencesComponent,
+    ProjectsComponent,
+    TechSkillsComponent,
+    CertificatesComponent,
+    AchievementsComponent,
+    MatIcon,
+    FooterComponent,
+    MatExpansionModule,
+    MatCardModule,
+    MatIconModule
+  ]
 })
 export class HomeComponent implements OnInit {
 
   title = 'Deepak Mandal | CGI | IIT Guwahati';
- 
-   constructor(
-     private http: HttpClient,
-     private breakpointObserver: BreakpointObserver
-     ) {
-      }
- 
-   ngOnInit() {
-   }
+
+  constructor(
+    private http: HttpClient,
+    private breakpointObserver: BreakpointObserver
+  ) {
+  }
+
+  ngOnInit() {
+  }
 }

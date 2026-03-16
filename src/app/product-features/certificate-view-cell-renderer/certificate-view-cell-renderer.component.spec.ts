@@ -8,9 +8,9 @@ describe('CertificateViewCellRendererComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [CertificateViewCellRendererComponent]
-})
-    .compileComponents();
+      imports: [CertificateViewCellRendererComponent]
+    })
+      .compileComponents();
   });
 
   beforeEach(() => {

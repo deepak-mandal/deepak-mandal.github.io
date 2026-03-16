@@ -8,9 +8,9 @@ describe('DkmCustomListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [DkmCustomListComponent]
-})
-    .compileComponents();
+      imports: [DkmCustomListComponent]
+    })
+      .compileComponents();
   });
 
   beforeEach(() => {

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CgiExperienceComponent } from './cgi-experience.component';
+import { DkmCgiExperienceComponent } from './cgi-experience.component';
 
 describe('CgiExperienceComponent', () => {
-  let component: CgiExperienceComponent;
-  let fixture: ComponentFixture<CgiExperienceComponent>;
+  let component: DkmCgiExperienceComponent;
+  let fixture: ComponentFixture<DkmCgiExperienceComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CgiExperienceComponent]
+      imports: [DkmCgiExperienceComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
-    fixture = TestBed.createComponent(CgiExperienceComponent);
+    fixture = TestBed.createComponent(DkmCgiExperienceComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

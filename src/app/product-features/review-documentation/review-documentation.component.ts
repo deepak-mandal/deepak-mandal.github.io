@@ -7,10 +7,10 @@ import { MatCard, MatCardSubtitle, MatCardContent, MatCardImage } from '@angular
 import { MatDivider } from '@angular/material/list';
 
 @Component({
-    selector: 'app-review-documentation',
-    templateUrl: './review-documentation.component.html',
-    styleUrls: ['./review-documentation.component.scss'],
-    imports: [MatDialogTitle, MatButton, MatDialogClose, MatIcon, CdkScrollable, MatDialogContent, MatCard, MatCardSubtitle, MatCardContent, MatCardImage, MatDivider, MatDialogActions]
+  selector: 'app-review-documentation',
+  templateUrl: './review-documentation.component.html',
+  styleUrls: ['./review-documentation.component.scss'],
+  imports: [MatDialogTitle, MatButton, MatDialogClose, MatIcon, CdkScrollable, MatDialogContent, MatCard, MatCardSubtitle, MatCardContent, MatCardImage, MatDivider, MatDialogActions]
 })
 export class ReviewDocumentationComponent implements OnInit {
 
@@ -18,8 +18,8 @@ export class ReviewDocumentationComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any,
   ) { }
   archDiagramUrl = "assets/images/product_arc_diagram.png";
-  techDiagramUrl ="assets/images/product_tech_diagram.png";
-  sourceCodeUrl="https://github.com/deepak-mandal/ReviewBook"
+  techDiagramUrl = "assets/images/product_tech_diagram.png";
+  sourceCodeUrl = "https://github.com/deepak-mandal/ReviewBook"
   ngOnInit(): void {
   }
 

@@ -8,9 +8,9 @@ describe('DkmTabComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [DkmTabComponent]
-})
-    .compileComponents();
+      imports: [DkmTabComponent]
+    })
+      .compileComponents();
   });
 
   beforeEach(() => {

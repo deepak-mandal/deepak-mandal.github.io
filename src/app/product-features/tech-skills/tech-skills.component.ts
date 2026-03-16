@@ -54,6 +54,9 @@ export class TechSkillsComponent implements OnInit {
         {
           technologies: SKILLS.WEB_TECHNOLOGIES_BACKEND, children: [
             { technologies: SKILLS.SPRING, proof: SKILLS.SPRING_LOGO },
+            { technologies: SKILLS.KAFKA, proof: SKILLS.KAFKA_LOGO },
+            { technologies: SKILLS.REDIS, proof: SKILLS.REDIS_LOGO },
+            { technologies: SKILLS.MYBATIS, proof: SKILLS.MYBATIS_LOGO },
             { technologies: SKILLS.RABBITMQ, proof: SKILLS.RABBITMQ_LOGO },
             { technologies: SKILLS.JUNIT, proof: SKILLS.JUNIT_LOGO },
             { technologies: SKILLS.SONAR, proof: SKILLS.SONAR_LOGO },
@@ -76,10 +79,11 @@ export class TechSkillsComponent implements OnInit {
         {
           technologies: SKILLS.DB, children: [
             { technologies: SKILLS.ORACLE, proof: SKILLS.ORACLE_LOGO },
+            { technologies: SKILLS.POSTGRESQL, proof: SKILLS.POSTGRESQL_LOGO },
             { technologies: SKILLS.MS_SQL, proof: SKILLS.MS_SQL_LOGO },
-            { technologies: SKILLS.MONGODB, proof: SKILLS.MONGODB_LOGO },
             { technologies: SKILLS.MYSQL, proof: SKILLS.MYSQL_LOGO },
             { technologies: SKILLS.SQLITE, proof: SKILLS.SQLITE_LOGO },
+            { technologies: SKILLS.MONGODB, proof: SKILLS.MONGODB_LOGO }
           ]
         },
       ]
@@ -102,7 +106,7 @@ export class TechSkillsComponent implements OnInit {
         { technologies: SKILLS.OTHER_ML, proof: SKILLS.ML_LOGO },
       ]
     },
-     {
+    {
       technologies: SKILLS.OS, children: [
         { technologies: SKILLS.LINUX, proof: SKILLS.LINUX_LOGO },
         { technologies: SKILLS.WINDOWS, proof: SKILLS.WINDOW_LOGO },
@@ -114,7 +118,7 @@ export class TechSkillsComponent implements OnInit {
         { technologies: SKILLS.LLD_HLD, proof: SKILLS.LLD_HLD_LOGO },
       ]
     },
-   
+
   ];
 
   constructor() {

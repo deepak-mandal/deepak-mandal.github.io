@@ -17,14 +17,15 @@ export const EDUCATION = {
 }
 
 export const EXPERIENCE = {
-EV_LOGO: 'assets/images/ev1.png',
+    EV_LOGO: 'assets/images/ev1.png',
+    EV_IL_LOGO: 'assets/images/ev.png',
     CGI: 'CGI / Product Engineering',
     CGI_INFO_SYS: 'CGI Information Systems and Management Consultants Pvt. Ltd.',
     SOFTWARE_CONSULTANT: 'Senior Software Engineer / CONSULTANT',
     DATACYCLE360_1: 'Worked on CGI DataCycle360 Webshop product, an eCommerce platform which is responsible for ordering items & approving purchases; Technical analysis/investigation of required functionality & features; Implemented new UI features using Angular',
     DATACYCLE360_2: 'Developed backend APIs using Spring Boot, Java, Apache Solr which involves CRUD operations, spellcheck suggest search functionality; Webshop-Advantage application integration with Purchase requests features & bug fixes.',
     DATACYCLE360_3: 'Designed database data model, schema modification using MS SQL database technologies; SQL query tuning to optimize performance.',
-    
+
     WEALTH360_1: 'Worked as a full-stack Engineer with Product Engineering perspective on CGI Wealth360 product features in the Global Wealth and Capital Markets domain, which delivers a flexible Unified Account Platform with goal-based investing capabilities and provides end-to-end investment management support',
     WEALTH360_2: 'Technical Analysis of epic/user story, bug root cause, and designed solutions meeting industry standard.',
     WEALTH360_3: 'Angular – development of new UI screen Including the building reusable component, service with HTML, SCSS, TypeScript, AG Grid, angular material, RxJs, Lodash & JavaScript, that works in multiple areas of application; Architecture upgrades - Angular version & Ascent libraries; services-API integration; Unit testcases using Karma-Jasmine.',
@@ -62,7 +63,7 @@ export const PROJECTS = {
     REVIEWBOOK_LOCATION: 'https://reviewbook.stackroute.io/',
     REVIEWBOOK_DOC_SOURCE_URL: 'https://github.com/deepak-mandal/ReviewBook',
     REVIEWBOOK_DOC_ARC_DIAGRAM: 'assets/images/product_arc_diagram.png',
-    REVIEWBOOK_DOC_TECH_DIAGRAM : 'assets/images/product_tech_diagram.png',
+    REVIEWBOOK_DOC_TECH_DIAGRAM: 'assets/images/product_tech_diagram.png',
     CONFERENCE_WEB: 'Conference Website - PHP',
     IITG_WEB: 'Conference Website',
     DOC_IITG: 'IITG',//'Dept. of Chem., IITG',
@@ -121,7 +122,7 @@ export const SKILLS = {
     JAVASCRIPT: 'JavaScript',
     JS: 'assets/images/js.png',
     SQL: 'SQL',
-    
+
     TYPESCRIPT: 'TypeScript',
     TS: 'assets/images/ts.png',
     PHP: 'php',
@@ -130,7 +131,7 @@ export const SKILLS = {
     WEB_TECHNOLOGIES_BACKEND: 'Backend',
     FRAMEWORK: 'Frameworks',
     WEB_TECHNOLOGIES_FRONTEND: 'Frontend',
-    SPRING: 'Spring',
+    SPRING: 'Spring boot',
     SPRING_LOGO: 'assets/images/spring.png',
     ANGULAR: 'Angular',
     AG_GRID: 'AG Grid',
@@ -160,14 +161,24 @@ export const SKILLS = {
 
 
     DB: 'Database management',
+    SQL_DB: 'SQL (RDBMS)',
+    NO_SQL: 'NoSQL',
+    KAFKA: 'Kafka',
+    KAFKA_LOGO: 'assets/images/Kafka.png',
+    MYBATIS: 'MyBatis',
+    MYBATIS_LOGO: 'assets/images/MyBatis.png',
+    REDIS: 'Redis',
+    REDIS_LOGO: 'assets/images/redis.png',
 
+    POSTGRESQL: 'PostgreSQL',
+    POSTGRESQL_LOGO: 'assets/images/elephant.png',
     ORACLE: 'Oracle',
     ORACLE_LOGO: 'assets/images/oracle.png',
     MONGODB: 'MongoDB',
     MONGODB_LOGO: 'assets/images/mongodb.png',
-    MYSQL:'MySQL',
+    MYSQL: 'MySQL',
     MYSQL_LOGO: 'assets/images/mysql.png',
-    MS_SQL:'MS SQL',
+    MS_SQL: 'MS SQL',
     MS_SQL_LOGO: 'assets/images/ms-sql.svg',
     SQLITE: 'SQLite',
     SQLITE_LOGO: 'assets/images/sqlite.png',
@@ -179,7 +190,7 @@ export const SKILLS = {
     MATPLOTLIB: 'Matplotlib',
     MATPLOTLIB_LOGO: 'assets/images/matplotlib.png',
     OTHER_ML: 'scikit-learn',
-    
+
     ML_LOGO: 'assets/images/ml.jpeg',
     MISCELLANEOUS: 'Miscellaneous',
     DSA: 'DSA, LLD, HLD',
@@ -224,13 +235,13 @@ export const ACHIEVEMENT = {
     BRONZE_AWARD_ACTIVITY: 'Received bronze award from president (FY23) and SVP (FY24) & applauds from managers for the excellent work delivered'
 }
 
-export const EXTRACURRICULARS ={
-    HEADING:'CGI/IITG',
-    ACTIVITIES: 'CoS, CSR'
-    // CGI_ACTIVITY_TRAINING: 'Qualified Unified Talent Assessment Platform - UTAP\'2022 assessment program and Completed many technical and non-technical courses/training at CGI-skillsoft.',
-    // CGI_ACTIVITY_APPLAUDS: 'Appreciation/Applaud, CoS, CCD',
-    // CGI_APPLAUD: 'Applaud - Celebrating CGI’s values 2022: Got appreciation letter from scrum master, manager, and Greater Toronto Area lead for the work delivered at CGI.',
-    // COMMUNITY_SERVICE: 'Participated in Football & Yoga student’s activity, and been a part of Community Services - CoS during 2017-19',
-    // IITG_CCD_VOLUNTEER: 'Participated as a volunteer during the placement season 2019-20 at Centre for Career Development - CCD, IITG'
+export const EXTRACURRICULARS = {
+    HEADING: 'CGI/IITG',
+    ACTIVITIES: 'CoS, CSR',
+    CGI_ACTIVITY_TRAINING: 'Qualified Unified Talent Assessment Platform - UTAP\'2022 assessment program and Completed many technical and non-technical courses/training at CGI-skillsoft.',
+    CGI_ACTIVITY_APPLAUDS: 'Appreciation/Applaud, CoS, CCD',
+    CGI_APPLAUD: 'Applaud - Celebrating CGI’s values 2022: Got appreciation letter from scrum master, manager, and Greater Toronto Area lead for the work delivered at CGI.',
+    COMMUNITY_SERVICE: 'Participated in Football & Yoga student’s activity, and been a part of Community Services - CoS during 2017-19',
+    IITG_CCD_VOLUNTEER: 'Participated as a volunteer during the placement season 2019-20 at Centre for Career Development - CCD, IITG'
 
 }

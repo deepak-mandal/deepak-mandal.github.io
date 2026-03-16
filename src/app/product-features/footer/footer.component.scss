@@ -1,28 +1,27 @@
 .footer {
-    padding-top: 10px;
-    /* width: 95vw */
-    padding-bottom: 10px;
-  }
-  
-  .footer-picture {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-  }
-  
-  .profile-heading {
-    text-align: right;
-    align-items: center;
-  }
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-  .logo{
-    height: 24px;
-    width: 24px;
-  }
+.footer-picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
 
-  .deepak-font{
-    font-size: 14px !important;
-  }
+.profile-heading {
+  text-align: right;
+  align-items: center;
+}
+
+.logo {
+  height: 24px;
+  width: 24px;
+}
+
+.deepak-font {
+  font-size: 14px !important;
+}

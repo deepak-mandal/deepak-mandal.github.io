@@ -12,13 +12,13 @@
   <mat-card-content>
     {{cardContentData}}
     @for (listData of cardContentList; track listData) {
-      <mat-list role="list">
-        <mat-list-item role="listitem" class="card-content">
-          <li>
-            {{listData}}
-          </li>
-        </mat-list-item>
-      </mat-list>
+    <mat-list role="list">
+      <mat-list-item role="listitem" class="card-content">
+        <li>
+          {{listData}}
+        </li>
+      </mat-list-item>
+    </mat-list>
     }
   </mat-card-content>
 </mat-card>

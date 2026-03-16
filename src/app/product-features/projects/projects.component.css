@@ -1,28 +1,26 @@
-.content-style{
-    height: auto; padding-top: 8px; padding-bottom: 8px;
+.content-style {
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-.cart-action{
-    margin-bottom: 10px; padding-bottom: 15px;
+.cart-action {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
 }
 
-.right-align{
-    float:right;
+.right-align {
+    float: right;
 }
 
-/* .action-footer{
-    display: flex; flex-direction: row; justify-content: space-between; align-items: baseline;
-    background-color: red; padding: 20px; margin: 20px;
-} */
-
-.mat-mdc-card-actions{
+.mat-mdc-card-actions {
     justify-content: flex-end !important;
-}   
+}
 
 
 .stepper-icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  object-fit: cover;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
 }

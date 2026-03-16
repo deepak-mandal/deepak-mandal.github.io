@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog as MatDialog } from '@angular/material/dialog';
-import { ColDef, ColumnApi, GridApi, GridReadyEvent, SelectionChangedEvent } from 'ag-grid-community';
+import { ColDef, ColumnApi, GridApi, GridReadyEvent } from 'ag-grid-community';
 import { DkmDialogComponent } from 'src/app/shared/dkm-dialog/dkm-dialog.component';
 import { CertificateViewCellRendererComponent } from '../certificate-view-cell-renderer/certificate-view-cell-renderer.component';
 import { CERTIFICATE_ENTITY } from '../types/product-features.interface';
 import { AgGridModule } from 'ag-grid-angular';
 
 @Component({
-    selector: 'certificates',
-    templateUrl: './certificates.component.html',
-    styleUrls: ['./certificates.component.scss'],
-    imports: [AgGridModule]
+  selector: 'certificates',
+  templateUrl: './certificates.component.html',
+  styleUrls: ['./certificates.component.scss'],
+  imports: [AgGridModule]
 })
 export class CertificatesComponent implements OnInit {
 
@@ -23,15 +23,12 @@ export class CertificatesComponent implements OnInit {
   columnDefs: ColDef[] = [
     { field: 'Certificate', cellRenderer: CertificateViewCellRendererComponent },
     { field: 'Technologies', },
-    // { field: 'Organization', },
   ];
 
   public defaultColDef: ColDef = {
-    // width: 150,
     sortable: true,
     resizable: true,
     filter: true,
-    // cellClass: 'custom-color'
     cellStyle: { color: 'rgb(82, 54, 171)' }
 
   };
@@ -100,7 +97,7 @@ export class CertificatesComponent implements OnInit {
       proof: 'assets/images/data-structures-and-algorithms.png',
       name: ''
     },
-     {
+    {
       Organization: 'CGI',
       Certificate: 'Product Engineering',
       Technologies: 'Java, Spring Boot, Angular, SQL',
@@ -121,27 +118,6 @@ export class CertificatesComponent implements OnInit {
       proof: 'assets/images/cpp.png',
       name: ''
     },
-    // {
-    //   Organization: 'HackerRank',
-    //   Certificate: 'Problem Solving',
-    //   Technologies: 'ds algo',
-    //   proof: 'assets/images/problem-solving.png',
-    //   name: 'Python'
-    // },
-    // {
-    //   Organization: 'HackerRank',
-    //   Certificate: 'SQL',
-    //   Technologies: 'SQL',
-    //   proof: 'assets/images/sql.png',
-    //   name: 'SQL'
-    // },
-    // {
-    //   Organization: 'HackerRank',
-    //   Certificate: 'Python',
-    //   Technologies: 'Python',
-    //   proof: 'assets/images/Python-basic.png',
-    //   name: 'Python'
-    // },
     {
       Organization: 'CGI',
       Certificate: 'Java full-stack training - Spring & Angular',
@@ -156,35 +132,27 @@ export class CertificatesComponent implements OnInit {
       proof: 'assets/images/latex.jpg',
       name: 'LaTeX'
     },
-    
-    // {
-    //   Organization: 'IITG',
-    //   Certificate: 'Computational (Theory+Lab) & Core Mathematics - Calculus, Linear Algebra',
-    //   Technologies: 'FORTRAN coding',
-    //   proof: 'assets/images/iitg.png',
-    //   name: 'Introduction to Computing & Computational (Theory+Lab)'
-    // },
-    // {
-    //   Organization: 'CGI',
-    //   Certificate: 'Technical & Non-Technical Courses',
-    //   Technologies: 'full-stack',
-    //   proof: 'https://drive.google.com/file/d/1CJ3xWwSiYNTd4XFsGw5MCO_Lvfpan8f9/view?usp=sharing',
-    //   name: 'https://drive.google.com/file/d/1CJ3xWwSiYNTd4XFsGw5MCO_Lvfpan8f9/view?usp=sharing'
-    // },
-    // {
-    //   Organization: 'CGI',
-    //   Certificate: 'Applauds from scrum master',
-    //   Technologies: 'Angular',
-    //   proof: 'assets/images/Deepak-Apprication.png',
-    //   name: 'ASDC'
-    // },
-    // {
-    //   Organization: 'CGI',
-    //   Certificate: 'Applauds',
-    //   Technologies: 'Java',
-    //   proof: 'assets/images/cgi-applaud4.png',
-    //   name: ''
-    // },
+    {
+      Organization: 'HackerRank',
+      Certificate: 'Problem Solving',
+      Technologies: 'ds algo',
+      proof: 'assets/images/problem-solving.png',
+      name: 'Python'
+    },
+    {
+      Organization: 'HackerRank',
+      Certificate: 'SQL',
+      Technologies: 'SQL',
+      proof: 'assets/images/sql.png',
+      name: 'SQL'
+    },
+    {
+      Organization: 'HackerRank',
+      Certificate: 'Python',
+      Technologies: 'Python',
+      proof: 'assets/images/Python-basic.png',
+      name: 'Python'
+    },
   ];
 
   onGridReady(params: GridReadyEvent) {

@@ -6,10 +6,10 @@ import { MatCard, MatCardHeader, MatCardAvatar, MatCardSubtitle } from '@angular
 import { MatList, MatListItem } from '@angular/material/list';
 
 @Component({
-    selector: 'dkm-custom-list',
-    templateUrl: './dkm-custom-list.component.html',
-    styleUrls: ['./dkm-custom-list.component.css'],
-    imports: [MatTabGroup, MatTab, MatCard, MatList, MatListItem, MatCardHeader, MatCardAvatar, NgStyle, MatCardSubtitle]
+  selector: 'dkm-custom-list',
+  templateUrl: './dkm-custom-list.component.html',
+  styleUrls: ['./dkm-custom-list.component.css'],
+  imports: [MatTabGroup, MatTab, MatCard, MatList, MatListItem, MatCardHeader, MatCardAvatar, NgStyle, MatCardSubtitle]
 })
 export class DkmCustomListComponent implements OnInit {
 

@@ -9,10 +9,10 @@ import { MatList, MatListItem } from '@angular/material/list';
 import { MatButton } from '@angular/material/button';
 
 @Component({
-    selector: 'dkm-custom-card',
-    templateUrl: './dkm-custom-card.component.html',
-    styleUrls: ['./dkm-custom-card.component.css'],
-    imports: [MatTabGroup, MatTab, MatCard, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent, MatList, MatListItem, MatCardImage, MatCardActions, MatButton]
+  selector: 'dkm-custom-card',
+  templateUrl: './dkm-custom-card.component.html',
+  styleUrls: ['./dkm-custom-card.component.css'],
+  imports: [MatTabGroup, MatTab, MatCard, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent, MatList, MatListItem, MatCardImage, MatCardActions, MatButton]
 })
 export class DkmCustomCardComponent implements OnInit {
 
@@ -23,9 +23,6 @@ export class DkmCustomCardComponent implements OnInit {
 
   @Input() data!: ITabCardEntity[];
 
-
-
-
   openDialog(): void {
     this.dialog.open(
       ReviewDocumentationComponent, {
@@ -33,15 +30,10 @@ export class DkmCustomCardComponent implements OnInit {
       height: 'auto',
       data: {
         title: 'ReviewBook - Product Overview',
-        // imageUrl: 'assets/images/dkm.jpeg',
-        // altText: 'Deepak',
-        // content: 'Software Engineer, IITian',
         productDoc: this.data[0]?.dialogData,
         submitText: 'Close'
-
       }
     });
   }
-
 
 }

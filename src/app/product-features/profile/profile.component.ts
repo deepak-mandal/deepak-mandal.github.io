@@ -5,12 +5,12 @@ import { MatCard, MatCardHeader, MatCardAvatar, MatCardTitle, MatCardSubtitle, M
 import { NgStyle } from '@angular/common';
 
 @Component({
-    selector: 'profile',
-    templateUrl: './profile.component.html',
-    styleUrls: ['./profile.component.css'],
-    imports: [MatIcon, MatCard, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent]
+  selector: 'profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css'],
+  imports: [MatIcon, MatCard, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent]
 })
-export class ProfileComponent implements OnInit{
+export class ProfileComponent implements OnInit {
 
   totalExperiences!: number;
   profileTitle: string = PROFILE.DEEPAK_MANDAL
@@ -26,11 +26,5 @@ export class ProfileComponent implements OnInit{
     this.totalExperiences = Number(diffYears.toExponential(1));
 
   }
-  
- 
-
-
- 
- 
 
 }

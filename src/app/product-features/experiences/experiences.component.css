@@ -1,28 +1,27 @@
-.no_href_style{
-   text-decoration: none;
+.no_href_style {
+    text-decoration: none;
     color: inherit;
 
 }
 
-.li_style{
-    height: auto; 
-    padding-top: 8px; 
+.li_style {
+    height: auto;
+    padding-top: 8px;
     padding-bottom: 8px
 }
 
-.right-align{
+.right-align {
     float: right !important;
     font-size: 14px;
 }
 
-.mat-mdc-card-actions{
+.mat-mdc-card-actions {
     justify-content: flex-end !important;
 }
 
 .stepper-icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  object-fit: cover;
+    width: auto;
+    height: 48px;
+    border-radius: 10px;
+    object-fit: cover;
 }
-

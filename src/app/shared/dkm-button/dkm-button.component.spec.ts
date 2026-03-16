@@ -8,9 +8,9 @@ describe('DkmButtonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [DkmButtonComponent]
-})
-    .compileComponents();
+      imports: [DkmButtonComponent]
+    })
+      .compileComponents();
   });
 
   beforeEach(() => {

@@ -1,4 +1,4 @@
-export interface ITabCardEntity{
+export interface ITabCardEntity {
     tabLabel: string
     cardTitle?: string;
     imagePathOrUrl: string;
@@ -6,7 +6,7 @@ export interface ITabCardEntity{
     cardContentData?: string;
     cardContentList?: string[]
     session?: string;
-    link?:string
+    link?: string
     location?: string;
     result?: IResult;
     isDialog?: boolean;
@@ -14,23 +14,22 @@ export interface ITabCardEntity{
     matCardTitleLink?: string;
 }
 
-export interface ISubTitleEntity{
+export interface ISubTitleEntity {
     content: string;
     rightContent?: string;
 }
 
-export interface IResult{
+export interface IResult {
     resultImage: string
     altText: string
 }
 
-export interface ITabCardListEntity{
+export interface ITabCardListEntity {
     tabLabel: string;
     skills: ISkills[]
-   
+
 }
-export interface ISkills{
-    // cardTitle?: string;
+export interface ISkills {
     imagePathOrUrl?: string;
     cardSubTitle?: string;
 }

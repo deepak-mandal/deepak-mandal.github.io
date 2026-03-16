@@ -18,12 +18,9 @@ export class ExtracurricularsComponent implements OnInit {
   extracurricularsData: ITabCardEntity[] = [
     {
       tabLabel: EXTRACURRICULARS.HEADING,
-      // cardTitle: EXTRACURRICULARS.CGI_ACTIVITY_APPLAUDS,
       imagePathOrUrl: EXPERIENCE.CGI_LOGO,
       cardContentList: [
         EXTRACURRICULARS.ACTIVITIES
-        // EXTRACURRICULARS.CGI_ACTIVITY_TRAINING,
-        //  EXTRACURRICULARS.CGI_APPLAUD, EXTRACURRICULARS.COMMUNITY_SERVICE, EXTRACURRICULARS.IITG_CCD_VOLUNTEER
       ]
     }
   ]

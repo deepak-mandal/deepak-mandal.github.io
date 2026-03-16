@@ -8,9 +8,9 @@ describe('DkmDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [DkmDialogComponent]
-})
-    .compileComponents();
+      imports: [DkmDialogComponent]
+    })
+      .compileComponents();
   });
 
   beforeEach(() => {

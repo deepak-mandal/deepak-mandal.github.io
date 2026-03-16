@@ -8,9 +8,9 @@ describe('DkmCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [DkmCardComponent]
-})
-    .compileComponents();
+      imports: [DkmCardComponent]
+    })
+      .compileComponents();
   });
 
   beforeEach(() => {

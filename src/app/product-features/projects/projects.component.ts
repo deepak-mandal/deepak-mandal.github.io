@@ -4,20 +4,21 @@ import { EDUCATION, EXPERIENCE, PROFILE, PROJECTS } from '../constant/product-fe
 import { MatDialog } from '@angular/material/dialog';
 import { ReviewDocumentationComponent } from '../review-documentation/review-documentation.component';
 import { MatTabsModule } from '@angular/material/tabs';
-import {  MatCardModule } from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatStepperModule } from '@angular/material/stepper';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-    selector: 'projects',
-    templateUrl: './projects.component.html',
-    styleUrls: ['./projects.component.css'],
-    standalone: true,
-    imports: [MatTabsModule, MatCardModule, MatIconModule,
+  selector: 'projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.css'],
+  standalone: true,
+  imports: [MatTabsModule, MatCardModule, MatIconModule, MatButtonModule,
     CommonModule, MatExpansionModule, MatDividerModule, MatStepperModule, ReactiveFormsModule]
 })
 export class ProjectsComponent implements OnInit {
@@ -28,9 +29,6 @@ export class ProjectsComponent implements OnInit {
   }
 
   @Input() data!: ITabCardEntity[];
-
-
-
 
   openDialog(): void {
     this.dialog.open(
@@ -50,7 +48,7 @@ export class ProjectsComponent implements OnInit {
   PYimagePathOrUrl = PROJECTS.INTERNSHALA_LOGO
   MLPimagePathOrUrl = PROFILE.PRFILE_PIC
   resultImage = PROJECTS.ANALYSIS_WORD_CLOUD
-   
+
   projectData: ITabCardEntity[] = [
     {
       tabLabel: PROJECTS.REVIEWBOOK,
@@ -60,11 +58,9 @@ export class ProjectsComponent implements OnInit {
         content: PROJECTS.CGI_PRODUCT_ENGG,
       },
       cardContentList: [
-        PROJECTS.REVIEWBOOK_PROBLEM_STATEMENT, PROJECTS.REVIEWBOOK_DB_ARCH, PROJECTS.REVIEWBOOK_MICROSERVICES, PROJECTS.REVIEWBOOK_ANGULAR_ARCH, 
-        // PROJECTS.REVIEWBOOK_TECHNOLOGIES
+        PROJECTS.REVIEWBOOK_PROBLEM_STATEMENT, PROJECTS.REVIEWBOOK_DB_ARCH, PROJECTS.REVIEWBOOK_MICROSERVICES, PROJECTS.REVIEWBOOK_ANGULAR_ARCH,
       ],
       session: PROJECTS.REVIEWBOOK_SESSION,
-      // location: PROJECTS.REVIEWBOOK_LOCATION,
       isDialog: true,
       dialogData: {
         url: PROJECTS.REVIEWBOOK_LOCATION,
@@ -81,7 +77,7 @@ export class ProjectsComponent implements OnInit {
         content: PROJECTS.DOC_IITG,
       },
       cardContentList: [
-        PROJECTS.CONFERENCE_TEAM, PROJECTS.CONFERENCE_DEV//, PROJECTS.CONFERENCE_TECH
+        PROJECTS.CONFERENCE_TEAM, PROJECTS.CONFERENCE_DEV
       ],
       session: PROJECTS.CONFERENCE_SESSION,
       location: PROJECTS.CONFERENCE_LOCATION
@@ -113,7 +109,7 @@ export class ProjectsComponent implements OnInit {
       session: PROJECTS.CRICKET_GAME_SESSION,
       link: PROJECTS.CRICKET_GAME_LOCATION,
       location: PROJECTS.CRICKET_GAME_LOCATION,
-      result:{
+      result: {
         resultImage: PROJECTS.CRICKET_GAME_RESULT,
         altText: ''
       }
@@ -131,7 +127,7 @@ export class ProjectsComponent implements OnInit {
       session: PROJECTS.ML_SESSION,
       link: PROJECTS.ML_LOCATION,
       location: PROJECTS.ML_LOCATION,
-      
+
     },
     {
       tabLabel: PROJECTS.AUTOMATION,
@@ -146,7 +142,7 @@ export class ProjectsComponent implements OnInit {
       session: PROJECTS.AUTOMATION_SESSION,
       link: PROJECTS.AUTOMATION_LOCATION,
       location: PROJECTS.AUTOMATION_LOCATION,
-     
+
     },
     {
       tabLabel: PROJECTS.ANALYSIS,
@@ -163,10 +159,10 @@ export class ProjectsComponent implements OnInit {
       location: PROJECTS.ANALYSIS_LOCATION,
       result: {
         resultImage: PROJECTS.ANALYSIS_WORD_CLOUD,
-        altText:''
+        altText: ''
       }
-     
+
     },
-    
+
   ]
 }
