@@ -8,9 +8,9 @@ describe('ExtracurricularsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [ExtracurricularsComponent]
-})
-    .compileComponents();
+      imports: [ExtracurricularsComponent]
+    })
+      .compileComponents();
   });
 
   beforeEach(() => {
