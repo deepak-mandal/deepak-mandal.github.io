@@ -19,6 +19,8 @@ export const EDUCATION = {
 export const EXPERIENCE = {
     EV_LOGO: 'assets/images/ev1.png',
     EV_IL_LOGO: 'assets/images/ev.png',
+    FINACLE_LOGO: 'assets/images/finacle.png',
+    FINACLE_LOGO1: 'assets/images/finacle1.png',
     CGI: 'CGI / Product Engineering',
     CGI_INFO_SYS: 'CGI Information Systems and Management Consultants Pvt. Ltd.',
     SOFTWARE_CONSULTANT: 'Senior Software Engineer / CONSULTANT',

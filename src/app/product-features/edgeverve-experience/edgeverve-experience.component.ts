@@ -13,5 +13,5 @@ import { MatStepperModule } from '@angular/material/stepper';
 export class DkmEdgeverveExperienceComponent {
 
 
-  evImagePathOrUrl = EXPERIENCE.EV_LOGO;
+  evImagePathOrUrl = EXPERIENCE.FINACLE_LOGO1//EV_LOGO;
 }
