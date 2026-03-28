@@ -75,6 +75,12 @@ export class CertificatesComponent implements OnInit {
       Technologies: 'Java, Spring, Angular, SQL; Angular v8 to v10 upgrade of Hybrid application consisting of AngularJS & Angular 2+; Production/Client fixes',
       proof: 'assets/images/applauds.png',
       name: ''
+    },{
+      Organization: 'IIT Guwahati',
+      Certificate: 'CRSI Conference Website',
+      Technologies: 'HTML, CSS, Bootstrap, MySQLi, PHP',
+      proof: 'assets/images/Project-CRSI_Conference_Website.jpg',
+      name: ''
     },
     {
       Organization: 'Henry Harvin Analytics Academy',
