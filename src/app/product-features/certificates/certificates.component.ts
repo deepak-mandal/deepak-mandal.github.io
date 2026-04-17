@@ -48,13 +48,7 @@ export class CertificatesComponent implements OnInit {
       proof: 'assets/images/IITG.png',
       name: 'Computing Laboratory'
     },
-    {
-      Organization: 'Collaboration with CGI and Microsoft',
-      Certificate: 'AI Powered Software Development (CGI)',
-      Technologies: 'AI, Java, Azure',
-      proof: 'assets/images/AI.png',
-      name: ''
-    },
+   
     {
       Organization: 'Greater Toronto Area (GTA), CGI',
       Certificate: 'Bronze award from president, CGI',
@@ -71,11 +65,26 @@ export class CertificatesComponent implements OnInit {
     },
     {
       Organization: 'CGI Wealth360 - Greater Toronto Area',
-      Certificate: 'Applauds from GTA & ASDC',
+      Certificate: 'Applauds from GTA & ASDC - CGI',
       Technologies: 'Java, Spring, Angular, SQL; Angular v8 to v10 upgrade of Hybrid application consisting of AngularJS & Angular 2+; Production/Client fixes',
       proof: 'assets/images/applauds.png',
       name: ''
-    },{
+    },
+     {
+      Organization: 'Infosys/EdgeVerve/Finacle',
+      Certificate: 'Kudos - EdgeVerve',
+      Technologies: 'Java, Spring boot, Kafka, System design',
+      proof: 'assets/images/ev_kudos.png',
+      name: ''
+    },
+     {
+      Organization: 'Collaboration with CGI and Microsoft',
+      Certificate: 'AI Powered Software Development (CGI)',
+      Technologies: 'AI, Java, Azure',
+      proof: 'assets/images/AI.png',
+      name: ''
+    },
+    {
       Organization: 'IIT Guwahati',
       Certificate: 'CRSI Conference Website',
       Technologies: 'HTML, CSS, Bootstrap, MySQLi, PHP',
