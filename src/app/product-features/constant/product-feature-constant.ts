@@ -1,7 +1,7 @@
 
 export const PROFILE = {
     DEEPAK_MANDAL: "Deepak K. Mandal",
-    CGI_IITG: "Product Technical Analyst, Edgeverve (Infosys) | Former Sr. Software Engineer, CGI | B.Tech, IIT Guwahati",
+    CGI_IITG: "Product Technical Analyst, Edgeverve (Infosys Finacle) | Former Sr. Software Engineer, CGI | B.Tech, IIT Guwahati",
     PRFILE_PIC: 'assets/images/Deepak_Image.jpg',
     DESCRIPTION: "~ 4 years of Professional experience in software engineering including significant expertise in Java technologies, SQL, Spring & Angular framework; with strong engineering Academic background from IIT Guwahati."
 }
