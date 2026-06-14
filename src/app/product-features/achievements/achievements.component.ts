@@ -20,6 +20,7 @@ export class AchievementsComponent implements OnInit {
 
   iitmLogo = ACHIEVEMENT.IITM_LOGO;
   cgiLogo = EXPERIENCE.CGI_LOGO;
+  evLogo = EXPERIENCE.FINACLE_LOGO1;
   stepperOrientation: 'horizontal' | 'vertical' = 'vertical';
 
   achievementData: ITabCardEntity[] = [
