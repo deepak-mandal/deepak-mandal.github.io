@@ -22,12 +22,14 @@
     width: 100%;
     min-width: 0;
     gap: 16px;
+    flex-wrap: wrap;
 }
 
 .step-label-title {
     display: inline-flex;
     align-items: center;
     gap: 4px;
+    min-width: 0;
 }
 
 .step-link-icon mat-icon {
@@ -41,26 +43,63 @@
     min-width: 0 !important;
 }
 
+::ng-deep .mat-step-header {
+    min-height: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    align-items: flex-start !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
 ::ng-deep .mat-step-header .step-label {
     width: 100% !important;
     display: flex !important;
     justify-content: space-between !important;
-    align-items: center !important;
+    align-items: flex-start !important;
     min-width: 0 !important;
+    flex-wrap: wrap !important;
+    gap: 8px;
+}
+
+.step-label-title {
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 .step-label > div:first-child {
-    flex: 1 1 auto;
+    flex: 1 1 0;
     min-width: 0;
 }
 
 .step-label-right {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     font-size: 14px;
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
     margin-left: auto;
     text-align: right;
     min-width: 0;
+}
+
+@media (max-width: 600px) {
+    ::ng-deep .mat-step-header {
+        padding-top: 14px !important;
+        padding-bottom: 14px !important;
+    }
+
+    .step-label {
+        gap: 8px;
+    }
+
+    .step-label-right {
+        width: 100%;
+        flex: 1 1 100%;
+        text-align: left;
+        margin-left: 0;
+        white-space: normal;
+    }
 }
 
 .mat-mdc-card-actions {

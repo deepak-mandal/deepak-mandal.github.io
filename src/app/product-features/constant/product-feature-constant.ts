@@ -159,7 +159,7 @@ export const SKILLS = {
     SONAR: ' SonarLint',
     SONAR_LOGO: 'assets/images/sonar.svg',
 
-    SOFTWARE_DEV_TOOLS: 'Software development tools',
+    SOFTWARE_DEV_TOOLS: 'Software dev tools',
     ECLIPSE: 'Eclipse',
     ECLIPSE_LOGO: 'assets/images/eclipse.png',
     VISUAL_STUDIO_CODE: 'Visual Studio Code',
