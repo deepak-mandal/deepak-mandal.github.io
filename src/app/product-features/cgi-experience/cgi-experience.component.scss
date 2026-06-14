@@ -15,6 +15,54 @@
     font-size: 14px;
 }
 
+.step-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    gap: 16px;
+}
+
+.step-label-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.step-link-icon mat-icon {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+::ng-deep .mat-step-header .mat-step-label {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+::ng-deep .mat-step-header .step-label {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    min-width: 0 !important;
+}
+
+.step-label > div:first-child {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.step-label-right {
+    flex: 0 0 auto;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-left: auto;
+    text-align: right;
+    min-width: 0;
+}
+
 .mat-mdc-card-actions {
     justify-content: flex-end !important;
 }

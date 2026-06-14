@@ -10,9 +10,21 @@
     padding-bottom: 8px
 }
 
+.step-label-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.step-link-icon mat-icon {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
 .right-align {
     float: right !important;
     font-size: 14px;
+    font-weight: normal !important;
 }
 
 .mat-mdc-card-actions {
