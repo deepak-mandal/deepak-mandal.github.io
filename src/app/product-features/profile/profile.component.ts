@@ -19,6 +19,8 @@ export class ProfileComponent implements OnInit {
   profilePath: string = PROFILE.PRFILE_PIC
   resumePath = "https://iitgoffice-my.sharepoint.com/:b:/g/personal/deepa170122014_alumni_iitg_ac_in/IQALExhbpbJuQKhkxcF5SqwHAY8vUBDEr0Z6zP-83J9L8WQ?e=wagGbH";
 
+  demoServer = "https://loquacious-rolypoly-d6d277.netlify.app/"
+
   ngOnInit(): void {
     const startDate = new Date(2021, 8, 27); // Months are 0-based: 8 = September
     const today = new Date();
