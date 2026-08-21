@@ -99,6 +99,13 @@ export class CertificatesComponent implements OnInit {
       name: ''
     },
     {
+      Organization: 'CGI DataCycle360 - European solutions',
+      Certificate: 'Applauds from Scrum Master, CGI | DataCycle360',
+      Technologies: 'Angular, Spring boot',
+      proof: 'assets/images/cgi-2024.png',
+      name: ''
+    },
+    {
       Organization: 'Internshala Trainings',
       Certificate: 'Programming in Python',
       Technologies: 'Python, SQLite, GUI - PyQt',
