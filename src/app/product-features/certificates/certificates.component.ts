@@ -35,14 +35,14 @@ export class CertificatesComponent implements OnInit {
 
   rowData: CERTIFICATE_ENTITY[] = [
     {
-      Organization: 'Asia Pacific Solutions Delivery Center (ASDC), CGI',
+      Organization: 'Asia Pacific Solutions Delivery Center (ASDC) | F2024',
       Certificate: 'Bronze award from SVP, CGI',
       Technologies: 'Java 8, Spring Boot v3, Angular v17, MS SQL',
       proof: 'assets/images/CGI-Bronze_Award_Certificate-F2024.png',
       name: ''
     },
     {
-      Organization: 'IIT Guwahati',
+      Organization: 'IIT Guwahati | F2017-21',
       Certificate: 'Introduction to Computing - Data structures & algorithms, Computing Laboratory, Computational (Theory+Lab) & Core Mathematics - Calculus, Linear Algebra',
       Technologies: 'C, C++, FORTRAN',
       proof: 'assets/images/IITG.png',
@@ -50,126 +50,126 @@ export class CertificatesComponent implements OnInit {
     },
    
     {
-      Organization: 'Greater Toronto Area (GTA), CGI',
+      Organization: 'Greater Toronto Area (GTA) | F2022',
       Certificate: 'Bronze award from president, CGI',
       Technologies: 'Java, Spring, Angular, SQL (Oracle)',
       proof: 'assets/images/CGI_Award_ecertificate.png',
       name: ''
     },
     {
-      Organization: 'CGI DataCycle360 Mobile UI app - European solutions',
+      Organization: 'CGI DataCycle360 Mobile UI app - European solutions | F2024-25',
       Certificate: 'Leadership in localization feature',
       Technologies: 'Angular, Nginx (deployment configuration, and production mode testing of Multiple locale simultaneously in local), External static(MSAL authentication client specific) package.json file configuration based on dev, test, prod/client mode',
       proof: 'assets/images/applauds-feb2025.png',
       name: ''
     },
     {
-      Organization: 'CGI Wealth360 - Greater Toronto Area',
+      Organization: 'CGI Wealth360 - Greater Toronto Area | F2022-23',
       Certificate: 'Applauds from GTA & ASDC - CGI',
       Technologies: 'Java, Spring, Angular, SQL; Angular v8 to v10 upgrade of Hybrid application consisting of AngularJS & Angular 2+; Production/Client fixes',
       proof: 'assets/images/applauds.png',
       name: ''
     },
      {
-      Organization: 'Infosys/EdgeVerve/Finacle',
-      Certificate: 'Kudos - EdgeVerve',
+      Organization: 'Infosys/EdgeVerve/Finacle | F2025-26',
+      Certificate: 'Kudos - Finacle',
       Technologies: 'Java, Spring boot, Kafka, System design',
       proof: 'assets/images/ev_kudos.png',
       name: ''
     },
      {
-      Organization: 'Collaboration with CGI and Microsoft',
+      Organization: 'Collaboration with CGI and Microsoft | F2025',
       Certificate: 'AI Powered Software Development (CGI)',
       Technologies: 'AI, Java, Azure',
       proof: 'assets/images/AI.png',
       name: ''
     },
     {
-      Organization: 'IIT Guwahati',
+      Organization: 'IIT Guwahati | 2020',
       Certificate: 'CRSI Conference Website',
       Technologies: 'HTML, CSS, Bootstrap, MySQLi, PHP',
       proof: 'assets/images/Project-CRSI_Conference_Website.jpg',
       name: ''
     },
     {
-      Organization: 'Henry Harvin Analytics Academy',
+      Organization: 'Henry Harvin Analytics Academy | 2020',
       Certificate: 'Certified Python Marketing Analyst',
       Technologies: 'Machine learning technique (ML), Python',
       proof: 'assets/images/cpma.png',
       name: ''
     },
     {
-      Organization: 'CGI DataCycle360 - European solutions',
+      Organization: 'CGI DataCycle360 - European solutions | F2023-24',
       Certificate: 'Applauds from Scrum Master, CGI | DataCycle360',
       Technologies: 'Angular, Spring boot',
       proof: 'assets/images/cgi-2024.png',
       name: ''
     },
     {
-      Organization: 'Internshala Trainings',
+      Organization: 'Internshala Trainings | 2020',
       Certificate: 'Programming in Python',
       Technologies: 'Python, SQLite, GUI - PyQt',
       proof: 'assets/images/python.png',
       name: ''
     },
     {
-      Organization: 'Udemy',
+      Organization: 'Udemy | 2020',
       Certificate: 'Data Structures and Algorithms',
       Technologies: 'Python, DS-Algo',
       proof: 'assets/images/data-structures-and-algorithms.png',
       name: ''
     },
     {
-      Organization: 'CGI',
+      Organization: 'CGI | 2024',
       Certificate: 'Product Engineering',
       Technologies: 'Java, Spring Boot, Angular, SQL',
       proof: 'assets/images/cgi-4th-yearbook.jpg',
       name: ''
     },
     {
-      Organization: 'Internshala Trainings',
+      Organization: 'Internshala Trainings | 2020',
       Certificate: 'Web Development',
       Technologies: 'PHP, MySQL, HTML, CSS, Bootstrap',
       proof: 'assets/images/php_cert.png',
       name: ''
     },
     {
-      Organization: 'Internshala Trainings',
+      Organization: 'Internshala Trainings | 2019',
       Certificate: 'Programming with C/C++',
       Technologies: 'C, C++',
       proof: 'assets/images/cpp.png',
       name: ''
     },
     {
-      Organization: 'CGI',
+      Organization: 'CGI | 2021',
       Certificate: 'Java full-stack training - Spring & Angular',
       Technologies: 'Java, SQL, Spring, Angular',
       proof: 'assets/images/cgi.png',
       name: 'LaTeX'
     },
     {
-      Organization: 'RSFM, IITG',
+      Organization: 'RSFM, IITG | 2018',
       Certificate: 'LaTeX Workshop @ IITG',
       Technologies: 'LaTeX',
       proof: 'assets/images/latex.jpg',
       name: 'LaTeX'
     },
     {
-      Organization: 'HackerRank',
+      Organization: 'HackerRank | 2020',
       Certificate: 'Problem Solving',
       Technologies: 'ds algo',
       proof: 'assets/images/problem-solving.png',
       name: 'Python'
     },
     {
-      Organization: 'HackerRank',
+      Organization: 'HackerRank | 2020',
       Certificate: 'SQL',
       Technologies: 'SQL',
       proof: 'assets/images/sql.png',
       name: 'SQL'
     },
     {
-      Organization: 'HackerRank',
+      Organization: 'HackerRank | 2020',
       Certificate: 'Python',
       Technologies: 'Python',
       proof: 'assets/images/Python-basic.png',
@@ -191,7 +191,7 @@ export class CertificatesComponent implements OnInit {
         title: 'Certificate',
         imageUrl: event.data.proof,
         altText: event.data.Technologies,
-        content: event.data.Certificate,
+        content: event.data.Certificate + ' | ' + event.data.Organization,
       }
     });
   }
