@@ -25,3 +25,21 @@
 .deepak-font {
   font-size: 14px !important;
 }
+
+.footer-carousel {
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  margin-right: 6px;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 24px;
+}
+
+.footer-carousel img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 250ms ease;
+  width: 100%;
+}

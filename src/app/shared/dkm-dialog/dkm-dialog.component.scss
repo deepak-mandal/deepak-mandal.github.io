@@ -1,0 +1,41 @@
+.carousel-row {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+mat-dialog-content {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+.carousel-row mat-card,
+mat-dialog-content > mat-card {
+	flex: 0 1 auto;
+	max-width: calc(100vw - 120px);
+	overflow: hidden;
+}
+
+img[mat-card-image] {
+	display: block;
+	height: auto;
+	max-height: calc(100vh - 240px);
+	max-width: 100%;
+	object-fit: contain;
+	width: auto;
+}
+
+@media (max-width: 600px) {
+	.carousel-row {
+		gap: 0;
+	}
+
+	.carousel-row mat-card,
+	mat-dialog-content > mat-card {
+		max-width: calc(100vw - 96px);
+	}
+
+	img[mat-card-image] {
+		max-height: calc(100vh - 220px);
+	}
+}

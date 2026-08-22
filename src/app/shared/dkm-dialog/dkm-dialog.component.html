@@ -5,9 +5,17 @@
 </h1>
 
 <div mat-dialog-content>
+  @if (images.length > 1) {
+  <div class="carousel-row" (mouseenter)="pauseAutoScroll()" (mouseleave)="resumeAutoScroll()">
+    <mat-card>
+      <img mat-card-image [src]="currentImage" [alt]="data?.altText">
+    </mat-card>
+  </div>
+  } @else {
   <mat-card>
-    <img mat-card-image [src]=data?.imageUrl [alt]=data?.altText>
+    <img mat-card-image [src]="currentImage" [alt]="data?.altText">
   </mat-card>
+  }
 </div>
 <div mat-dialog-actions>
   <h1>
