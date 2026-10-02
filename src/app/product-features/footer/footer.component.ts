@@ -16,9 +16,8 @@ export class FooterComponent implements OnInit, OnDestroy {
     'assets/images/dkm.jpeg',
     'assets/images/dkm-iitg.jpg',
     'assets/images/dkm-cgi.jpg',
-    'assets/images/dkm-edgeverve.jpg',
-    'assets/images/deepak-iitg.jpg',
     'assets/images/deepak-edgeverve.jpg',
+    'assets/images/deepak-iitg.jpg',
   ];
   currentImageIndex = 0;
   private autoScrollTimer?: ReturnType<typeof setInterval>;
