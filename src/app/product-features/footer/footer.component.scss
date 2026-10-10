@@ -12,6 +12,18 @@
   flex-wrap: wrap;
 }
 
+.footer-picture a {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.4rem;
+}
+
+@media (max-width: 1024px) {
+  .footer-picture > div {
+    flex: 0 0 100%;
+  }
+}
+
 .profile-heading {
   text-align: right;
   align-items: center;

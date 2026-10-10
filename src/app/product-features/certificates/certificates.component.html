@@ -1,6 +1,25 @@
-<div style="overflow:auto">
-  <ag-grid-angular style="width: auto; height: 100vh;" class="ag-theme-alpine" [rowData]="rowData"
+<div class="certificates-container">
+  <ag-grid-angular class="certificate-grid ag-theme-alpine" [rowData]="rowData"
     [columnDefs]="columnDefs" [defaultColDef]="defaultColDef" (gridReady)="onGridReady($event)"
     [paginationAutoPageSize]="true" [pagination]="true" (rowClicked)="onRowClicked($event)">
   </ag-grid-angular>
+  <table class="print-table">
+    <thead>
+      <tr>
+        <th>Certificate</th>
+        <th>Technologies</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (certificate of rowData; track certificate.Certificate + certificate.Organization) {
+        <tr>
+          <td>
+            <img class="print-certificate-image" [src]="certificate.proof" [alt]="certificate.Certificate">
+            {{ certificate.Certificate }}
+          </td>
+          <td>{{ certificate.Technologies }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
 </div>
