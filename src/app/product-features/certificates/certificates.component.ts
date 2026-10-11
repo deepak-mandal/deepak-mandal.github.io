@@ -119,13 +119,13 @@ export class CertificatesComponent implements OnInit {
       proof: 'assets/images/data-structures-and-algorithms.png',
       name: ''
     },
-    {
-      Organization: 'CGI | 2024',
-      Certificate: 'Product Engineering',
-      Technologies: 'Java, Spring Boot, Angular, SQL',
-      proof: 'assets/images/cgi-4th-yearbook.jpg',
-      name: ''
-    },
+    // {
+    //   Organization: 'CGI | 2024',
+    //   Certificate: 'Product Engineering',
+    //   Technologies: 'Java, Spring Boot, Angular, SQL',
+    //   proof: 'assets/images/cgi-4th-yearbook.jpg',
+    //   name: ''
+    // },
     {
       Organization: 'Internshala Trainings | 2020',
       Certificate: 'Web Development',
@@ -154,27 +154,27 @@ export class CertificatesComponent implements OnInit {
       proof: 'assets/images/latex.jpg',
       name: 'LaTeX'
     },
-    {
-      Organization: 'HackerRank | 2020',
-      Certificate: 'Problem Solving',
-      Technologies: 'ds algo',
-      proof: 'assets/images/problem-solving.png',
-      name: 'Python'
-    },
-    {
-      Organization: 'HackerRank | 2020',
-      Certificate: 'SQL',
-      Technologies: 'SQL',
-      proof: 'assets/images/sql.png',
-      name: 'SQL'
-    },
-    {
-      Organization: 'HackerRank | 2020',
-      Certificate: 'Python',
-      Technologies: 'Python',
-      proof: 'assets/images/Python-basic.png',
-      name: 'Python'
-    },
+    // {
+    //   Organization: 'HackerRank | 2020',
+    //   Certificate: 'Problem Solving',
+    //   Technologies: 'ds algo',
+    //   proof: 'assets/images/problem-solving.png',
+    //   name: 'Python'
+    // },
+    // {
+    //   Organization: 'HackerRank | 2020',
+    //   Certificate: 'SQL',
+    //   Technologies: 'SQL',
+    //   proof: 'assets/images/sql.png',
+    //   name: 'SQL'
+    // },
+    // {
+    //   Organization: 'HackerRank | 2020',
+    //   Certificate: 'Python',
+    //   Technologies: 'Python',
+    //   proof: 'assets/images/Python-basic.png',
+    //   name: 'Python'
+    // },
   ];
 
   onGridReady(params: GridReadyEvent) {

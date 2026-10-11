@@ -15,7 +15,8 @@
       <h2>
         <span class="step-label-title">
           <b>Finacle</b>
-          <a class="step-link-icon no_href_style" href="https://www.finacle.com/" target="_blank" aria-label="Open Finacle in new tab">
+          <a class="step-link-icon no_href_style" href="https://www.finacle.com/" target="_blank"
+            aria-label="Open Finacle in new tab">
             <mat-icon>open_in_new</mat-icon>
           </a>
         </span>
@@ -23,19 +24,51 @@
       </h2>
       <ul>
         <li class="li_style">
-          System design, solution use case with HLD and LLD, backend development using Java, Spring boot, microservices
+          Design & development of Finacle banking platform using <b>Java v25, Spring boot v4, microservices, Kafka,
+            Redis, PostgreSQL, composable
+            architecture with LMAX disruptor, Domain-driven design.</b>
         </li>
         <li class="li_style">
-          Design & development of Finacle banking platform using Spring boot, Kafka, Redis, Spring AOP, Custom annotation
+          <b>System design</b>, solution use case with <b>HLD</b> and <b>LLD</b>. Delivered access management in
+          Contract APIs using <b>Spring security</b>.
+
         </li>
         <li class="li_style">
-          Delivered access management in Contract APIs using Spring security & Enabled custom field support in deal/facility API with Kafka event.
-        </li>
-         <li class="li_style">
-          Used Clojure for data validation and payload mapping to internal system data structure.
+          Implemented <b>custom exception feature</b> with ignore exception & custom field support in the create, modify
+          & retrieve deal/facility API
         </li>
         <li class="li_style">
-          Implemented custom exception feature in the create, modify & retrieve deal/facility API and audit feature in the expire deal/facility API
+          Designed re-usable <b>custom annotation</b> for audit feature in the expire deal/facility API using <b>Spring
+            AOP</b>. </li>
+        <li class="li_style">
+          Externalize <b>service extension</b> under existing <b>domain</b> to support <b>Customization
+            functionality</b> for Contract API, without modifying core
+          product files, using external mapper files to enable loan notices. </li>
+        <li class="li_style">
+          Resolved defects across the core contract application.
+        </li>
+        <li class="li_style">
+          Refactored the contract app to <b>support multiple product (loans/deposit/wallet, etc.) in a single
+            instance</b> by introducing common, custom &
+          product layer to improve maintainability & scalability with dynamic behaviour-driven
+          files/applicable-services/mappers/schema validation
+          files fetch based on <b>{{ '{' }}profile{{ '}' }}/{{ '{' }}product{{ '}' }} environment variable</b> on runtime.
+        </li>
+        <li class="li_style">
+          Design & development of <b>Syndication domain lifecycle app</b> which handles multiple participation bank
+          contribute to loans a huge amount to
+          corporate/institution, which mitigate the financial risk overall using <b>Java, Spring boot, Spring AOP,
+            Spring security, Spring data JPA, Postgre
+            SQL, Kafka, Factory design pattern.</b>
+        </li>
+        <li class="li_style">
+          Implemented re-usable computation algorithms for the <b>contribution calculation</b> at Facility level
+          corresponding to drawdowns & contribution
+          calculation at drawdown level corresponding to participations under the deal contract.
+        </li>
+        <li class="li_style">
+          Developed <b>consumer service</b> with re-try mechanism for the initial data setup for contribution
+          calculation in <b>event-driven way</b>.
         </li>
       </ul>
     </div>

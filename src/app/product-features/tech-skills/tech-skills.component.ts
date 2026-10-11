@@ -56,12 +56,14 @@ export class TechSkillsComponent implements OnInit {
             { technologies: SKILLS.SPRING, proof: SKILLS.SPRING_LOGO },
             { technologies: SKILLS.KAFKA, proof: SKILLS.KAFKA_LOGO },
             { technologies: SKILLS.REDIS, proof: SKILLS.REDIS_LOGO },
-            { technologies: SKILLS.MYBATIS, proof: SKILLS.MYBATIS_LOGO },
-            { technologies: SKILLS.RABBITMQ, proof: SKILLS.RABBITMQ_LOGO },
-            { technologies: SKILLS.CLAMAV, proof: SKILLS.CLAMAV_LOGO },
+            // { technologies: SKILLS.MYBATIS, proof: SKILLS.MYBATIS_LOGO },
+            // { technologies: SKILLS.RABBITMQ, proof: SKILLS.RABBITMQ_LOGO },
+            // { technologies: SKILLS.CLAMAV, proof: SKILLS.CLAMAV_LOGO },
+            { technologies: SKILLS.SPRING_DATA_JPA, proof: SKILLS.SPRING_LOGO },
+            { technologies: SKILLS.SPRING_SECURITY, proof: SKILLS.SPRING_LOGO },
+            { technologies: SKILLS.SPRING_AOP, proof: SKILLS.SPRING_LOGO },
             { technologies: SKILLS.JUNIT, proof: SKILLS.JUNIT_LOGO },
             { technologies: SKILLS.SONAR, proof: SKILLS.SONAR_LOGO },
-            { technologies: SKILLS.MAVEN, proof: SKILLS.MAVEN_LOGO },
           ]
         },
         {
@@ -73,40 +75,38 @@ export class TechSkillsComponent implements OnInit {
             { technologies: SKILLS.AG_GRID, proof: SKILLS.AG_GRID_LOGO },
             { technologies: SKILLS.ANGULAR_MATERIALS, proof: SKILLS.ANGULAR_MATERIALS_LOGO },
             { technologies: SKILLS.RXJS, proof: SKILLS.RXJS_LOGO },
-            { technologies: SKILLS.BOOTSTRAP, proof: SKILLS.BOOTSTRAP_LOGO },
+            // { technologies: SKILLS.BOOTSTRAP, proof: SKILLS.BOOTSTRAP_LOGO },
             { technologies: SKILLS.ANGULAR_TC, proof: SKILLS.ANGULAR_TC_LOGO },
             { technologies: SKILLS.ESLINT, proof: SKILLS.ESLINT_LOGO },
-            { technologies: SKILLS.LODASH, proof: SKILLS.LODASH_LOGO }
+            // { technologies: SKILLS.LODASH, proof: SKILLS.LODASH_LOGO }
           ]
         },
         {
           technologies: SKILLS.DB, children: [
             { technologies: SKILLS.ORACLE, proof: SKILLS.ORACLE_LOGO },
             { technologies: SKILLS.POSTGRESQL, proof: SKILLS.POSTGRESQL_LOGO },
-            { technologies: SKILLS.MS_SQL, proof: SKILLS.MS_SQL_LOGO },
-            { technologies: SKILLS.MYSQL, proof: SKILLS.MYSQL_LOGO },
-            { technologies: SKILLS.SQLITE, proof: SKILLS.SQLITE_LOGO },
-            { technologies: SKILLS.MONGODB, proof: SKILLS.MONGODB_LOGO },
-            { technologies: SKILLS.SOLR, proof: SKILLS.SOLR_LOGO }
+            // { technologies: SKILLS.MS_SQL, proof: SKILLS.MS_SQL_LOGO },
+            // { technologies: SKILLS.MYSQL, proof: SKILLS.MYSQL_LOGO },
+            // { technologies: SKILLS.SQLITE, proof: SKILLS.SQLITE_LOGO },
+            // { technologies: SKILLS.MONGODB, proof: SKILLS.MONGODB_LOGO },
+            // { technologies: SKILLS.SOLR, proof: SKILLS.SOLR_LOGO }
           ]
         },
-        {
-          technologies: SKILLS.SOFTWARE_DEV_TOOLS, children: [
-            { technologies: SKILLS.ECLIPSE, proof: SKILLS.ECLIPSE_LOGO },
-            { technologies: SKILLS.VISUAL_STUDIO_CODE, proof: SKILLS.VS_CODE_LOGO },
-            { technologies: SKILLS.INTILIJ_IDEA, proof: SKILLS.INTILIJ_IDEA_LOGO },
-            { technologies: SKILLS.BITBUCKET, proof: SKILLS.BITBUCKET_LOGO },
-            { technologies: SKILLS.JIRA, proof: SKILLS.JIRA_LOGO },
-            { technologies: SKILLS.CONFLUENCE, proof: SKILLS.CONFLUENCE_LOGO },
-            { technologies: SKILLS.POSTMAN, proof: SKILLS.POSTMAN_LOGO },
-            { technologies: SKILLS.SWAGGER, proof: SKILLS.SWAGGER_LOGO },
-            { technologies: SKILLS.TOMCAT, proof: SKILLS.TOMCAT_LOGO },
-            { technologies: SKILLS.WILDFLY, proof: SKILLS.WILDFLY_LOGO },
-
-
-
-          ]
-        },
+        // {
+        //   technologies: SKILLS.SOFTWARE_DEV_TOOLS, children: [
+        //     // { technologies: SKILLS.ECLIPSE, proof: SKILLS.ECLIPSE_LOGO },
+        //     // { technologies: SKILLS.VISUAL_STUDIO_CODE, proof: SKILLS.VS_CODE_LOGO },
+        //     // { technologies: SKILLS.INTILIJ_IDEA, proof: SKILLS.INTILIJ_IDEA_LOGO },
+        //     // { technologies: SKILLS.BITBUCKET, proof: SKILLS.BITBUCKET_LOGO },
+        //     // { technologies: SKILLS.JIRA, proof: SKILLS.JIRA_LOGO },
+        //     // { technologies: SKILLS.CONFLUENCE, proof: SKILLS.CONFLUENCE_LOGO },
+        //     { technologies: SKILLS.POSTMAN, proof: SKILLS.POSTMAN_LOGO },
+        //     { technologies: SKILLS.SWAGGER, proof: SKILLS.SWAGGER_LOGO },
+        //     // { technologies: SKILLS.MAVEN, proof: SKILLS.MAVEN_LOGO },
+        //     { technologies: SKILLS.TOMCAT, proof: SKILLS.TOMCAT_LOGO },
+        //     { technologies: SKILLS.WILDFLY, proof: SKILLS.WILDFLY_LOGO },
+        //   ]
+        // },
       ]
     },
     {
@@ -116,26 +116,26 @@ export class TechSkillsComponent implements OnInit {
         { technologies: SKILLS.CI_CD, proof: SKILLS.CI_CD_LOGO },
         { technologies: SKILLS.DOCKER, proof: SKILLS.DOCKER_LOGO },
         { technologies: SKILLS.PUTTY, proof: SKILLS.PUTTY_LOGO },
-        { technologies: SKILLS.WINSCP, proof: SKILLS.WINSCP_LOGO },
+        // { technologies: SKILLS.WINSCP, proof: SKILLS.WINSCP_LOGO },
         { technologies: SKILLS.NGINX, proof: SKILLS.NGINX_LOGO },
         { technologies: SKILLS.SERVICE_WRAPPER, proof: SKILLS.SERVICE_WRAPPER_LOGO }
       ]
     },
-    {
-      technologies: SKILLS.ANALYTICAL_TOOLS, children: [
-        { technologies: SKILLS.PYTHON, proof: SKILLS.PY },
-        { technologies: SKILLS.PANDAS, proof: SKILLS.PANDAS_LOGO },
-        { technologies: SKILLS.NUMPY, proof: SKILLS.NUMPY_LOGO },
-        { technologies: SKILLS.MATPLOTLIB, proof: SKILLS.MATPLOTLIB_LOGO },
-        { technologies: SKILLS.OTHER_ML, proof: SKILLS.ML_LOGO },
-      ]
-    },
-    {
-      technologies: SKILLS.OS, children: [
-        { technologies: SKILLS.LINUX, proof: SKILLS.LINUX_LOGO },
-        { technologies: SKILLS.WINDOWS, proof: SKILLS.WINDOW_LOGO },
-      ]
-    },
+    // {
+    //   technologies: SKILLS.ANALYTICAL_TOOLS, children: [
+    //     { technologies: SKILLS.PYTHON, proof: SKILLS.PY },
+    //     { technologies: SKILLS.PANDAS, proof: SKILLS.PANDAS_LOGO },
+    //     { technologies: SKILLS.NUMPY, proof: SKILLS.NUMPY_LOGO },
+    //     { technologies: SKILLS.MATPLOTLIB, proof: SKILLS.MATPLOTLIB_LOGO },
+    //     { technologies: SKILLS.OTHER_ML, proof: SKILLS.ML_LOGO },
+    //   ]
+    // },
+    // {
+    //   technologies: SKILLS.OS, children: [
+    //     { technologies: SKILLS.LINUX, proof: SKILLS.LINUX_LOGO },
+    //     { technologies: SKILLS.WINDOWS, proof: SKILLS.WINDOW_LOGO },
+    //   ]
+    // },
     {
       technologies: SKILLS.MISCELLANEOUS, children: [
         { technologies: SKILLS.DS_ALGO, proof: SKILLS.DS_ALGO_LOGO },
