@@ -3,8 +3,6 @@
 @import 'ag-grid-community/styles/ag-theme-alpine.css';
 /* Blackletter / Gothic fonts imported from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap');
-// @import "ag-grid-community/dist/styles/ag-grid.css";
-// @import "ag-grid-community/dist/styles/ag-theme-balham.css";
 
 html,
 body {
@@ -18,7 +16,7 @@ body {
 }
 
 .mat-mdc-card-title {
-  color: rgb(227, 25, 55);
+  // color: rgb(227, 25, 55);
 }
 
 /* Reusable Blackletter / Gothic font class */
@@ -28,7 +26,7 @@ body {
 
 
 .mat-mdc-card-subtitle {
-  color: rgb(82, 54, 171) !important;
+  // color: rgb(82, 54, 171) !important;
 }
 
 .mat-list-base .mat-list-option {

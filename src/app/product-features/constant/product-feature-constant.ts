@@ -9,8 +9,8 @@ export const PROFILE = {
 export const EDUCATION = {
     IIT: 'Engineering',
     IITG: 'Indian Institute of Technology, Guwahati ',
-    BTECH: 'Bachelor of Technology',
-    SESSION: '2017-2021',
+    BTECH: 'Bachelor of Technology in Chemical Science and Technology',
+    SESSION: '(2017-2021)',
     IITG_LOGO: 'assets/images/IITG.png',
     SENIOR_SECONDARY: 'Senior Secondary',
     IITG_LINK: 'https://www.iitg.ac.in/'

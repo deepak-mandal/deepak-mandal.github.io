@@ -22,6 +22,8 @@ import { MatButtonModule } from '@angular/material/button';
     CommonModule, MatExpansionModule, MatDividerModule, MatStepperModule, ReactiveFormsModule]
 })
 export class ProjectsComponent implements OnInit {
+    demoServer = "https://deepak-mandal.github.io/ims/"
+
 
   constructor(public dialog: MatDialog) { }
 

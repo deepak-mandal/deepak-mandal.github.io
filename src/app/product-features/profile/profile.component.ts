@@ -8,7 +8,7 @@ import { NgStyle } from '@angular/common';
   selector: 'profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css'],
-  imports: [MatIcon, MatCard, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent]
+  imports: [MatCard, MatCardHeader, MatCardAvatar, NgStyle, MatCardTitle, MatCardSubtitle, MatCardContent]
 })
 export class ProfileComponent implements OnInit {
 

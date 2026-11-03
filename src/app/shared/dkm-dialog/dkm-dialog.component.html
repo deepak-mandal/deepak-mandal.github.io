@@ -13,6 +13,18 @@
   </div>
   } @else {
   <mat-card>
+    <div style="margin: 10px;" *ngFor="let project of data?.projects">
+      <h1>{{project?.heading}}</h1>
+      <div style="margin: 10px;"  *ngFor="let desc of project.description">
+        <li>{{desc}}</li>
+      </div>
+      <!-- <h3 *ngIf="project?.description2">{{project?.description2}}</h3>
+      <h3 *ngIf="project?.description3">{{project?.description3}}</h3>
+      <h3 *ngIf="project?.description4">{{project?.description4}}</h3> -->
+      <div style="float: right;">
+            <a href="{{project?.url}}" target="_blank">{{project?.url}}</a>
+          </div>
+    </div>
     <img mat-card-image [src]="currentImage" [alt]="data?.altText">
   </mat-card>
   }

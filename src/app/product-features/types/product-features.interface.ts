@@ -4,8 +4,17 @@ export interface CERTIFICATE_ENTITY {
   proof: string;
   Technologies: string;
   name: string;
+    projects?: PROJECT_ENTITY[];
 }
 
+export interface PROJECT_ENTITY{
+heading?: string;
+    description?: string[] | [];
+    // description2?: string;
+    // description3?: string;
+    // description4?: string;
+    url?: string;
+}
 export interface SKILL_ENTITY {
   skill: string;
   technologies: TECH[];

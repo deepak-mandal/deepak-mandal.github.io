@@ -29,7 +29,7 @@ export class CertificatesComponent implements OnInit {
     sortable: true,
     resizable: true,
     filter: true,
-    cellStyle: { color: 'rgb(82, 54, 171)' }
+    // cellStyle: { color: 'rgb(82, 54, 171)' }
 
   };
 
@@ -43,12 +43,100 @@ export class CertificatesComponent implements OnInit {
     },
     {
       Organization: 'IIT Guwahati | F2017-21',
-      Certificate: 'Introduction to Computing - Data structures & algorithms, Computing Laboratory, Computational (Theory+Lab) & Core Mathematics - Calculus, Linear Algebra',
+      Certificate: 'Introduction to Computing & Core Mathematics',
       Technologies: 'C, C++, FORTRAN',
       proof: 'assets/images/IITG.png',
-      name: 'Computing Laboratory'
+      name: 'Computing Laboratory',
+      projects: [
+        {
+          heading: 'Introduction to Computing - Data structures & algorithms, Computing Laboratory',
+          description: ['Core Mathematics - Calculus, Linear Algebra', 'Computational (Theory+Lab)',],
+          url: ''
+        }
+      ]
     },
-   
+    {
+      Organization: 'CGI | 2021',
+      Certificate: 'Java full-stack training - Spring & Angular',
+      Technologies: 'Java, SQL, Spring, Angular',
+      proof: 'assets/images/cgi.png',
+      name: 'LaTeX',
+      projects: [
+        {
+          heading: 'ReviewBook Platform',
+          description: ['Designed & developed an app where user can provide genuine reviews and ratings that can influence buying decision of other consumers',
+            'Designed Architecture diagram, Database data model & schema by analyzing business requirement/high-level features.',
+            'Developed microservice architecture for Registration, Login, Product management, Review management services using Spring Boot with NoSQL/MongoDB & SQL/MySQL databases. JWT authentication, microservices communication using RabbitMQ; Docker',
+            'Built Restful APIs that involves CRUD operations. Designed angular application architecture including single page application corresponding to services using HTML, CSS, Bootstrap, angular materials, AG Grid; implemented custom, shared module features.',
+          ],
+          url: 'https://github.com/deepak-mandal/ReviewBook'
+        }
+      ]
+    },
+    {
+      Organization: 'IIT Guwahati | 2020',
+      Certificate: 'CRSI Conference Website',
+      Technologies: 'HTML, CSS, Bootstrap, MySQLi, PHP',
+      proof: 'assets/images/Project-CRSI_Conference_Website.jpg',
+      name: ''
+    },
+    {
+      Organization: 'Henry Harvin Analytics Academy | 2020',
+      Certificate: 'Certified Python Marketing Analyst',
+      Technologies: 'Machine learning technique (ML), Python',
+      proof: 'assets/images/cpma.png',
+      name: '',
+      projects: [
+        {
+          heading: 'House Price Prediction',
+          description: ['Built a Linear Regression Model to Predict the Sale Price of the House based on its characteristics.',
+          ],
+          url: 'https://github.com/deepak-mandal/SalePricePrediction'
+        },
+        {
+          heading: 'Web and PDF file Data Extraction (DueDash Germany)',
+          description: ['Summarization of Text:- Generated the summary from the Source text either web link or PDF file. Further Drawn their Word Cloud',
+            'Text and Image Extraction from any Web Link or URL:- Extraced Images and text data from the web Links and PDF files.',
+          ],
+          url: 'https://github.com/deepak-mandal/DueDash-Germany'
+        },
+        {
+          heading: 'Wikipedia Text Analytics and Mining',
+          description: ['Analysed the unstructured data (article) using text mining and created the Word Cloud out of that; to understand what these article trying to say, rather than reading the entire article.',
+            'Technologies used: Python3, WordCloud'],
+          url: 'https://github.com/deepak-mandal/Word-Cloud-from-Text-Mining'
+        },
+
+      ]
+
+    },
+    {
+      Organization: 'Internshala Trainings | 2020',
+      Certificate: 'Programming in Python',
+      Technologies: 'Python, SQLite, GUI - PyQt',
+      proof: 'assets/images/python.png',
+      name: '',
+      projects: [
+        {
+          heading: 'Fantasy Cricket Game',
+          description: ['Developed a Python-based desktop application using PyQt framework with SQLite Database.'],
+          url: 'https://github.com/deepak-mandal/Game'
+        },
+        {
+          heading: 'Email Automation with Python',
+          description: ['Email automation including extraction of emails from Linkedin Post using selenium, chrome automated test software, re, pandas, Python, smtplib, Linux & Window OS, HTML, CSS, with attachments using Encrypted connections.'],
+          url: 'https://github.com/deepak-mandal/Email-Automation-with-Python'
+        }
+      ]
+
+    },
+{
+      Organization: 'Infosys/EdgeVerve/Finacle | F2025-26',
+      Certificate: 'Kudos - Finacle',
+      Technologies: 'Java, Spring boot, Kafka, System design',
+      proof: 'assets/images/ev_kudos.png',
+      name: ''
+    },
     {
       Organization: 'Greater Toronto Area (GTA) | F2022',
       Certificate: 'Bronze award from president, CGI',
@@ -70,46 +158,20 @@ export class CertificatesComponent implements OnInit {
       proof: 'assets/images/applauds.png',
       name: ''
     },
-     {
-      Organization: 'Infosys/EdgeVerve/Finacle | F2025-26',
-      Certificate: 'Kudos - Finacle',
-      Technologies: 'Java, Spring boot, Kafka, System design',
-      proof: 'assets/images/ev_kudos.png',
-      name: ''
-    },
-     {
+    
+    {
       Organization: 'Collaboration with CGI and Microsoft | F2025',
       Certificate: 'AI Powered Software Development (CGI)',
       Technologies: 'AI, Java, Azure',
       proof: 'assets/images/AI.png',
       name: ''
     },
-    {
-      Organization: 'IIT Guwahati | 2020',
-      Certificate: 'CRSI Conference Website',
-      Technologies: 'HTML, CSS, Bootstrap, MySQLi, PHP',
-      proof: 'assets/images/Project-CRSI_Conference_Website.jpg',
-      name: ''
-    },
-    {
-      Organization: 'Henry Harvin Analytics Academy | 2020',
-      Certificate: 'Certified Python Marketing Analyst',
-      Technologies: 'Machine learning technique (ML), Python',
-      proof: 'assets/images/cpma.png',
-      name: ''
-    },
+    
     {
       Organization: 'CGI DataCycle360 - European solutions | F2023-24',
       Certificate: 'Applauds from Scrum Master, CGI | DataCycle360',
       Technologies: 'Angular, Spring boot',
       proof: 'assets/images/cgi-2024.png',
-      name: ''
-    },
-    {
-      Organization: 'Internshala Trainings | 2020',
-      Certificate: 'Programming in Python',
-      Technologies: 'Python, SQLite, GUI - PyQt',
-      proof: 'assets/images/python.png',
       name: ''
     },
     {
@@ -140,13 +202,7 @@ export class CertificatesComponent implements OnInit {
       proof: 'assets/images/cpp.png',
       name: ''
     },
-    {
-      Organization: 'CGI | 2021',
-      Certificate: 'Java full-stack training - Spring & Angular',
-      Technologies: 'Java, SQL, Spring, Angular',
-      proof: 'assets/images/cgi.png',
-      name: 'LaTeX'
-    },
+
     {
       Organization: 'RSFM, IITG | 2018',
       Certificate: 'LaTeX Workshop @ IITG',
@@ -192,6 +248,7 @@ export class CertificatesComponent implements OnInit {
         imageUrl: event.data.proof,
         altText: event.data.Technologies,
         content: event.data.Certificate + ' | ' + event.data.Organization,
+        projects: event.data.projects
       }
     });
   }

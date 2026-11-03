@@ -4,11 +4,13 @@ import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { CdkScrollable } from '@angular/cdk/scrolling';
 import { MatCard, MatCardImage } from '@angular/material/card';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-dkm-dialog',
   templateUrl: './dkm-dialog.component.html',
   styleUrls: ['./dkm-dialog.component.scss'],
-  imports: [MatDialogTitle, MatButton, MatDialogClose, MatIcon, CdkScrollable, MatDialogContent, MatCard, MatCardImage, MatDialogActions]
+  imports: [CommonModule,
+    MatDialogTitle, MatButton, MatDialogClose, MatIcon, CdkScrollable, MatDialogContent, MatCard, MatCardImage, MatDialogActions]
 })
 export class DkmDialogComponent implements OnInit, OnDestroy {
 
