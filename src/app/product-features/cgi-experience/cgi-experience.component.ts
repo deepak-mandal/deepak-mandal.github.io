@@ -1,4 +1,4 @@
-import { NgStyle } from '@angular/common';
+import { CommonModule, NgStyle } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -6,11 +6,19 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { EXPERIENCE } from '../constant/product-feature-constant';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { StepperSelectionEvent } from '@angular/cdk/stepper';
+import { STEPPER_GLOBAL_OPTIONS, StepperSelectionEvent } from '@angular/cdk/stepper';
+import { MatDialog } from '@angular/material/dialog';
+import { ReviewDocumentationComponent } from '../review-documentation/review-documentation.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'dkm-cgi-experience',
-  imports: [MatCardModule, NgStyle, MatStepperModule, MatIconModule],
+  imports: [MatCardModule,
+    //  NgStyle,
+      MatStepperModule, MatIconModule, MatButtonModule, CommonModule],
+  providers: [{ provide: STEPPER_GLOBAL_OPTIONS, useValue: { displayDefaultIndicatorType: false } }],
+  // MatTabsModule, MatCardModule, MatIconModule, MatButtonModule, DkmCgiExperienceComponent, DkmEdgeverveExperienceComponent,
+  //   CommonModule, MatExpansionModule, MatDividerModule, MatStepperModule, ReactiveFormsModule
   templateUrl: './cgi-experience.component.html',
   styleUrl: './cgi-experience.component.scss',
 })
@@ -23,7 +31,8 @@ export class DkmCgiExperienceComponent implements OnInit {
   secondFormGroup!: UntypedFormGroup;
 
   constructor(private _formBuilder: UntypedFormBuilder,
-    private breakpointObserver: BreakpointObserver
+    private breakpointObserver: BreakpointObserver,
+    public dialog: MatDialog
   ) {
     this.breakpointObserver.observe([
       Breakpoints.Handset
@@ -60,4 +69,17 @@ export class DkmCgiExperienceComponent implements OnInit {
       this.iconValue = 'business'
     }
   }
+
+    openDialog(): void {
+      this.dialog.open(
+        ReviewDocumentationComponent, {
+        width: 'auto',
+        height: 'auto',
+        data: {
+          title: 'ReviewBook - Product Overview',
+          submitText: 'Close'
+  
+        }
+      });
+    }
 }

@@ -2,6 +2,33 @@
   <mat-expansion-panel [expanded]="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
+        <img [src]="evImagePathOrUrl" class="stepper-icon" alt="EdgeVerve">
+      </mat-panel-title>
+      <mat-panel-description>Jan. 2026 - Present</mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-card>
+      <dkm-edgeverve-experience></dkm-edgeverve-experience>
+    </mat-card>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <img [src]="cgiImagePathOrUrl" class="stepper-icon" alt="CGI">
+      </mat-panel-title>
+      <mat-panel-description>Sept. 2021 - Jan. 2026</mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-card>
+      <dkm-cgi-experience></dkm-cgi-experience>
+    </mat-card>
+  </mat-expansion-panel>
+</mat-accordion>
+
+
+<mat-accordion [multi]="true">
+  <!-- <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
         <img [src]="cgiImagePathOrUrl" class="stepper-icon"> &nbsp; ReviewBook
       </mat-panel-title>
       <mat-panel-description>Sept. 2021</mat-panel-description>
@@ -45,41 +72,42 @@
       <mat-card-actions class="cart-action">
         <div>
 
-          <!-- <button mat-raised-button><span>
+          <button mat-raised-button><span>
               <a href="{{demoServer}}" target="_blank" class="fixed-resume-button">
                 <mat-icon>dns</mat-icon>
-              </a></span></button> &nbsp; -->
+              </a></span></button> &nbsp;
 
           <button mat-raised-button (click)="openDialog()"><span
               style="background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Product
               overview</span></button>
-          <!-- <a mat-raised-button href="https://calm-lokum-c20f66.netlify.app/" target="_blank"
+          <a mat-raised-button href="https://calm-lokum-c20f66.netlify.app/" target="_blank"
             rel="noopener noreferrer"><span
               style="background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Demo
-              site</span></a> -->
+              site</span></a>
         </div>
       </mat-card-actions>
     </mat-card>
-  </mat-expansion-panel>
+  </mat-expansion-panel> -->
 
   <mat-expansion-panel [expanded]="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <img [src]="iitgImagePathOrUrl" class="stepper-icon"> &nbsp; CRSI Conference
+        <img [src]="iitgImagePathOrUrl" class="stepper-icon"> 
+        <!-- &nbsp; IIT Guwahati -->
       </mat-panel-title>
       <mat-panel-description>April 2020-June 2020</mat-panel-description>
     </mat-expansion-panel-header>
     <mat-card>
       <mat-card-header>
-        <div mat-card-avatar
+        <!-- <div mat-card-avatar
           [ngStyle]="{'background-image': 'url(' + iitgImagePathOrUrl + ')', 'background-size': 'cover'  }">
-        </div>
+        </div> -->
         <mat-card-title>
-          Conference Website
+         CRSI Conference Website
         </mat-card-title>
-        <mat-card-subtitle>
+        <!-- <mat-card-subtitle>
           IITG
-        </mat-card-subtitle>
+        </mat-card-subtitle> -->
       </mat-card-header>
       <mat-card-content>
         <ul>
@@ -104,20 +132,21 @@
   <mat-expansion-panel [expanded]="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <img [src]="resultImage" class="stepper-icon"> &nbsp; Machine learning
+        <img [src]="resultImage" class="stepper-icon"> &nbsp; 
+        <!-- Machine learning -->
       </mat-panel-title>
       <mat-panel-description>Jul. 2020 - May 2021</mat-panel-description>
     </mat-expansion-panel-header>
     <mat-card>
       <mat-card-header>
-        <div mat-card-avatar [ngStyle]="{'background-image': 'url(' + resultImage + ')', 'background-size': 'cover'  }">
-        </div>
+        <!-- <div mat-card-avatar [ngStyle]="{'background-image': 'url(' + resultImage + ')', 'background-size': 'cover'  }">
+        </div> -->
         <mat-card-title>
-          Certified Python Marketing Analyst
+          Certified Python Marketing Analyst (Machine learning)
         </mat-card-title>
-        <mat-card-subtitle>
+        <!-- <mat-card-subtitle>
           Henry Harvin Academy
-        </mat-card-subtitle>
+        </mat-card-subtitle> -->
       </mat-card-header>
       <mat-card-content>
         <h2>House Price Prediction</h2>

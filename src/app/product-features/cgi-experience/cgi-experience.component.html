@@ -1,5 +1,5 @@
 <mat-card>
-  <mat-card-header>
+  <!-- <mat-card-header>
     <div mat-card-avatar
       [ngStyle]="{'background-image': 'url(' + cgiImagePathOrUrl + ')', 'background-size': 'cover'  }">
     </div>
@@ -9,7 +9,7 @@
     <mat-card-subtitle>
       Senior Software Engineer / CONSULTANT
     </mat-card-subtitle>
-  </mat-card-header>
+  </mat-card-header> -->
   <mat-card-content>
     Responsibility: <b><i>Product Engineering</i></b> including technical analysis, solution architecture, UI & API
     development, functional testing, code review.
@@ -202,16 +202,88 @@
         </mat-card>
       </mat-step>
 
+      <mat-step state="pe" label="">
+        <ng-template matStepLabel>
+          <div class="step-label">
+            <div class="step-label-title">
+              <b>ReviewBook Platform</b>
+              <a class="step-link-icon no_href_style" (click)="openDialog()" target="_blank" aria-label="Open ReviewBook in new tab">
+                <mat-icon>open_in_new</mat-icon>
+              </a>
+              <!-- <button mat-raised-button (click)="openDialog()"><span
+              style="background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Product
+              overview</span></button> -->
+            </div>
+            <div class="step-label-right">Product Engineering</div>
+          </div>
+        </ng-template>
+        <mat-card>
+      <!-- <mat-card-header>
+        <div mat-card-avatar
+          [ngStyle]="{'background-image': 'url(' + cgiImagePathOrUrl + ')', 'background-size': 'cover'  }">
+        </div>
+        <mat-card-title>
+          ReviewBook Platform
+        </mat-card-title>
+        <mat-card-subtitle>
+          CGI - Product Engineering
+        </mat-card-subtitle>
+      </mat-card-header> -->
+      <mat-card-content>
+        <ul>
+          <li class="li_style">
+            <b><i>Designed & developed</i></b> an app where user can provide genuine reviews and ratings
+            that can influence buying decision of other consumers
+          </li>
+          <li class="li_style">
+            Designed Architecture diagram, <b><i>Database data model</i></b> & schema by analyzing business
+            requirement/high-level features.
+          </li>
+          <li class="li_style">
+            Developed <b><i>microservice architecture</i></b> for Registration, Login, Product management,
+            Review management services using Spring Boot with <b><i>NoSQL/MongoDB & SQL/MySQL</i></b>
+            databases. <b><i>JWT</i></b> authentication, <b><i>microservices communication</i></b> using
+            RabbitMQ; Docker
+          </li>
+          <li class="li_style">
+            <b><i>Built Restful APIs</i></b> that involves CRUD operations. Designed <b><i>angular
+                application architecture</i></b> including <b><i>single page application</i></b>
+            corresponding to services using HTML, <b><i>CSS</i></b>, Bootstrap, angular materials, AG Grid;
+            implemented custom, shared module features.
+          </li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions class="cart-action">
+        <div>
+
+          <!-- <button mat-raised-button><span>
+              <a href="{{demoServer}}" target="_blank" class="fixed-resume-button">
+                <mat-icon>dns</mat-icon>
+              </a></span></button> &nbsp; -->
+
+          <!-- <button mat-raised-button (click)="openDialog()"><span
+              style="background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Product
+              overview</span></button> -->
+          <!-- <a mat-raised-button href="https://calm-lokum-c20f66.netlify.app/" target="_blank"
+            rel="noopener noreferrer"><span
+              style="background: linear-gradient(to right, rgb(227, 25, 55), rgb(82, 54, 171)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Demo
+              site</span></a> -->
+        </div>
+      </mat-card-actions>
+    </mat-card>
+      </mat-step>
+
       <ng-template matStepperIcon="dc360"><mat-icon class="gradient-icon">storage</mat-icon></ng-template>
       <ng-template matStepperIcon="w360"><mat-icon class="gradient-icon">account_balance</mat-icon></ng-template>
+      <ng-template matStepperIcon="pe"><mat-icon class="gradient-icon">rate_review</mat-icon></ng-template>
       <ng-template matStepperIcon="done" let-index="index">
-        <mat-icon class="gradient-icon">{{ index === 0 ? 'storage' : 'account_balance' }}</mat-icon>
+        <mat-icon class="gradient-icon">{{ index === 0 ? 'storage' : index === 1 ? 'account_balance' : 'rate_review' }}</mat-icon>
       </ng-template>
       <ng-template matStepperIcon="edit" let-index="index">
-        <mat-icon class="gradient-icon">{{ index === 0 ? 'storage' : 'account_balance' }}</mat-icon>
+        <mat-icon class="gradient-icon">{{ index === 0 ? 'storage' : index === 1 ? 'account_balance' : 'rate_review' }}</mat-icon>
       </ng-template>
       <ng-template matStepperIcon="number" let-index="index">
-        <mat-icon class="gradient-icon">{{ index === 0 ? 'storage' : 'account_balance' }}</mat-icon>
+        <mat-icon class="gradient-icon">{{ index === 0 ? 'storage' : index === 1 ? 'account_balance' : 'rate_review' }}</mat-icon>
       </ng-template>
     </mat-stepper>
   </mat-card-content>

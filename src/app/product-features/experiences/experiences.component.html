@@ -1,4 +1,4 @@
-<mat-accordion [multi]="true">
+<!-- <mat-accordion [multi]="true">
   <mat-expansion-panel [expanded]="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
@@ -22,4 +22,28 @@
       <dkm-cgi-experience></dkm-cgi-experience>
     </mat-card>
   </mat-expansion-panel>
-</mat-accordion>
+</mat-accordion> -->
+
+
+<mat-card *ngFor="let experienceData of experiencesData" class="card">
+  @if (experienceData.cardTitle) {
+  <mat-card-header>
+    <div mat-card-avatar
+      [ngStyle]="{'background-image': 'url(' + experienceData.imagePathOrUrl + ')', 'background-size': 'cover'  }">
+    </div>
+    <mat-card-title>
+      @if (!experienceData.matCardTitleLink) {
+      <span>{{experienceData.cardTitle}}</span>
+      }
+      <span>@if (experienceData.matCardTitleLink) {
+        <a class="no_href_style" [href]="experienceData.matCardTitleLink" target="_blank">
+          {{experienceData.cardTitle}}</a>
+        }</span>
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{experienceData.cardSubTitle?.content || ''}}&nbsp;<i style="float: right;">{{experienceData.cardSubTitle?.rightContent
+        || ''}}</i>
+    </mat-card-subtitle>
+  </mat-card-header>
+  }
+</mat-card>

@@ -7,7 +7,12 @@ import { MatStepperModule } from '@angular/material/stepper';
 
 @Component({
   selector: 'dkm-edgeverve-experience',
-  imports: [MatStepperModule, MatCardModule, MatCardHeader, MatCardAvatar, MatIconModule, NgStyle],
+  imports: [MatStepperModule, MatCardModule,
+    //  MatCardHeader,
+    //  MatCardAvatar, 
+     MatIconModule, 
+    // NgStyle
+  ],
   templateUrl: './edgeverve-experience.component.html',
   styleUrl: './edgeverve-experience.component.scss',
 })
