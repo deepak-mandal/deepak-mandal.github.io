@@ -1,15 +1,15 @@
 
 export const PROFILE = {
     DEEPAK_MANDAL: "Deepak K. Mandal",
-    CGI_IITG: "Product Technical Analyst, Edgeverve (Infosys Finacle) | Former Sr. Software Engineer, CGI | B.Tech, IIT Guwahati",
+    CGI_IITG: "Software Engineer | IITian",
     PRFILE_PIC: 'assets/images/Deepak_Image.jpg',
-    DESCRIPTION: "~ 4 years of Professional experience in software engineering including significant expertise in Java technologies, SQL, Spring & Angular framework; with strong engineering Academic background from IIT Guwahati."
+    DESCRIPTION: "~ 4 years of Professional experience in software engineering industry including significant expertise in Java technologies, SQL, Spring & Angular framework; with strong engineering Academic background from IIT Guwahati."
 }
 
 export const EDUCATION = {
     IIT: 'Engineering',
     IITG: 'Indian Institute of Technology, Guwahati ',
-    BTECH: 'Bachelor of Technology in Chemical Science and Technology',
+    BTECH: 'Bachelor of Technology',
     SESSION: '(2017-2021)',
     IITG_LOGO: 'assets/images/IITG.png',
     SENIOR_SECONDARY: 'Senior Secondary',
@@ -23,9 +23,9 @@ export const EXPERIENCE = {
     FINACLE_LOGO1: 'assets/images/finacle1.png',
     CGI: 'CGI / Product Engineering',
     CGI_INFO_SYS: 'CGI Information Systems and Management Consultants Pvt. Ltd.',
-    SOFTWARE_CONSULTANT: 'Senior Software Engineer; Responsibility - Product Engineering including UI & API; Technologies - Java, Spring boot, Angular, SQL',// / CONSULTANT',
-    EDGEVERVE: 'EdgeVerve Systems Limited',
-    PRODUCT_TECH_ANALYST: 'Product Technical Analyst; Responsibility - System design, backend development; Technologies - Java, Spring boot, SQL, Kafka',
+    SOFTWARE_CONSULTANT: 'Senior Software Engineer',// / CONSULTANT',
+    EDGEVERVE: 'EdgeVerve Systems Limited (Infosys Finacle)',
+    PRODUCT_TECH_ANALYST: 'Product Technical Analyst',
     EV_LINK: 'https://www.edgeverve.com/',
     CGI_LINK:'https://www.cgi.com/en',
     DATACYCLE360_1: 'Worked on CGI DataCycle360 Webshop product, an eCommerce platform which is responsible for ordering items & approving purchases; Technical analysis/investigation of required functionality & features; Implemented new UI features using Angular',
