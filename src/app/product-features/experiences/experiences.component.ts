@@ -18,25 +18,23 @@ import { ReactiveFormsModule } from '@angular/forms';
   styleUrls: ['./experiences.component.css'],
   standalone: true,
   imports: [MatCardModule, MatIconModule,
-    //  DkmCgiExperienceComponent, DkmEdgeverveExperienceComponent,
-
     CommonModule, MatExpansionModule, MatDividerModule, MatStepperModule, ReactiveFormsModule]
 })
 export class ExperiencesComponent implements OnInit {
 
   cgiImagePathOrUrl = EXPERIENCE.CGI_LOGO;
-  evImagePathOrUrl = EXPERIENCE.FINACLE_LOGO1;//EV_IL_LOGO;
+  evImagePathOrUrl = EXPERIENCE.FINACLE_LOGO1;
   experiencesData: ITabCardEntity[] = [
     {
-        tabLabel: EXPERIENCE.EDGEVERVE,
-        cardTitle: EXPERIENCE.EDGEVERVE,
-        imagePathOrUrl: EXPERIENCE.FINACLE_LOGO1,
-        cardSubTitle: {
-          content: EXPERIENCE.PRODUCT_TECH_ANALYST,
-          rightContent: EXPERIENCE.EV_SESSION
-        },
-        matCardTitleLink: EXPERIENCE.EV_LINK,
+      tabLabel: EXPERIENCE.EDGEVERVE,
+      cardTitle: EXPERIENCE.EDGEVERVE,
+      imagePathOrUrl: EXPERIENCE.FINACLE_LOGO1,
+      cardSubTitle: {
+        content: EXPERIENCE.PRODUCT_TECH_ANALYST,
+        rightContent: EXPERIENCE.EV_SESSION
       },
+      matCardTitleLink: EXPERIENCE.EV_LINK,
+    },
     {
       tabLabel: EXPERIENCE.CGI,
       cardTitle: EXPERIENCE.CGI_INFO_SYS,
@@ -45,23 +43,11 @@ export class ExperiencesComponent implements OnInit {
         content: EXPERIENCE.SOFTWARE_CONSULTANT,
         rightContent: EXPERIENCE.CGI_SESSION
       },
-      // cardContentList: [
-      //   EXPERIENCE.DATACYCLE360_1,
-      //   EXPERIENCE.DATACYCLE360_2,
-      //   EXPERIENCE.DATACYCLE360_3,
-      //   EXPERIENCE.WEALTH360_1,
-      //   EXPERIENCE.WEALTH360_2,
-      //   EXPERIENCE.WEALTH360_3,
-      //   EXPERIENCE.WEALTH360_4,
-      //   EXPERIENCE.WEALTH360_5,
-      //   EXPERIENCE.WEALTH360_6,
-
-      // ],
       session: EXPERIENCE.CGI_SESSION,
       location: EXPERIENCE.ASDC,
       matCardTitleLink: EXPERIENCE.CGI_LINK,
     },
-    
+
 
   ]
 
@@ -69,16 +55,16 @@ export class ExperiencesComponent implements OnInit {
 
   ngOnInit() { }
 
-    educationData: ITabCardEntity =
-      {
-        tabLabel: EDUCATION.IIT,
-        cardTitle: EDUCATION.IITG,
-        imagePathOrUrl: EDUCATION.IITG_LOGO,
-        cardSubTitle: {
-          content: EDUCATION.BTECH,
-          rightContent: EDUCATION.SESSION
-        },
-        matCardTitleLink: EDUCATION.IITG_LINK,
-      }
+  educationData: ITabCardEntity =
+    {
+      tabLabel: EDUCATION.IIT,
+      cardTitle: EDUCATION.IITG,
+      imagePathOrUrl: EDUCATION.IITG_LOGO,
+      cardSubTitle: {
+        content: EDUCATION.BTECH,
+        rightContent: EDUCATION.SESSION
+      },
+      matCardTitleLink: EDUCATION.IITG_LINK,
+    }
 
 }

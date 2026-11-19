@@ -72,7 +72,7 @@ export class FooterComponent implements OnInit, OnDestroy {
       width: 'auto',
       height: 'auto',
       data: {
-        title: 'Deepak',
+        title: 'Deepak Mandal',
         imageUrl: 'assets/images/dkm.jpeg',
         images: this.profileImages,
         altText: 'Deepak',

@@ -24,13 +24,13 @@
     margin-left: 5px;
   }
 
-  .footer-picture > div {
+  .footer-picture>div {
     flex: 0 0 50%;
   }
 }
 
 @media (max-width: 600px) {
-  .footer-picture > div {
+  .footer-picture>div {
     flex: 0 0 100%;
   }
 }

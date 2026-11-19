@@ -19,7 +19,7 @@
     justify-content: flex-end !important;
 }
 
-.card + .card {
+.card+.card {
     margin-top: 5px;
 }
 

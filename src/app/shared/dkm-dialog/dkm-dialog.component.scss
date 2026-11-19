@@ -10,7 +10,7 @@ mat-dialog-content {
 }
 
 .carousel-row mat-card,
-mat-dialog-content > mat-card {
+mat-dialog-content>mat-card {
 	flex: 0 1 auto;
 	max-width: calc(100vw - 120px);
 	overflow: hidden;
@@ -31,7 +31,7 @@ img[mat-card-image] {
 	}
 
 	.carousel-row mat-card,
-	mat-dialog-content > mat-card {
+	mat-dialog-content>mat-card {
 		max-width: calc(100vw - 96px);
 	}
 

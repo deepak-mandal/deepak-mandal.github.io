@@ -1,30 +1,3 @@
-<!-- <mat-accordion [multi]="true">
-  <mat-expansion-panel [expanded]="true">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <img [src]="evImagePathOrUrl" class="stepper-icon" alt="EdgeVerve">
-      </mat-panel-title>
-      <mat-panel-description>Jan. 2026 - Present</mat-panel-description>
-    </mat-expansion-panel-header>
-    <mat-card>
-      <dkm-edgeverve-experience></dkm-edgeverve-experience>
-    </mat-card>
-  </mat-expansion-panel>
-
-  <mat-expansion-panel [expanded]="true">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <img [src]="cgiImagePathOrUrl" class="stepper-icon" alt="CGI">
-      </mat-panel-title>
-      <mat-panel-description>Sept. 2021 - Jan. 2026</mat-panel-description>
-    </mat-expansion-panel-header>
-    <mat-card>
-      <dkm-cgi-experience></dkm-cgi-experience>
-    </mat-card>
-  </mat-expansion-panel>
-</mat-accordion> -->
-
-
 <mat-card *ngFor="let experienceData of experiencesData" class="card">
   @if (experienceData.cardTitle) {
   <mat-card-header>
@@ -41,7 +14,8 @@
         }</span>
     </mat-card-title>
     <mat-card-subtitle>
-      {{experienceData.cardSubTitle?.content || ''}}&nbsp;<i style="float: right;">{{experienceData.cardSubTitle?.rightContent
+      {{experienceData.cardSubTitle?.content || ''}}&nbsp;<i
+        style="float: right;">{{experienceData.cardSubTitle?.rightContent
         || ''}}</i>
     </mat-card-subtitle>
   </mat-card-header>

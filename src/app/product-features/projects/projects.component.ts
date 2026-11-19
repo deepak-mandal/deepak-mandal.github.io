@@ -14,6 +14,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { DkmCgiExperienceComponent } from '../cgi-experience/cgi-experience.component';
 import { DkmEdgeverveExperienceComponent } from '../edgeverve-experience/edgeverve-experience.component';
+import { IitgComponent } from '../iitg/iitg.component';
+import { MiscellaneousComponent } from '../miscellaneous/miscellaneous.component';
 
 @Component({
   selector: 'projects',
@@ -21,13 +23,9 @@ import { DkmEdgeverveExperienceComponent } from '../edgeverve-experience/edgever
   styleUrls: ['./projects.component.css'],
   standalone: true,
   imports: [MatTabsModule, MatCardModule, MatIconModule, MatButtonModule, DkmCgiExperienceComponent, DkmEdgeverveExperienceComponent,
-    CommonModule, MatExpansionModule, MatDividerModule, MatStepperModule, ReactiveFormsModule]
-    // imports: [MatCardModule, MatIconModule, DkmCgiExperienceComponent, DkmEdgeverveExperienceComponent,
-    // CommonModule, MatExpansionModule, MatDividerModule, MatStepperModule, ReactiveFormsModule]
+    CommonModule, MatExpansionModule, MatDividerModule, MatStepperModule, ReactiveFormsModule, IitgComponent, MiscellaneousComponent]
 })
 export class ProjectsComponent implements OnInit {
-    demoServer = "https://deepak-mandal.github.io/ims/"
-//  cgiImagePathOrUrl = EXPERIENCE.CGI_LOGO;
   evImagePathOrUrl = EXPERIENCE.EV_IL_LOGO;
 
   constructor(public dialog: MatDialog) { }

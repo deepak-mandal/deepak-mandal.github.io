@@ -14,11 +14,8 @@ import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'dkm-cgi-experience',
   imports: [MatCardModule,
-    //  NgStyle,
-      MatStepperModule, MatIconModule, MatButtonModule, CommonModule],
+    MatStepperModule, MatIconModule, MatButtonModule, CommonModule],
   providers: [{ provide: STEPPER_GLOBAL_OPTIONS, useValue: { displayDefaultIndicatorType: false } }],
-  // MatTabsModule, MatCardModule, MatIconModule, MatButtonModule, DkmCgiExperienceComponent, DkmEdgeverveExperienceComponent,
-  //   CommonModule, MatExpansionModule, MatDividerModule, MatStepperModule, ReactiveFormsModule
   templateUrl: './cgi-experience.component.html',
   styleUrl: './cgi-experience.component.scss',
 })
@@ -70,16 +67,16 @@ export class DkmCgiExperienceComponent implements OnInit {
     }
   }
 
-    openDialog(): void {
-      this.dialog.open(
-        ReviewDocumentationComponent, {
-        width: 'auto',
-        height: 'auto',
-        data: {
-          title: 'ReviewBook - Product Overview',
-          submitText: 'Close'
-  
-        }
-      });
-    }
+  openDialog(): void {
+    this.dialog.open(
+      ReviewDocumentationComponent, {
+      width: 'auto',
+      height: 'auto',
+      data: {
+        title: 'ReviewBook - Product Overview',
+        submitText: 'Close'
+
+      }
+    });
+  }
 }

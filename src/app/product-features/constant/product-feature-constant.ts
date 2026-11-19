@@ -27,7 +27,7 @@ export const EXPERIENCE = {
     EDGEVERVE: 'EdgeVerve Systems Limited (Infosys Finacle)',
     PRODUCT_TECH_ANALYST: 'Product Technical Analyst',
     EV_LINK: 'https://www.edgeverve.com/',
-    CGI_LINK:'https://www.cgi.com/en',
+    CGI_LINK: 'https://www.cgi.com/en',
     DATACYCLE360_1: 'Worked on CGI DataCycle360 Webshop product, an eCommerce platform which is responsible for ordering items & approving purchases; Technical analysis/investigation of required functionality & features; Implemented new UI features using Angular',
     DATACYCLE360_2: 'Developed backend APIs using Spring Boot, Java, Apache Solr which involves CRUD operations, spellcheck suggest search functionality; Webshop-Advantage application integration with Purchase requests features & bug fixes.',
     DATACYCLE360_3: 'Designed database data model, schema modification using MS SQL database technologies; SQL query tuning to optimize performance.',
@@ -65,7 +65,6 @@ export const PROJECTS = {
     REVIEWBOOK_DB_ARCH: 'Designed Architecture diagram, Database data model & schema by analyzing business requirement/high-level features.',
     REVIEWBOOK_MICROSERVICES: 'Developed microservice architecture for Registration, Login, Product management, Review management services, Eureka server, API Gateway using Spring Boot with NoSQL/MongoDB & SQL/MySQL databases. Implemented user authentication using JWT, microservices communication using RabbitMQ queuing system & containerization using Docker',//'Developed microservice architecture for Registration, Login, Product management, Review management services, Eureka server, API Gateway using Spring Boot with NoSQL/MongoDB & SQL/MySQL databases',
     REVIEWBOOK_ANGULAR_ARCH: 'Designed & built Restful APIs that involves CRUD operations. Designed angular application architecture & developed single page application corresponding to services using angular materials, AG Grid; implemented custom, shared module features.',//'Developed angular application architecture corresponding to services using angular materials, AG Grid',
-    // REVIEWBOOK_TECHNOLOGIES: 'Implemented JWT authentication, microservices communication using RabbitMQ & containerization using Docker',
     REVIEWBOOK_SESSION: 'Jul. 2021- Sept. 2021',
     REVIEWBOOK_LOCATION: 'https://reviewbook.stackroute.io/',
     REVIEWBOOK_DOC_SOURCE_URL: 'https://github.com/deepak-mandal/ReviewBook',
@@ -114,7 +113,7 @@ export const PROJECTS = {
     ANALYSIS_MINING: 'Wikipedia Text Analytics and Mining',
     ANALYSIS_ACTIVITY: ' Analysed the unstructured data (article) using text mining and created the Word Cloud out of that; to understand what these article trying to say, rather than reading the entire article.',
     ANALYSIS_TECH: 'Technologies used: Python3, WordCloud',
-    ANALYSIS_WORD_CLOUD: 'assets/images/cpma.png',//'assets/images/tech.png',
+    ANALYSIS_WORD_CLOUD: 'assets/images/cpma.png',
     ANALYSIS_SESSION: 'Dec 2020',
     ANALYSIS_LOCATION: 'https://github.com/deepak-mandal/Word-Cloud-from-Text-Mining'
 }

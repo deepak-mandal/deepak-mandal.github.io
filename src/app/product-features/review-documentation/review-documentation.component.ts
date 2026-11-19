@@ -9,7 +9,6 @@ import { MatDivider } from '@angular/material/list';
 @Component({
   selector: 'app-review-documentation',
   templateUrl: './review-documentation.component.html',
-  styleUrls: ['./review-documentation.component.scss'],
   imports: [MatDialogTitle, MatButton, MatDialogClose, MatIcon, CdkScrollable, MatDialogContent, MatCard, MatCardSubtitle, MatCardContent, MatCardImage, MatDivider, MatDialogActions]
 })
 export class ReviewDocumentationComponent implements OnInit {

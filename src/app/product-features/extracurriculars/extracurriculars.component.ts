@@ -4,10 +4,10 @@ import { EXPERIENCE, EXTRACURRICULARS } from '../constant/product-feature-consta
 import { DkmCustomCardComponent } from '../../shared/dkm-custom-card/dkm-custom-card.component';
 
 @Component({
-    selector: 'extracurriculars',
-    templateUrl: './extracurriculars.component.html',
-    styleUrls: ['./extracurriculars.component.css'],
-    imports: [DkmCustomCardComponent]
+  selector: 'extracurriculars',
+  templateUrl: './extracurriculars.component.html',
+  styleUrls: ['./extracurriculars.component.css'],
+  imports: [DkmCustomCardComponent]
 })
 export class ExtracurricularsComponent implements OnInit {
 
